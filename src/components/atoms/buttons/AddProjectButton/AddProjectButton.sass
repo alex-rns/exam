@@ -1,0 +1,20 @@
+@import '../../../../variables.sass'
+
+.add-project-button
+  border: none
+  color: #fff
+  background: $accent-color
+  font: 700 calc(0.25em + 0.6vmax) Roboto, sans-serif
+  letter-spacing: 0.24px
+  padding: 0.7vmax 2.1vmax
+  border-radius: 50px
+  transition: $transition
+
+  &-icon
+    vertical-align: middle
+    font-size: calc(0.3em + 0.8vmax)
+    color: #fff
+    opacity: 0.5
+    margin-right: 0.7vmax
+  &:hover
+    box-shadow: inset 11em 0 darken($accent-color, 10%)

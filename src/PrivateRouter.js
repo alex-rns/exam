@@ -3,6 +3,8 @@ import {Route, Redirect} from 'react-router-dom';
 import {Link} from 'react-router-dom'
 
 //components
+import TopBar from './components/organisms/TopBar/TopBar'
+import LeftBar from "./components/organisms/LeftBar/LeftBar";
 
 const PrivateRouter = ({component: Component, ...rest}) => {
 
@@ -12,7 +14,8 @@ const PrivateRouter = ({component: Component, ...rest}) => {
       if (localStorage.getItem('userCheck') === 'user exist') {
         return (
           <div className='Private'>
-            <h2>Bar</h2>
+            <TopBar/>
+            <LeftBar/>
             <Link to="/">Home</Link>
             <Link to="/workflow">workflow</Link>
             <Link to="/raport">raport</Link>

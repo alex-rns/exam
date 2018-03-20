@@ -14,7 +14,6 @@ const userExist = {
 App.use(bodyParser.json());
 
 App.post('/api/user', (req, res) => {
-  console.log('asdasd');
   const name = req.body.login;
   const pass = req.body.pass;
 

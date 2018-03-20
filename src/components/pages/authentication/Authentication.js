@@ -4,7 +4,7 @@ import './Authentication.css';
 //components
 import Registration from "../../organisms/Login&Registration/Registration";
 import Login from '../../organisms/Login&Registration/Login';
-import logo from '../../../assets/img/logo.png';
+import Logo from '../../../assets/img/logo.png';
 
 
 class Authentication extends React.Component {
@@ -36,7 +36,7 @@ class Authentication extends React.Component {
       <div className="Authentication">
         <div className="auth-wrapp">
           <div className='auth-box'>
-            <img className='logo' src={logo} alt="Logo"/>
+            <img className='logo' src={Logo} alt="Logo"/>
             <div className='auth-tab'>
               <a
                 className={this.state.tab === 'regTab'
