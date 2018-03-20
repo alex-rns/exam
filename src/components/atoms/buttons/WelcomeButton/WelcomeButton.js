@@ -13,7 +13,6 @@ class WelcomeButton extends React.Component {
 
         </button>
         <FontAwesome
-          className='welcome-button-icon'
           name='angle-right'
         />
       </div>
