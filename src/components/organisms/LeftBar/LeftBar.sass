@@ -7,30 +7,33 @@
   top: 0
   left: 0
   height: 100vh
-  background-color: #0e1a35
-
+  background-color: $second-gray
+  box-shadow: 0 3px 80px rgba(158, 163, 180, 0.2)
 
 .nav
   &-item
     a
-      padding: 1.4vmax 9vmax 1.4vmax 0
       width: 100%
       height: 100%
       display: inline-block
-      color: #fff
+      color: #737ba2
       font: 500 1.6vmax/3.5vmax Roboto, sans-serif
-      border-left: 10px solid #0e1a35
+      span
+        transition: $transition
       &:hover
-        background-color: #122143
-        border-left: 10px solid $accent-color
+        span
+          color: #fff
       .active
-        background-color: #122143
+        span
+          color: #fff
 
 .nav-icon
   color: $accent-color
   margin: 0 1.1vmax 0 2.1vmax
 
-
+.activeLeftLink
+  span
+    color: #fff
 
 //media-queries
 @media only screen and (max-width : 1200px)

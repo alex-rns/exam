@@ -17,7 +17,7 @@ class LeftBar extends React.Component {
           <ul>
             <li className="nav-item">
               <NavLink
-                activeStyle={{ backgroundColor: '#122143', borderLeft: "10px solid #5584ff" }}
+                activeClassName="activeLeftLink"
                 exact
                 to="/">
                 <FontAwesome
@@ -27,7 +27,7 @@ class LeftBar extends React.Component {
             </li>
             <li className="nav-item">
               <NavLink
-                activeStyle={{ backgroundColor: '#122143', borderLeft: "10px solid #5584ff" }}
+                activeClassName="activeLeftLink"
                 exact
                 to="/workflow">
                 <FontAwesome
@@ -38,7 +38,7 @@ class LeftBar extends React.Component {
 
             <li className="nav-item">
               <NavLink
-                activeStyle={{ backgroundColor: '#122143', borderLeft: "10px solid #5584ff" }}
+                activeClassName="activeLeftLink"
                 exact
                 to="/statistics">
                 <FontAwesome
@@ -48,7 +48,7 @@ class LeftBar extends React.Component {
             </li>
             <li className="nav-item">
               <NavLink
-                activeStyle={{ backgroundColor: '#122143', borderLeft: "10px solid #5584ff" }}
+                activeClassName="activeLeftLink"
                 exact
                 to="/calendar">
                 <FontAwesome
@@ -58,7 +58,7 @@ class LeftBar extends React.Component {
             </li>
             <li className="nav-item">
               <NavLink
-                activeStyle={{ backgroundColor: '#122143', borderLeft: "10px solid #5584ff" }}
+                activeClassName="activeLeftLink"
                 exact to="/users">
                 <FontAwesome
                   className='nav-icon nav-icon-home'

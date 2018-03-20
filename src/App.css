@@ -65,3 +65,6 @@ a {
 
 *, *:after, *:before {
   box-sizing: border-box; }
+
+.Private {
+  padding: 150px; }
