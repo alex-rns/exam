@@ -7,7 +7,6 @@ const NotificationButton = () => {
     <button className='notification-button'>
       <FontAwesome
         name='bell'
-        size='2x'
       />
     </button>
   )

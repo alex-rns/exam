@@ -31,7 +31,7 @@ class AccountDropdown extends React.Component {
           <span className="account-dropdown__name">
           <FontAwesome
             className='dropdown-caret'
-            name='sort-down'
+            name='angle-down'
           />
         </span>
         </DropdownTrigger>
@@ -42,21 +42,13 @@ class AccountDropdown extends React.Component {
           </div>
 
           <ul className="account-dropdown__management-links account-dropdown__segment">
-            <li className="account-dropdown__link">
-              <a className="account-dropdown__link__anchor" onClick={this.handleLinkClick}>
-                My profile
-              </a>
-            </li>
+
             <li className="account-dropdown__link">
               <a className="account-dropdown__link__anchor" onClick={this.handleLinkClick}>
                 Settings
               </a>
             </li>
-            <li className="account-dropdown__link">
-              <a className="account-dropdown__link__anchor" onClick={this.handleLogOut}>
-                Help
-              </a>
-            </li>
+
             <li className="account-dropdown__link">
               <a className="account-dropdown__link__anchor" onClick={this.handleLogOut}>
                 Log out

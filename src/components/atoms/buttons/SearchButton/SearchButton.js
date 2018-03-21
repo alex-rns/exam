@@ -7,7 +7,6 @@ const SearchButton = () => {
     <button className='search-button'>
       <FontAwesome
         name='search'
-        size='2x'
       />
     </button>
   )

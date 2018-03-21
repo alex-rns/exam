@@ -22,7 +22,6 @@ const PrivateRouter = ({component: Component, ...rest}) => {
             <Link to="/projects">projects</Link>
             <Link to="/inbox">inbox</Link>
 
-            {/*<Bar/>*/}
             <div className='content'>
               <Component {...matchProps}/>
             </div>

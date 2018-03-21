@@ -1,17 +1,27 @@
 import React from 'react';
 import './Home.css'
-import FontAwesome from 'react-fontawesome';
+import {Grid, Row} from 'react-bootstrap/lib';
+import HomeMainChart from "../../organisms/Charts/HomeMainChart/HomeMainChart";
+import YourProjects from "../../organisms/YourProjects/YourProjects";
+import SalesReport from "../../organisms/Charts/SalesReport/SalesReport";
+import Inbox from "../../organisms/Inbox/Inbox";
+import Calendar from "../../organisms/Calendar/Calendar";
 
 class Home extends React.Component {
   render(){
     return(
-      <div>
-        <h2>Home111111111111111111111111111111111111111111111111111111111111111111</h2>
-        <FontAwesome
-          className='nav-icon nav-icon-home'
-          name='home'
-          size="5x"
-        />
+      <div className="Home">
+        <Grid fluid>
+          <Row>
+            <HomeMainChart/>
+            <YourProjects/>
+          </Row>
+          <Row>
+            <SalesReport/>
+            <Inbox/>
+            <Calendar/>
+          </Row>
+        </Grid>
       </div>
 
 
