@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactHighcharts from 'react-highcharts';
-import {Row, Col} from 'react-bootstrap/lib';
+import {Col} from 'react-bootstrap/lib';
 import './SalesReport.css'
 
 //component
@@ -101,7 +101,6 @@ class SalesReport extends React.Component {
   };
 
   render(){
-
     const reportSelect = {
       list: ["Year", "Month", "Week"],
       label: 'Show'
@@ -109,14 +108,10 @@ class SalesReport extends React.Component {
 
     return(
       <Col className="SalesReport" md={6}>
-        <Row>
-          <Col xs={6}>
-            <h2>Report</h2>
-          </Col>
-          <Col className='text-right' xs={6}>
+        <div className="report-header">
+            <h2>Sales report</h2>
             <Select onChange={this.onChange} data={reportSelect}/>
-          </Col>
-        </Row>
+        </div>
         <ReactHighcharts config={reportChart} ref='reportChart'>
         </ReactHighcharts>
       </Col>

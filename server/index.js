@@ -10,6 +10,31 @@ const report = {
 };
 
 
+
+const inbox = [
+  {
+    name: 'Michelle Stewart',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.',
+    date: 'Today, 5:32 PM',
+    readed: false,
+    // img: '../src/assets/img/Michelle Stewart.png'
+  },
+  {
+    name: 'Jolene Slater',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.',
+    date: 'Today, 5:32 PM',
+    readed: false,
+    // img: '../src/assets/img/Jolene Slater.png'
+  },{
+    name: 'Lyall Roach',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.',
+    date: 'Today, 5:32 PM',
+    readed: true,
+    // img: '../src/assets/img/Lyall Roach.png'
+  }
+];
+
+
 //login
 const userExist = {
   name: 'admin',
@@ -33,7 +58,7 @@ App.post('/api/user', (req, res) => {
   }
 });
 
-
+//Sales Report
 App.get('/api/user/report/year', (req, res) => {
   return res.json(report.year)
 });
@@ -45,6 +70,15 @@ App.get('/api/user/report/month', (req, res) => {
 App.get('/api/user/report/week', (req, res) => {
   return res.json(report.week)
 });
+
+
+
+//Inbox Messages
+App.get('/api/user/messages/inbox', (req, res) => {
+  return res.json(inbox)
+});
+
+
 
 App.listen(4000, () => {
   console.log('yoohoo! server is started')

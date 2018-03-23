@@ -5,7 +5,7 @@ import HomeMainChart from "../../organisms/Charts/HomeMainChart/HomeMainChart";
 import YourProjects from "../../organisms/YourProjects/YourProjects";
 import SalesReport from "../../organisms/Charts/SalesReport/SalesReport";
 import Inbox from "../../organisms/Inbox/Inbox";
-import Calendar from "../../organisms/Calendar/Calendar";
+import Calendar from "../../organisms/HomeCalendar/HomeCalendar";
 
 class Home extends React.Component {
   render(){
