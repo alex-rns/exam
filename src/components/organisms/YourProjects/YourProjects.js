@@ -5,7 +5,7 @@ import {Row, Col} from 'react-bootstrap/lib';
 class YourProjects extends React.Component {
   render(){
     return(
-      <Col className="YourProjects" md={5}>
+      <Col className="YourProjects" md={3}>
         YourProjects
       </Col>
     )
