@@ -31,7 +31,7 @@ class LeftBar extends React.Component {
                 exact
                 to="/workflow">
                 <FontAwesome
-                  className='nav-icon nav-icon-home'
+                  className='nav-icon nav-icon-bars'
                   name='bars'
                 /></NavLink>
             </li>
@@ -42,7 +42,7 @@ class LeftBar extends React.Component {
                 exact
                 to="/raport">
                 <FontAwesome
-                  className='nav-icon nav-icon-home'
+                  className='nav-icon nav-icon-chart-line'
                   name='chart-line'
                 /></NavLink>
             </li>
@@ -52,7 +52,7 @@ class LeftBar extends React.Component {
                 exact
                 to="/inbox">
                 <FontAwesome
-                  className='nav-icon nav-icon-home'
+                  className='nav-icon nav-icon-envelope'
                   name='envelope'
                 /></NavLink>
             </li>
@@ -61,7 +61,7 @@ class LeftBar extends React.Component {
                 activeClassName="activeLeftLink"
                 exact to="/users">
                 <FontAwesome
-                  className='nav-icon nav-icon-home'
+                  className='nav-icon nav-icon-users'
                   name='users'
                 /></NavLink>
             </li>

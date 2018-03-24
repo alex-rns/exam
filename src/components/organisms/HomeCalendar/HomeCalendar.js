@@ -18,6 +18,7 @@ class HomeCalendar extends React.Component {
         <Calendar
           onChange={this.onChange}
           value={this.state.date}
+          locale="en-EN"
         />
       </Col>
     )

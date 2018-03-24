@@ -10,6 +10,7 @@ class InboxHomeMessage extends React.Component {
            return(
              <div className="InboxHomeMessage" key={index}>
                {item.name}
+
              </div>
            )
          })}
