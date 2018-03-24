@@ -40,7 +40,7 @@ class Inbox extends React.Component {
             <Col className="Inbox" md={3}>
                 <div className="inbox-header">
                     <p>Inbox
-                    <span>({this.state.dataNoReaded.length})</span>
+                    (<span>{this.state.dataNoReaded.length}</span>)
                     </p>
                 </div>
                 <InboxHomeMessage data={this.state.dataInbox}/>
