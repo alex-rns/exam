@@ -24,7 +24,6 @@ class Home extends React.Component {
         </Grid>
       </div>
 
-
     )
   }
 }

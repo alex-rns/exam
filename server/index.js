@@ -35,6 +35,12 @@ const inbox = [
     date: 'Today, 5:32 PM',
     readed: true,
     img: '/img/LyallRoach.png'
+  },{
+    name: 'Lyall Roach',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.',
+    date: 'Today, 5:32 PM',
+    readed: true,
+    img: '/img/LyallRoach.png'
   }
 ];
 
