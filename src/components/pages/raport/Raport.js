@@ -1,10 +1,16 @@
 import React from 'react';
-// import './Home.css'
+import './Raport.css'
+
+
+import RaportChart from "../../organisms/Charts/RaportChart/RaportChart";
 
 class Raport extends React.Component {
-  render(){
-    return(
-      <h2>Raport</h2>
+  render() {
+    return (
+      <div className="Raport">
+        <RaportChart/>
+
+      </div>
     )
   }
 }
