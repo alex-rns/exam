@@ -55,18 +55,28 @@ const ReportChart = {
       },
     },
     series: {
-      lineWidth: 5,
+      lineWidth: 4,
       fillColor: {
-        linearGradient: [0, 0, 0, 400],
+        linearGradient: [0, 0, 0, 450],
         stops: [
           [0, '#284c72'],
-          [1, '#282a38']
+          [1, '#282837']
         ]
       },
       color: '#2196f3',
       states: {
         hover: {
-          color: "#2196f3"
+          color: "#2196f3",
+        }
+      },
+      marker: {
+        states: {
+          hover: {
+            fillColor: '#fff',
+            lineColor: '#2196f3',
+            lineWidth: 5,
+            radius: 9
+          }
         }
       }
     }
@@ -86,7 +96,6 @@ const ReportChart = {
     pointFormat: '<b>{point.y}</b>',
     shared: true,
     crosshairs: true
-
   },
 };
 
