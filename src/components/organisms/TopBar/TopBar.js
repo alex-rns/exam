@@ -30,7 +30,7 @@ class TopBar extends React.Component {
         <div className="user-panel">
           <AddProjectButton/>
           <SearchButton/>
-          <NotificationButton/>
+          <NotificationButton />
           <AccountDropdown data={userData} />
         </div>
       </div>

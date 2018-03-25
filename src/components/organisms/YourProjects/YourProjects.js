@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap/lib';
 import './YourProjects.css'
+import HomeProjectBlock from "../../molecules/HomeProjectBlock/HomeProjectBlock";
 
 class YourProjects extends React.Component {
 
@@ -21,9 +22,11 @@ class YourProjects extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({
-          dataYourProject: res
+          dataYourProject: res.filter((el)=>{
+            return el.id === 'user1'
+          })
         });
-        console.log('123 ', res)
+        console.log('123 ', this.state.dataYourProject)
 
       })
   }
@@ -36,6 +39,7 @@ class YourProjects extends React.Component {
         <div className="your-project-header">
           <p>Your projects</p>
         </div>
+        <HomeProjectBlock data={this.state.dataYourProject.slice(0,4)}/>
       </Col>
     )
   }

@@ -2,12 +2,16 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import FontAwesome from 'react-fontawesome';
 import './LeftBar.css'
+import IconMarker from "../../atoms/IconMarker/IconMarker";
 
 //components
 
 class LeftBar extends React.Component {
 
   render() {
+
+    let dataMarker = "IconMarker";
+
     return (
       <div
         className={'LeftBar'}
@@ -48,13 +52,18 @@ class LeftBar extends React.Component {
             </li>
             <li className="nav-item">
               <NavLink
+                className="wrapper-marker"
                 activeClassName="activeLeftLink"
                 exact
                 to="/inbox">
                 <FontAwesome
                   className='nav-icon nav-icon-envelope'
                   name='envelope'
-                /></NavLink>
+                />
+                <IconMarker/>
+
+
+              </NavLink>
             </li>
             <li className="nav-item">
               <NavLink

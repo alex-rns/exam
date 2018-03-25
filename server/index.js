@@ -74,112 +74,112 @@ const projects = [
     type: "Wordpress theme",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "Landing page",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "New website",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/LyallRoach.png',
+    userImg: '/img/LyallRoach.png',
     id: "user3"
   },
   {
     type: "Dashboard",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "Mobile App",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/ava.png',
+    userImg: '/img/ava.png',
     id: "user1"
   },
   {
     type: "New Logo",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "New website",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/ava.png',
+    userImg: '/img/ava.png',
     id: "user1"
   },
   {
     type: "New website",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "Dashboard",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/ava.png',
+    userImg: '/img/ava.png',
     id: "user1"
   },
   {
     type: "Mobile App",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/LyallRoach.png',
+    userImg: '/img/LyallRoach.png',
     id: "user3"
   },
   {
     type: "New website",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "Dashboard",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/LyallRoach.png',
+    userImg: '/img/LyallRoach.png',
     id: "user3"
   },
   {
     type: "Landing page",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "Landing page",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   },
   {
     type: "New website",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/LyallRoach.png',
+    userImg: '/img/LyallRoach.png',
     id: "user3"
   },
   {
     type: "Dashboard",
     company: "Symu.co",
     price: "$1500",
-    img: '/img/MichelleStewart.png',
+    userImg: '/img/MichelleStewart.png',
     id: "user2"
   }
 
