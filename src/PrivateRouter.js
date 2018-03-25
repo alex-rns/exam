@@ -16,11 +16,6 @@ const PrivateRouter = ({component: Component, ...rest}) => {
           <div className='Private'>
             <TopBar/>
             <LeftBar/>
-            <Link to="/">Home</Link>
-            <Link to="/workflow">workflow</Link>
-            <Link to="/raport">raport</Link>
-            <Link to="/projects">projects</Link>
-            <Link to="/inbox">inbox</Link>
 
             <div className='content'>
               <Component {...matchProps}/>

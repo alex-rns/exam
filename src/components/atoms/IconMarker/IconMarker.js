@@ -3,15 +3,15 @@ import './IconMarker.css'
 
 class IconMarker extends React.Component {
 
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      marker:false
+      marker: false
     }
   }
 
-  componentDidMount(){
-    setTimeout(()=>{
+  componentDidMount() {
+    setTimeout(() => {
       this.setState({
         marker: true
       })
@@ -19,10 +19,12 @@ class IconMarker extends React.Component {
   }
 
 
-  render(){
-    return(
-        <div className={this.state.marker && "IconMarker"}>
-        </div>
+  render() {
+    return (
+      this.state.marker &&
+      <div className="IconMarker">
+      </div>
+
     )
   }
 }
