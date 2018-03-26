@@ -129,7 +129,7 @@ class Workflow extends React.Component {
           <Select onChange={this.onSelectChange} data={workflowProject}/>
         </div>
 
-        <div>
+        <div className="workflow-wrap">
           {this.state.tab === 'workflowDndTab'
             ? <DNDWrap/>
             : <AllProjects data={this.state.showedProject}/>

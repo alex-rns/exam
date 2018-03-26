@@ -13,11 +13,11 @@ class AllProjects extends React.Component {
 
 
 
-  userNameBlock = (cell, row) => {
+  projectTitle = (cell, row) => {
     return (
       <div className="user-name-block" style={{display: 'flex', alignItems: 'center'}}>
         <div className="user-image">
-          <img className="user-photo" src={row.userPhoto} alt={row.userName}/>
+          <img className="user-photo" src={row.userImg} alt={row.userName}/>
           {/*{*/}
             {/*row.active && (<img className="onlineIndicator" src={onlineIndicator} alt="onlineIndicator"/>)*/}
           {/*}*/}
@@ -49,7 +49,7 @@ class AllProjects extends React.Component {
     return (
       <div className="mail-and-phone-block">
         <p>
-          {row.email}</p>
+          {row.deadline}</p>
       </div>
     )
   };
@@ -80,24 +80,25 @@ class AllProjects extends React.Component {
 
 
     return (
-      <div>
         <BootstrapTable
-          bordered={false}
-          headerStyle={{background: '#ccc', font: '400 1.2vmax Roboto', paddingLeft: 20}}
-          containerStyle={{background: '#ccc'}}
+          className='project-table'
+          bordered={ false }
+          headerStyle={{background: '#2a2c3a', font: '400 1.2vmax Roboto', paddingLeft: 20}}
+          containerStyle={{background: '#2a2c3a'}}
           data={this.props.data}
           pagination>
 
           <TableHeaderColumn
+            tdStyle={{'border': 'none', background: '#3a3e52'}}
             thStyle={{'border': 'none'}}
             width='30%'
-            dataField='userName'
+            dataField='id'
             isKey
-            dataFormat={this.userNameBlock}
-          >Name</TableHeaderColumn>
+            dataFormat={this.projectTitle}
+          >Project title</TableHeaderColumn>
 
           <TableHeaderColumn
-
+            tdStyle={{'border': 'none'}}
             thStyle={{'border': 'none'}}
             width='20%'
             dataField='lastActivity'
@@ -106,6 +107,7 @@ class AllProjects extends React.Component {
 
 
           <TableHeaderColumn
+            tdStyle={{'border': 'none'}}
             thStyle={{'border': 'none'}}
             width='20%'
             dataField='email'
@@ -114,6 +116,7 @@ class AllProjects extends React.Component {
 
 
           <TableHeaderColumn
+            tdStyle={{'border': 'none'}}
             thStyle={{'border': 'none'}}
             width='20%'
             dataField='phone'
@@ -121,6 +124,7 @@ class AllProjects extends React.Component {
           >Phone</TableHeaderColumn>
 
           <TableHeaderColumn
+            tdStyle={{'border': 'none'}}
             thStyle={{'border': 'none'}}
             width='10%'
             dataField='button'
@@ -130,7 +134,6 @@ class AllProjects extends React.Component {
           </TableHeaderColumn>
 
         </BootstrapTable>
-      </div>
     );
 
   }
