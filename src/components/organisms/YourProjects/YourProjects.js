@@ -26,7 +26,6 @@ class YourProjects extends React.Component {
             return el.id === 'user1'
           })
         });
-        console.log('123 ', this.state.dataYourProject)
 
       })
   }

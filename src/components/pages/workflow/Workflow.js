@@ -2,6 +2,7 @@ import React from 'react';
 import Select from "../../atoms/Select/Select";
 import './Workflow.css'
 import DNDWrap from "../../organisms/DND/DNDWrap/DNDWrap";
+import AllProjects from "../../organisms/AllProjects/AllProjects";
 
 
 class Workflow extends React.Component {
@@ -10,9 +11,90 @@ class Workflow extends React.Component {
     super(props);
 
     this.state = {
-      tab: 'workflowAllProjectTab'
+      tab: 'workflowAllProjectTab',
+      showedProject: []
     }
   }
+
+  componentWillMount() {
+    fetch('/api/user/projects', {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'get'
+    })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          showedProject: res
+        });
+
+      })
+  }
+
+  onSelectChange = (e) => {
+    let selectCompany = e.target.value;
+    fetch('/api/user/projects', {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'get'
+    })
+
+      .then(res => res.json())
+      .then(res => {
+        if(selectCompany === "Microsoft"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "Microsoft"
+            })
+          })
+        }
+        if(selectCompany === "Google"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "Google"
+            })
+          })
+        }
+        if(selectCompany === "Themeforest"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "Themeforest"
+            })
+          })
+        }
+        if(selectCompany === "Symu.co"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "Symu.co"
+            })
+          })
+        }
+        if(selectCompany === "JCD.pl"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "JCD.pl"
+            })
+          })
+        }
+        if(selectCompany === "Facebook"){
+          this.setState({
+            showedProject: res.filter((e)=>{
+              return e.company === "Facebook"
+            })
+          })
+        }
+        if(selectCompany === "All"){
+          this.setState({
+            showedProject: res
+          })
+        }
+
+      })
+
+  };
+
 
   tabChange = (value) => {
     this.setState({
@@ -44,13 +126,13 @@ class Workflow extends React.Component {
               onClick={() => this.tabChange('workflowAllProjectTab')}
             >Workflow</a>
           </div>
-          <Select data={workflowProject}/>
+          <Select onChange={this.onSelectChange} data={workflowProject}/>
         </div>
 
         <div>
           {this.state.tab === 'workflowDndTab'
             ? <DNDWrap/>
-            : <div>2</div>
+            : <AllProjects data={this.state.showedProject}/>
           }
         </div>
 
