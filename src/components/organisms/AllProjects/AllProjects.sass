@@ -3,6 +3,30 @@
 .project-table
   padding: 30px
 
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+    vertical-align: middle
+
+  tbody tr
+    border-top: 20px #2a2c3a solid
+    font: $main-font
+    &.progress-0
+      border-left: 5px #fff solid
+    &.progress-mid
+      border-left: 5px #2196f3 solid
+    &.progress-100
+      border-left: 5px #4caf50 solid
+
+.projectTitle-block
+  padding-left: 30px
+  span
+    font-weight: 400
+    color: $font-second-color
+
+.deadline-block
+  span
+    font-weight: 400
+    color: $font-second-color
+
 .user-name-block
   display: flex
   align-items: center
@@ -12,6 +36,7 @@
   border-radius: 50%
   margin-right: 25px
   position: relative
+
   .user-photo
     width: 3.5vmax
     height: 3.5vmax
@@ -23,33 +48,11 @@
     height: 1vmax
 
 .user-main-info
-  color: #0e1a35
-  font: 500 1.2vmax Roboto, sans-serif
+  color: #fff
   span
     font-weight: 400
-    color: #8492af
+    color: $font-second-color
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
-  vertical-align: middle
-
-.last-activity-block
-  display: flex
-  padding: 1.6vmax
-  p
-    color: #8492af
-    font: 500 1.2vmax Roboto, sans-serif
-  .online-now
-    color: #00bf1b
-    span
-      color: #00bf1b
-
-
-.mail-and-phone-block
-  display: flex
-  padding: 1.6vmax
-  p
-    font: 500 1.2vmax Roboto, sans-serif
-    color: #0e1a35
 
 .button-block
   margin: auto
@@ -60,14 +63,7 @@
   justify-content: center
   padding: 1.6vmax
 
-//.react-bs-container-body
-//  border-top: #dadfe7 1px solid
 
-//thead
-//  margin-left: 20px
-
-tbody td
-  margin-top: 20px
 
 .react-bootstrap-table-page-btns-ul
   display: flex

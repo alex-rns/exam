@@ -9,56 +9,63 @@ import FontAwesome from 'react-fontawesome';
 class AllProjects extends React.Component {
 
 
-
-
-
-
   projectTitle = (cell, row) => {
+    return (
+        <div className="projectTitle-block">
+          <p>{row.type}</p>
+          <span>{row.company}</span>
+        </div>
+    )
+  };
+
+
+  value = (cell, row) => {
+    return (
+      <div className="value-block">
+        <p>{row.price}</p>
+      </div>
+    )
+  };
+
+  deadline = (cell, row) => {
+    return (
+      <div className="deadline-block">
+        <p>{row.deadline}</p>
+        <span>{row.timeLeft}</span>
+      </div>
+    )
+  };
+
+  timeSpent = (cell, row) => {
+    return (
+      <div className="timeSpent-block">
+        <p>
+          {row.timeSpent}</p>
+      </div>
+    )
+  };
+
+  progress = (cell, row) => {
+    return (
+      <div className="progress-block">
+        <p>
+          {row.progress}</p>
+      </div>
+    )
+  };
+
+  assignedTo = (cell, row) => {
     return (
       <div className="user-name-block" style={{display: 'flex', alignItems: 'center'}}>
         <div className="user-image">
           <img className="user-photo" src={row.userImg} alt={row.userName}/>
-          {/*{*/}
-            {/*row.active && (<img className="onlineIndicator" src={onlineIndicator} alt="onlineIndicator"/>)*/}
-          {/*}*/}
+
         </div>
 
         <div className="user-main-info">
           <p>{row.type}</p>
           <span>{row.company}</span>
         </div>
-      </div>
-    )
-  };
-
-
-  lastActivityBlock = (cell, row) => {
-    return (
-      <div className="last-activity-block">
-        <p className={row.active ? 'online-now' : ''}>
-          <FontAwesome
-            className='task-time-icon'
-            name='clock'
-          />
-          {row.lastActivity}</p>
-      </div>
-    )
-  };
-
-  emailBlock = (cell, row) => {
-    return (
-      <div className="mail-and-phone-block">
-        <p>
-          {row.deadline}</p>
-      </div>
-    )
-  };
-
-  phoneBlock = (cell, row) => {
-    return (
-      <div className="mail-and-phone-block">
-        <p>
-          {row.phone}</p>
       </div>
     )
   };
@@ -75,65 +82,105 @@ class AllProjects extends React.Component {
     )
   };
 
+  //colored leftBorder
+  trClassFormat = (row) => {
+    if (row.progress === 100) {
+      return 'progress-100'
+    }
+    if (row.progress === 0) {
+      return 'progress-0'
+    }
+    else {
+      return 'progress-mid'
+    }
+  };
+
 
   render() {
 
 
     return (
-        <BootstrapTable
-          className='project-table'
-          bordered={ false }
-          headerStyle={{background: '#2a2c3a', font: '400 1.2vmax Roboto', paddingLeft: 20}}
-          containerStyle={{background: '#2a2c3a'}}
-          data={this.props.data}
-          pagination>
+      <BootstrapTable
+        trClassName={this.trClassFormat}
+        className='project-table'
+        bordered={false}
+        tableStyle={{padding: '10px'}}
+        headerStyle={{color: '#9ea3b4', background: '#2a2c3a', font: '400 16px Montserrat'}}
+        containerStyle={{background: '#2a2c3a'}}
+        data={this.props.data}
+        pagination>
 
-          <TableHeaderColumn
-            tdStyle={{'border': 'none', background: '#3a3e52'}}
-            thStyle={{'border': 'none'}}
-            width='30%'
-            dataField='id'
-            isKey
-            dataFormat={this.projectTitle}
-          >Project title</TableHeaderColumn>
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='15%'
+          dataField='id'
+          isKey
+          dataFormat={this.projectTitle}
+        >Project title</TableHeaderColumn>
 
-          <TableHeaderColumn
-            tdStyle={{'border': 'none'}}
-            thStyle={{'border': 'none'}}
-            width='20%'
-            dataField='lastActivity'
-            dataFormat={this.lastActivityBlock}
-          >Last activity</TableHeaderColumn>
-
-
-          <TableHeaderColumn
-            tdStyle={{'border': 'none'}}
-            thStyle={{'border': 'none'}}
-            width='20%'
-            dataField='email'
-            dataFormat={this.emailBlock}
-          >Mail</TableHeaderColumn>
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='10%'
+          dataField='value'
+          dataFormat={this.value}
+        >Value</TableHeaderColumn>
 
 
-          <TableHeaderColumn
-            tdStyle={{'border': 'none'}}
-            thStyle={{'border': 'none'}}
-            width='20%'
-            dataField='phone'
-            dataFormat={this.phoneBlock}
-          >Phone</TableHeaderColumn>
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='10%'
+          dataField='deadline'
+          dataFormat={this.deadline}
+        >Deadline</TableHeaderColumn>
 
-          <TableHeaderColumn
-            tdStyle={{'border': 'none'}}
-            thStyle={{'border': 'none'}}
-            width='10%'
-            dataField='button'
-            dataFormat={this.buttonBlock}
-          >
 
-          </TableHeaderColumn>
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='10%'
+          dataField='timeSpent'
+          dataFormat={this.timeSpent}
+        >Time spent</TableHeaderColumn>
 
-        </BootstrapTable>
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='20%'
+          dataField='progress'
+          dataFormat={this.progress}
+        >Progress</TableHeaderColumn>
+
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='10%'
+          dataField='status'
+          dataFormat={this.status}
+        >Status</TableHeaderColumn>
+
+
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='15%'
+          dataField='assignedTo'
+          dataFormat={this.assignedTo}
+        >Assigned to</TableHeaderColumn>
+
+        <TableHeaderColumn
+          tdStyle={{'border': 'none', background: '#3a3e52'}}
+          thStyle={{'border': 'none'}}
+          width='5%'
+          dataField='buttonBlock'
+          dataFormat={this.buttonBlock}
+        >
+
+        </TableHeaderColumn>
+
+      </BootstrapTable>
     );
 
   }
