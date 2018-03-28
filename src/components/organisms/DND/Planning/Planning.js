@@ -34,9 +34,7 @@ class Planning extends React.Component {
             group: 'shared'
           }}
           tag="ul" // Defaults to "div"
-          onChange={(order, sortable, evt) => {
-            this.setState({ items: order });
-          }}
+
         >
           {items}
         </Sortable>

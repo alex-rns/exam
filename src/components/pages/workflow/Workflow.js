@@ -118,7 +118,7 @@ class Workflow extends React.Component {
                 ? 'workflowTab-active'
                 : 'workflowTab'}
               onClick={() => this.tabChange('workflowDndTab')}
-            >All Projects</a>
+            >All Projects ({this.state.showedProject.length})</a>
             <a
               className={this.state.tab === 'workflowAllProjectTab'
                 ? 'workflowTab-active'
@@ -131,8 +131,8 @@ class Workflow extends React.Component {
 
         <div className="workflow-wrap">
           {this.state.tab === 'workflowDndTab'
-            ? <DNDWrap/>
-            : <AllProjects data={this.state.showedProject}/>
+            ? <AllProjects data={this.state.showedProject}/>
+            : <DNDWrap data={this.state.showedProject}/>
           }
         </div>
 

@@ -19,7 +19,6 @@ class AllProjects extends React.Component {
     )
   };
 
-
   value = (cell, row) => {
     return (
       <div className="value-block">
@@ -94,9 +93,7 @@ class AllProjects extends React.Component {
     }
   };
 
-
   render() {
-
 
     return (
       <BootstrapTable

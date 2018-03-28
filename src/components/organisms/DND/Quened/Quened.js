@@ -11,19 +11,48 @@ import TaskDND from "../../../molecules/TaskDND/TaskDND";
 
 class Quened extends React.Component {
 
-  state = {
-    items: ['Apple', 'Banana', 'Cherry', 'Guava', 'Peach', 'Strawberry']
-  };
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     filterItem: []
+  //   }
+  // }
+  //
+  // componentWillMount(){
+  //   let task = this.props.data.map((e)=>{
+  //     return e.type === "New website"
+  //   });
+  //
+  //   console.log('rtrt', this.props.data)
+  //
+  //   this.setState({
+  //
+  //     filterItem: task
+  //   })
+  // }
+
+
+
 
   render() {
 
-    const items = this.state.items.map(val => (<li key={uniqueId()} data-id={val}>{val}</li>));
+    let state = {
+      project: this.props.data
+
+    };
+    // this.state.items = this.props.data.filter((e)=>{
+    //   return e.type === "New website"
+    // });
+
+    const item = state.project.map(val => (
+      <li key={uniqueId()} data-id={val}>{val.company}</li>));
+    console.log('333', state);
 
 
     return (
-      <Col className='WorkflowToDo' md={4}>
+      <Col className='' md={2}>
         <div className="workflow-header">
-          <h2>To Do{this.state.items.length}</h2>
+          <h2>To Do</h2>
           <FontAwesome
             className='workflow-header-icon'
             name='angle-right'
@@ -35,11 +64,9 @@ class Quened extends React.Component {
             group: 'shared'
           }}
           tag="ul" // Defaults to "div"
-          onChange={(order, sortable, evt) => {
-            this.setState({ items: order });
-          }}
+
         >
-          {items}
+          {item}
         </Sortable>
       </Col>
     )
