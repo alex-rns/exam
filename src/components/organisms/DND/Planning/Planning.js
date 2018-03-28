@@ -10,19 +10,23 @@ import TaskDND from "../../../molecules/TaskDND/TaskDND";
 
 
 class Planning extends React.Component {
-  state = {
-    items: ['Apple', 'Banana', 'Cherry']
-  };
 
   render() {
 
-    const items = this.state.items.map(val => (<li key={uniqueId()} data-id={val}>{val}</li>));
+    let state = {
+      project: this.props.data
+
+    };
+
+    const item = state.project.map(val => (
+      <li key={uniqueId()} data-id={val}>{val.company}</li>));
+    console.log('333', state);
 
 
     return (
-      <Col className='WorkflowToDo' md={4}>
+      <Col className='' md={2}>
         <div className="workflow-header">
-          <h2>To Do{this.state.items.length}</h2>
+          <h2>To Do{item.length}</h2>
           <FontAwesome
             className='workflow-header-icon'
             name='angle-right'
@@ -36,7 +40,7 @@ class Planning extends React.Component {
           tag="ul" // Defaults to "div"
 
         >
-          {items}
+          {item}
         </Sortable>
       </Col>
     )
