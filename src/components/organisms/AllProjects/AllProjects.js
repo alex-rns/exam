@@ -4,6 +4,7 @@ import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css'
 import './AllProjects.css'
 // import onlineIndicator from '../../../assets/img/online-indicator.png'
 import FontAwesome from 'react-fontawesome';
+import ProgressBar from "../../molecules/ProgressBar/ProgressBar";
 
 
 class AllProjects extends React.Component {
@@ -48,8 +49,8 @@ class AllProjects extends React.Component {
   progress = (cell, row) => {
     return (
       <div className="progress-block">
-        <p>
-          {row.progress}</p>
+        <p>{row.progress}%</p>
+        <ProgressBar data={row.progress}/>
       </div>
     )
   };
@@ -59,7 +60,6 @@ class AllProjects extends React.Component {
       <div className="user-name-block" style={{display: 'flex', alignItems: 'center'}}>
         <div className="user-image">
           <img className="user-photo" src={row.userImg} alt={row.userName}/>
-
         </div>
 
         <div className="user-main-info">
@@ -74,9 +74,8 @@ class AllProjects extends React.Component {
     return (
       <button className="button-block">
         <FontAwesome
-          className='dropdown-button-icon'
+          className='dropdown-dots'
           name='ellipsis-v'
-          size='2x'
         />
       </button>
     )
@@ -111,6 +110,7 @@ class AllProjects extends React.Component {
         pagination>
 
         <TableHeaderColumn
+          columnClassName='td-column-string-example'
           tdStyle={{'border': 'none', background: '#3a3e52'}}
           thStyle={{'border': 'none'}}
           width='15%'
