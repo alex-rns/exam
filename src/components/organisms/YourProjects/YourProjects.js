@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap/lib';
+import {Col} from 'react-bootstrap/lib';
 import './YourProjects.css'
 import HomeProjectBlock from "../../molecules/HomeProjectBlock/HomeProjectBlock";
 

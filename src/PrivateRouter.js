@@ -1,6 +1,5 @@
 import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
-import {Link} from 'react-router-dom'
 
 //components
 import TopBar from './components/organisms/TopBar/TopBar'

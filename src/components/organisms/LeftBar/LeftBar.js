@@ -10,8 +10,6 @@ class LeftBar extends React.Component {
 
   render() {
 
-    let dataMarker = "IconMarker";
-
     return (
       <div
         className={'LeftBar'}

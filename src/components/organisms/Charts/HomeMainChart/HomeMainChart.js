@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap/lib';
+import {Col} from 'react-bootstrap/lib';
 
 
 class HomeMainChart extends React.Component {
