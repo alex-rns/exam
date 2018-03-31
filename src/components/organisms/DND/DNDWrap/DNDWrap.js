@@ -7,6 +7,8 @@ import Quened from '../Quened/Quened'
 import Planning from "../Planning/Planning";
 
 
+
+
 class DNDWrap extends React.Component {
 
   render() {
@@ -23,10 +25,10 @@ class DNDWrap extends React.Component {
 
         <Grid fluid>
           <Row>
-            {/*<Quened items={quened}/>*/}
-            {/*<Quened items={planning}/>*/}
-            <Planning data={planning}/>
-            <Planning data={quened}/>
+            <Quened items={quened}/>
+            <Quened items={planning}/>
+            {/*<Planning/>*/}
+            {/*<Planning data={quened}/>*/}
           </Row>
         </Grid>
 
