@@ -32,6 +32,8 @@ class Workflow extends React.Component {
       })
   }
 
+
+
   onSelectChange = (e) => {
     let selectCompany = e.target.value;
     fetch('/api/user/projects', {
@@ -104,12 +106,26 @@ class Workflow extends React.Component {
 
   render() {
 
+    // let quenedd = this.state.showedProject.filter((e)=>{
+    //   return e.status === "Quened"
+    // });
+    // let planningg = this.state.showedProject.filter((e)=>{
+    //   return e.status === "Planning"
+    // });
+
+
+    console.log('Workflow ', this.state.showedProject)
+
     const workflowProject = {
       list: ["All", "Microsoft", "Google", "Symu.co", "JCD.pl", "Facebook", "Themeforest"],
       label: 'Show projects'
     };
 
     return (
+
+
+
+
       <div className="Workflow">
         <div className="workflow-header">
           <div className="workflow-tab">

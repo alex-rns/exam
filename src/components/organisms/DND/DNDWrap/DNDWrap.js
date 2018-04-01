@@ -15,7 +15,42 @@ import Container from './Container';
 class DNDWrap extends React.Component {
 
 
+  constructor() {
+    super();
+
+    this.state = {
+      quened: [],
+      planning: []
+    }
+  }
+
+  componentWillMount(){
+
+
+    let quenedd = this.props.data.filter((e)=>{
+      return e.status === "Quened"
+    });
+    this.setState({
+      quened: quenedd
+    })
+
+    let planningg = this.props.data.filter((e)=>{
+      return e.status === "Planning"
+    });
+    this.setState({
+      planning: planningg
+    })
+
+  }
+
+
+
   render() {
+
+    console.log('dndwrap state', this.state.quened)
+    console.log('dndwrap props ', this.props)
+
+
 
     const style = {
       display: "flex",
@@ -24,14 +59,16 @@ class DNDWrap extends React.Component {
       paddingTop: "20px"
     }
 
-    let quened = this.props.data.filter((e)=>{
-      return e.status === "Quened"
-    });
-    let planning = this.props.data.filter((e)=>{
-      return e.status === "Planning"
-    });
 
-    console.log('q',this.props)
+
+    // let quened = this.props.data.filter((e)=>{
+    //   return e.status === "Quened"
+    // });
+    // let planning = this.props.data.filter((e)=>{
+    //   return e.status === "Planning"
+    // });
+
+
 
 
 
@@ -40,8 +77,8 @@ class DNDWrap extends React.Component {
 
         <Grid fluid>
           <Row style={{...style}}>
-            <Container id={1} list={quened} />
-            <Container id={2} list={planning} />
+            <Container id={1} list={this.state.quened} />
+            <Container id={2} list={this.state.planning} />
             {/*<Container id={3} list={listThree} />*/}
           </Row>
         </Grid>

@@ -10,6 +10,7 @@ class Container extends Component {
     this.state = { cards: props.list };
   }
 
+
   pushCard(card) {
     this.setState(update(this.state, {
       cards: {
@@ -45,6 +46,8 @@ class Container extends Component {
 
 
   render() {
+    console.log('q',this.props)
+
     const { cards } = this.state;
     const { canDrop, isOver, connectDropTarget } = this.props;
     const isActive = canDrop && isOver;
