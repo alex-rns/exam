@@ -51,17 +51,29 @@ class Container extends Component {
     const {cards} = this.state;
     const {canDrop, isOver, connectDropTarget} = this.props;
     const isActive = canDrop && isOver;
-    const style = {
-      width: "200px",
-      height: "404px",
-      border: '1px dashed gray'
-    };
 
     const backgroundColor = isActive ? '#2f3242' : '#2b2d3c';
 
+
+    //Total Price
+    let priceSum = 0;
+    cards.forEach(function (e) {
+      priceSum += e.price;
+      console.log('sum' , priceSum)
+    });
+
+
+    console.log(priceSum);
+
     return connectDropTarget(
       <div>
-        <p>-{cards.length}</p>
+        <div className="DND-header">
+          <div>
+            <p>{cards.Text}</p>
+            <span>{cards.length} project &middot; {priceSum} </span>
+          </div>
+
+        </div>
         <div className="DND-container" style={{backgroundColor}}>
 
           {cards.map((card, i) => {

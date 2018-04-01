@@ -24,7 +24,7 @@ class Card extends Component {
                 <p>{card.type}</p>
 
               </div>
-              <p className="project-text">{card.company} &middot; {card.price}</p>
+              <p className="project-text">{card.company} &middot; ${card.price}</p>
             </div>
           </div>
           <DropdownButton/>
