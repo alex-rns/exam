@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col} from 'react-bootstrap/lib';
 import './YourProjects.css'
-import HomeProjectBlock from "../../molecules/HomeProjectBlock/HomeProjectBlock";
+import HomeProjectBlock from "../../molecules/ProjectBlock/ProjectBlock";
 
 class YourProjects extends React.Component {
 
@@ -23,7 +23,7 @@ class YourProjects extends React.Component {
       .then(res => {
         this.setState({
           dataYourProject: res.filter((el)=>{
-            return el.id === 'user1'
+            return el.idd === 'user1'
           })
         });
 

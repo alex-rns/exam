@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
+import './DND.css'
 
-const style = {
-  border: '1px dashed gray',
-  padding: '0.5rem 1rem',
-  margin: '.5rem',
-  backgroundColor: 'white',
-  cursor: 'move'
-};
+
+import DropdownButton from '../../atoms/buttons/DropdownButton/DropdownButton'
+
 
 class Card extends Component {
 
@@ -18,10 +15,21 @@ class Card extends Component {
     const opacity = isDragging ? 0 : 1;
 
     return connectDragSource(connectDropTarget(
-      <div style={{ ...style, opacity }}>
-        {card.company}
-        {card.text}
-        {card.type}
+      <div className="DND-card">
+        <div className="ProjectBlock">
+          <div className="project-wrap">
+            <img src={card.userImg} alt={card.name}/>
+            <div>
+              <div className={"project-header"}>
+                <p>{card.type}</p>
+
+              </div>
+              <p className="project-text">{card.company} &middot; {card.price}</p>
+            </div>
+          </div>
+          <DropdownButton/>
+        </div>
+
       </div>
     ));
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from "../../atoms/Select/Select";
 import './Workflow.css'
-import DNDWrap from "../../organisms/DND/DNDWrap/DNDWrap";
+import DNDWrap from "../../organisms/DND/DNDWrap";
 import AllProjects from "../../organisms/AllProjects/AllProjects";
 
 
@@ -147,8 +147,8 @@ class Workflow extends React.Component {
 
         <div className="workflow-wrap">
           {this.state.tab === 'workflowDndTab'
-            ? <AllProjects data={this.state.showedProject}/>
-            : <DNDWrap data={this.state.showedProject}/>
+            ? <DNDWrap data={this.state.showedProject}/>
+            : <AllProjects data={this.state.showedProject}/>
           }
         </div>
 

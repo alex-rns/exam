@@ -1,24 +1,24 @@
 import React from 'react';
-import './HomeProjectBlock.css'
+import './ProjectBlock.css'
 
 import DropdownButton from '../../atoms/buttons/DropdownButton/DropdownButton'
 
 
-class HomeProjectBlock extends React.Component {
+class ProjectBlock extends React.Component {
   render() {
     return (
       <div>
         {this.props.data.map((item, index) => {
           return (
-            <div className="HomeProjectBlock" key={index}>
-              <div className="home-project-wrap">
+            <div className="ProjectBlock" key={index}>
+              <div className="project-wrap">
                 <img src={item.userImg} alt={item.name}/>
                 <div>
-                  <div className={"home-project-header"}>
+                  <div className={"project-header"}>
                     <p>{item.type}</p>
 
                   </div>
-                  <p className="home-project-text">{item.company} &middot; {item.price}</p>
+                  <p className="project-text">{item.company} &middot; {item.price}</p>
                 </div>
               </div>
               <DropdownButton/>
@@ -30,4 +30,4 @@ class HomeProjectBlock extends React.Component {
   }
 }
 
-export default HomeProjectBlock;
+export default ProjectBlock;

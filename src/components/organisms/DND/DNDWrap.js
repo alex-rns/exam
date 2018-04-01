@@ -2,15 +2,11 @@ import React from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import {Grid, Row} from 'react-bootstrap/lib';
+import './DND.css'
 
 //component
 
-import Quened from '../Quened/Quened'
-import Planning from "../Planning/Planning";
-import Appa from "../Completed/App";
-import Container from './Container';
-
-
+import Container from './DNDContainer';
 
 class DNDWrap extends React.Component {
 
@@ -40,9 +36,7 @@ class DNDWrap extends React.Component {
     this.setState({
       planning: planningg
     })
-
   }
-
 
 
   render() {
@@ -52,23 +46,6 @@ class DNDWrap extends React.Component {
 
 
 
-    const style = {
-      display: "flex",
-      color: 'red',
-      justifyContent: "space-around",
-      paddingTop: "20px"
-    }
-
-
-
-    // let quened = this.props.data.filter((e)=>{
-    //   return e.status === "Quened"
-    // });
-    // let planning = this.props.data.filter((e)=>{
-    //   return e.status === "Planning"
-    // });
-
-
 
 
 
@@ -76,7 +53,7 @@ class DNDWrap extends React.Component {
       <div className="DNDWrap">
 
         <Grid fluid>
-          <Row style={{...style}}>
+          <Row className="DND">
             <Container id={1} list={this.state.quened} />
             <Container id={2} list={this.state.planning} />
             {/*<Container id={3} list={listThree} />*/}
