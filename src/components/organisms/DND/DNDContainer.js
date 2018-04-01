@@ -69,7 +69,10 @@ class Container extends Component {
       <div>
         <div className="DND-header">
           <div>
-            <p>{cards.Text}</p>
+
+            <p>123</p>
+
+
             <span>{cards.length} project &middot; {priceSum} </span>
           </div>
 
