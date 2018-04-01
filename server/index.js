@@ -47,158 +47,13 @@ const inbox = [
 
 //Projects
 
-// const projects = [
-//   {
-//     type: "Mobile App",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "New dashboard",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "Landing page",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "Wordpress theme",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "Landing page",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/LyanRoach.png",
-//     id: "user3"
-//   },
-//   {
-//     type: "Dashboard",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "Mobile App",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "New Logo",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "Dashboard",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/ava.png",
-//     id: "user1"
-//   },
-//   {
-//     type: "Mobile App",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/LyanRoach.png",
-//     id: "user3"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "Dashboard",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/LyanRoach.png",
-//     id: "user3"
-//   },
-//   {
-//     type: "Landing page",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "Landing page",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   },
-//   {
-//     type: "New website",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/LyanRoach.png",
-//     id: "user3"
-//   },
-//   {
-//     type: "Dashboard",
-//     company: "Symu.co",
-//     price: "$1500",
-//     userImg: "/img/MichelleStewart.png",
-//     id: "user2"
-//   }
-//
-//
-// ];
-
 const projects = [
-  {
+  { id: 1,
     type: "New website",
     company: "Microsoft",
     price: "$1300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "15 May 2018",
     timeLeft: "10 days left",
     timeSpent: "2 months",
@@ -207,12 +62,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 2,
     type: "New website",
     company: "Google",
     price: "$3600",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "31 May 2018",
     timeLeft: "Completed",
     timeSpent: "620 hours",
@@ -221,12 +76,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 3,
     type: "New logo",
     company: "Themeforest",
     price: "$1200",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "13 April 2018",
     timeLeft: "Completed",
     timeSpent: "46 hours",
@@ -235,12 +90,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 4,
     type: "New website",
     company: "Themeforest",
     price: "$1000",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "14 April 2018",
     timeLeft: "Completed",
     timeSpent: "140 hours",
@@ -249,12 +104,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 5,
     type: "Landing page",
     company: "Google",
     price: "$1500",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "31 May 2018",
     timeLeft: "15 days left",
     timeSpent: "40 hours",
@@ -263,12 +118,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 6,
     type: "Landing page",
     company: "Microsoft",
     price: "$900",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "10 April 2018",
     timeLeft: "1 year left",
     timeSpent: "70 hours",
@@ -277,12 +132,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 7,
     type: "Mobile app",
     company: "Microsoft",
     price: "$2700",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "6 May 2018",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -291,12 +146,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 8,
     type: "New dashboard",
     company: "Symu.co",
     price: "$3200",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "22 April 2018",
     timeLeft: "15 days left",
     timeSpent: "35 hours",
@@ -305,12 +160,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 9,
     type: "New logo",
     company: "Microsoft",
     price: "$3500",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "19 April 2018",
     timeLeft: "Completed",
     timeSpent: "12 hours",
@@ -319,12 +174,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 10,
     type: "New dashboard",
     company: "Symu.co",
     price: "$900",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "12 May 2018",
     timeLeft: "30 days left",
     timeSpent: "10 hours",
@@ -333,12 +188,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 11,
     type: "New dashboard",
     company: "Symu.co",
     price: "$3600",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "4 May 2018",
     timeLeft: "Completed",
     timeSpent: "548 hours",
@@ -347,12 +202,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 12,
     type: "Landing page",
     company: "Symu.co",
     price: "$4300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -361,12 +216,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 13,
     type: "New logo",
     company: "Themeforest",
     price: "$1300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "30 June 2017",
     timeLeft: "3 month left",
     timeSpent: "26 hours",
@@ -375,12 +230,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 14,
     type: "New logo",
     company: "JCD.pl",
     price: "$3500",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "13 May 2018",
     timeLeft: "45 days left",
     timeSpent: "15 hours",
@@ -389,12 +244,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 15,
     type: "Landing page",
     company: "Google",
     price: "$2100",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "22 June 2017",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -403,12 +258,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 16,
     type: "New dashboard",
     company: "Symu.co",
     price: "$4300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -417,12 +272,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 17,
     type: "New dashboard",
     company: "JCD.pl",
     price: "$3800",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "1 April 2018",
     timeLeft: "2 month left",
     timeSpent: "78 hours",
@@ -431,12 +286,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 18,
     type: "New website",
     company: "Google",
     price: "$3500",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "13 May 2018",
     timeLeft: "45 days left",
     timeSpent: "15 hours",
@@ -445,12 +300,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 19,
     type: "Mobile app",
     company: "Facebook",
     price: "$2400",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
@@ -459,12 +314,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 20,
     type: "Landing page",
     company: "JCD.pl",
     price: "$4300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "9 May 2018",
     timeLeft: "Completed",
     timeSpent: "1024 hours",
@@ -473,12 +328,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 21,
     type: "Landing page",
     company: "Symu.co",
     price: "$2400",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
@@ -487,12 +342,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 22,
     type: "Wordpress theme",
     company: "Google",
     price: "$4500",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "1 April 2018",
     timeLeft: "1 month left",
     timeSpent: "78 hours",
@@ -501,12 +356,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 23,
     type: "Wordpress theme",
     company: "Microsoft",
     price: "$2600",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "15 June 2018",
     timeLeft: "22 days left",
     timeSpent: "56 hours",
@@ -515,12 +370,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 24,
     type: "Wordpress theme",
     company: "Microsoft",
     price: "$900",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "12 May 2018",
     timeLeft: "30 days left",
     timeSpent: "10 hours",
@@ -529,12 +384,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 25,
     type: "New dashboard",
     company: "Themeforest",
     price: "$2800",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "3 May 2018",
     timeLeft: "Completed",
     timeSpent: "2048 hours",
@@ -543,12 +398,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 26,
     type: "New dashboard",
     company: "Microsoft",
     price: "$2600",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "15 June 2018",
     timeLeft: "22 days left",
     timeSpent: "56 hours",
@@ -557,12 +412,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 27,
     type: "New website",
     company: "Microsoft",
     price: "$1900",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "1 May 2018",
     timeLeft: "1 month left",
     timeSpent: "1024 hours",
@@ -571,12 +426,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 28,
     type: "Mobile app",
     company: "JCD.pl",
     price: "$1500",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "31 May 2018",
     timeLeft: "15 days left",
     timeSpent: "40 hours",
@@ -585,12 +440,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 29,
     type: "New dashboard",
     company: "Google",
     price: "$3100",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "30 June 2018",
     timeLeft: "1 month left",
     timeSpent: "256 hours",
@@ -599,12 +454,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 30,
     type: "Landing page",
     company: "Microsoft",
     price: "$1900",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "1 May 2018",
     timeLeft: "Completed",
     timeSpent: "1024 hours",
@@ -613,12 +468,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 31,
     type: "Wordpress theme",
     company: "JCD.pl",
     price: "$3100",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "30 June 2018",
     timeLeft: "1 month left",
     timeSpent: "256 hours",
@@ -627,12 +482,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 32,
     type: "Landing page",
     company: "Themeforest",
     price: "$2800",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "3 May 2018",
     timeLeft: "1 month left",
     timeSpent: "2048 hours",
@@ -641,12 +496,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 33,
     type: "New logo",
     company: "Microsoft",
     price: "$1300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "15 May 2018",
     timeLeft: "10 days left",
     timeSpent: "2 months",
@@ -655,12 +510,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 34,
     type: "Landing page",
     company: "Themeforest",
     price: "$1300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "30 June 2017",
     timeLeft: "3 month left",
     timeSpent: "26 hours",
@@ -669,12 +524,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 35,
     type: "New website",
     company: "Google",
     price: "$4500",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "1 April 2018",
     timeLeft: "1 month left",
     timeSpent: "78 hours",
@@ -683,12 +538,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 36,
     type: "New logo",
     company: "Microsoft",
     price: "$3600",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "31 May 2018",
     timeLeft: "1 day left",
     timeSpent: "620 hours",
@@ -697,12 +552,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 37,
     type: "New website",
     company: "JCD.pl",
     price: "$4300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "9 May 2018",
     timeLeft: "5 month left",
     timeSpent: "1024 hours",
@@ -711,12 +566,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 38,
     type: "Mobile app",
     company: "JCD.pl",
     price: "$2100",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "22 June 2017",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -725,12 +580,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 39,
     type: "Wordpress theme",
     company: "Symu.co",
     price: "$4300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "9 May 2018",
     timeLeft: "5 month left",
     timeSpent: "1024 hours",
@@ -739,12 +594,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 40,
     type: "New logo",
     company: "JCD.pl",
     price: "$3800",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "1 April 2018",
     timeLeft: "2 month left",
     timeSpent: "78 hours",
@@ -753,12 +608,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 41,
     type: "Landing page",
     company: "Symu.co",
     price: "$4300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -767,12 +622,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 42,
     type: "New logo",
     company: "Microsoft",
     price: "$2300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "22 June 2015",
     timeLeft: "2 days left",
     timeSpent: "158 hours",
@@ -781,12 +636,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 43,
     type: "New website",
     company: "JCD.pl",
     price: "$2800",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "3 May 2018",
     timeLeft: "1 month left",
     timeSpent: "2048 hours",
@@ -795,12 +650,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 44,
     type: "New dashboard",
     company: "Symu.co",
     price: "$4300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -809,12 +664,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 45,
     type: "Wordpress theme",
     company: "Themeforest",
     price: "$1900",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "1 May 2018",
     timeLeft: "1 month left",
     timeSpent: "1024 hours",
@@ -823,12 +678,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 46,
     type: "Landing page",
     company: "Symu.co",
     price: "$3600",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "4 May 2018",
     timeLeft: "1 day left",
     timeSpent: "548 hours",
@@ -837,12 +692,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 47,
     type: "Wordpress theme",
     company: "Facebook",
     price: "$3200",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "22 April 2018",
     timeLeft: "15 days left",
     timeSpent: "35 hours",
@@ -851,12 +706,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 48,
     type: "Mobile app",
     company: "Microsoft",
     price: "$3500",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "19 April 2018",
     timeLeft: "2 month left",
     timeSpent: "12 hours",
@@ -865,12 +720,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 49,
     type: "New website",
     company: "Google",
     price: "$4300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -879,12 +734,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 50,
     type: "New logo",
     company: "Microsoft",
     price: "$2700",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "6 May 2018",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -893,12 +748,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 51,
     type: "Mobile app",
     company: "Symu.co",
     price: "$900",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "10 April 2018",
     timeLeft: "1 year left",
     timeSpent: "70 hours",
@@ -907,12 +762,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 52,
     type: "Landing page",
     company: "Themeforest",
     price: "$1000",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "14 April 2018",
     timeLeft: "3 month left",
     timeSpent: "140 hours",
@@ -921,12 +776,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 53,
     type: "Mobile app",
     company: "Google",
     price: "$3600",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "31 May 2018",
     timeLeft: "1 day left",
     timeSpent: "0 hours",
@@ -935,12 +790,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 54,
     type: "Landing page",
     company: "Themeforest",
     price: "$1200",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "13 April 2018",
     timeLeft: "3 month left",
     timeSpent: "46 hours",
@@ -949,12 +804,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 55,
     type: "New website",
     company: "Microsoft",
     price: "$1200",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "13 April 2018",
     timeLeft: "3 month left",
     timeSpent: "46 hours",
@@ -963,12 +818,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 56,
     type: "Mobile app",
     company: "Microsoft",
     price: "$4500",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "1 April 2018",
     timeLeft: "1 month left",
     timeSpent: "78 hours",
@@ -977,12 +832,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 57,
     type: "Mobile app",
     company: "Google",
     price: "$1300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "15 May 2018",
     timeLeft: "10 days left",
     timeSpent: "2 months",
@@ -991,12 +846,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 58,
     type: "New dashboard",
     company: "Google",
     price: "$1000",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "14 April 2018",
     timeLeft: "3 month left",
     timeSpent: "140 hours",
@@ -1005,12 +860,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 59,
     type: "New logo",
     company: "Google",
     price: "$900",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "10 April 2018",
     timeLeft: "1 year left",
     timeSpent: "70 hours",
@@ -1019,12 +874,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 60,
     type: "Landing page",
     company: "Symu.co",
     price: "$3800",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "1 April 2018",
     timeLeft: "2 month left",
     timeSpent: "78 hours",
@@ -1033,12 +888,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 61,
     type: "Wordpress theme",
     company: "Themeforest",
     price: "$1500",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "31 May 2018",
     timeLeft: "15 days left",
     timeSpent: "40 hours",
@@ -1047,12 +902,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 62,
     type: "Wordpress theme",
     company: "Microsoft",
     price: "$3500",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "19 April 2018",
     timeLeft: "2 month left",
     timeSpent: "12 hours",
@@ -1061,12 +916,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 63,
     type: "Mobile app",
     company: "JCD.pl",
     price: "$3200",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "22 April 2018",
     timeLeft: "15 days left",
     timeSpent: "35 hours",
@@ -1075,12 +930,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 64,
     type: "New website",
     company: "Google",
     price: "$3600",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "4 May 2018",
     timeLeft: "1 day left",
     timeSpent: "548 hours",
@@ -1089,12 +944,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 65,
     type: "New website",
     company: "Google",
     price: "$900",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "12 May 2018",
     timeLeft: "30 days left",
     timeSpent: "10 hours",
@@ -1103,12 +958,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 66,
     type: "New logo",
     company: "JCD.pl",
     price: "$4300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -1117,12 +972,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 67,
     type: "New dashboard",
     company: "Microsoft",
     price: "$2300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "22 June 2015",
     timeLeft: "2 days left",
     timeSpent: "158 hours",
@@ -1131,12 +986,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 68,
     type: "New dashboard",
     company: "Themeforest",
     price: "$2700",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "6 May 2018",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -1145,12 +1000,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 69,
     type: "Landing page",
     company: "Symu.co",
     price: "$3500",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "13 May 2018",
     timeLeft: "45 days left",
     timeSpent: "15 hours",
@@ -1159,12 +1014,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 70,
     type: "Mobile app",
     company: "Facebook",
     price: "$3800",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "1 April 2018",
     timeLeft: "2 month left",
     timeSpent: "78 hours",
@@ -1173,12 +1028,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 71,
     type: "New logo",
     company: "Symu.co",
     price: "$2100",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "22 June 2017",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -1187,12 +1042,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 72,
     type: "Wordpress theme",
     company: "JCD.pl",
     price: "$1000",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "14 April 2018",
     timeLeft: "3 month left",
     timeSpent: "140 hours",
@@ -1201,12 +1056,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 73,
     type: "New dashboard",
     company: "JCD.pl",
     price: "$2400",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
@@ -1215,12 +1070,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 74,
     type: "Landing page",
     company: "Symu.co",
     price: "$4500",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "1 April 2018",
     timeLeft: "1 month left",
     timeSpent: "78 hours",
@@ -1229,12 +1084,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 75,
     type: "New website",
     company: "Microsoft",
     price: "$1300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "30 June 2017",
     timeLeft: "3 month left",
     timeSpent: "26 hours",
@@ -1243,12 +1098,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 76,
     type: "New dashboard",
     company: "Themeforest",
     price: "$3500",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "19 April 2018",
     timeLeft: "Completed",
     timeSpent: "12 hours",
@@ -1257,12 +1112,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 77,
     type: "New logo",
     company: "Google",
     price: "$2600",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "15 June 2018",
     timeLeft: "22 days left",
     timeSpent: "56 hours",
@@ -1271,12 +1126,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 78,
     type: "New dashboard",
     company: "Themeforest",
     price: "$1900",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "1 May 2018",
     timeLeft: "Completed",
     timeSpent: "1024 hours",
@@ -1285,12 +1140,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 79,
     type: "Landing page",
     company: "Themeforest",
     price: "$3100",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "30 June 2018",
     timeLeft: "1 month left",
     timeSpent: "256 hours",
@@ -1299,12 +1154,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 80,
     type: "New website",
     company: "Google",
     price: "$4300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
@@ -1313,12 +1168,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 81,
     type: "New website",
     company: "Themeforest",
     price: "$3100",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "30 June 2018",
     timeLeft: "1 month left",
     timeSpent: "256 hours",
@@ -1327,12 +1182,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 82,
     type: "New logo",
     company: "Google",
     price: "$2800",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "3 May 2018",
     timeLeft: "Completed",
     timeSpent: "2048 hours",
@@ -1341,12 +1196,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 83,
     type: "Mobile app",
     company: "Google",
     price: "$2600",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "15 June 2018",
     timeLeft: "22 days left",
     timeSpent: "56 hours",
@@ -1355,12 +1210,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 84,
     type: "New website",
     company: "Microsoft",
     price: "$2300",
     userImg: "/img/LyanRoach.png",
-    id: "user4",
+    idd: "user4",
     deadline: "22 June 2015",
     timeLeft: "2 days left",
     timeSpent: "158 hours",
@@ -1369,12 +1224,12 @@ const projects = [
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
   },
-  {
+  { id: 85,
     type: "Mobile app",
     company: "Microsoft",
     price: "$1300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "30 June 2017",
     timeLeft: "3 month left",
     timeSpent: "26 hours",
@@ -1383,12 +1238,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 86,
     type: "Wordpress theme",
     company: "Microsoft",
     price: "$4400",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "5 May 2018",
     timeLeft: "Completed",
     timeSpent: "2048 hours",
@@ -1397,12 +1252,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 87,
     type: "New logo",
     company: "JCD.pl",
     price: "$2400",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
@@ -1411,12 +1266,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 88,
     type: "New dashboard",
     company: "Symu.co",
     price: "$2100",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "22 June 2017",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
@@ -1425,12 +1280,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 89,
     type: "New dashboard",
     company: "Facebook",
     price: "$4300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "9 May 2018",
     timeLeft: "Completed",
     timeSpent: "1024 hours",
@@ -1439,12 +1294,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 90,
     type: "New dashboard",
     company: "Symu.co",
     price: "$3500",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "13 May 2018",
     timeLeft: "45 days left",
     timeSpent: "15 hours",
@@ -1453,12 +1308,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 91,
     type: "Landing page",
     company: "Google",
     price: "$2300",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "22 June 2015",
     timeLeft: "2 days left",
     timeSpent: "158 hours",
@@ -1467,12 +1322,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 92,
     type: "Mobile app",
     company: "Symu.co",
     price: "$3300",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "9 May 2018",
     timeLeft: "Completed",
     timeSpent: "526 hours",
@@ -1481,12 +1336,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 93,
     type: "Landing page",
     company: "Google",
     price: "$900",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "12 May 2018",
     timeLeft: "30 days left",
     timeSpent: "10 hours",
@@ -1495,12 +1350,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 94,
     type: "New logo",
     company: "JCD.pl",
     price: "$3200",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "22 April 2018",
     timeLeft: "15 days left",
     timeSpent: "35 hours",
@@ -1509,12 +1364,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 95,
     type: "New logo",
     company: "JCD.pl",
     price: "$3600",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "4 May 2018",
     timeLeft: "Completed",
     timeSpent: "548 hours",
@@ -1523,12 +1378,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 96,
     type: "New website",
     company: "Themeforest",
     price: "$1500",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "31 May 2018",
     timeLeft: "15 days left",
     timeSpent: "40 hours",
@@ -1537,12 +1392,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 97,
     type: "New dashboard",
     company: "Google",
     price: "$900",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "10 April 2018",
     timeLeft: "Completed",
     timeSpent: "70 hours",
@@ -1551,12 +1406,12 @@ const projects = [
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
   },
-  {
+  { id: 98,
     type: "Landing page",
     company: "Symu.co",
     price: "$3600",
     userImg: "/img/ava.png",
-    id: "user1",
+    idd: "user1",
     deadline: "31 May 2018",
     timeLeft: "Completed",
     timeSpent: "620 hours",
@@ -1565,12 +1420,12 @@ const projects = [
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
-  {
+  { id: 99,
     type: "New website",
     company: "Symu.co",
     price: "$1300",
     userImg: "/img/DominicLynton.png",
-    id: "user2",
+    idd: "user2",
     deadline: "15 May 2018",
     timeLeft: "10 days left",
     timeSpent: "2 months",
@@ -1579,12 +1434,12 @@ const projects = [
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
   },
-  {
+  { id: 100,
     type: "Mobile app",
     company: "Microsoft",
     price: "$1200",
     userImg: "/img/MichelleStewart.png",
-    id: "user3",
+    idd: "user3",
     deadline: "13 April 2018",
     timeLeft: "Completed",
     timeSpent: "46 hours",
