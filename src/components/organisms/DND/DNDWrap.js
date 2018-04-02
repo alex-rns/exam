@@ -5,15 +5,13 @@ import {Grid, Row} from 'react-bootstrap/lib';
 import './DND.css'
 
 //component
-
 import Container from './DNDContainer';
+
 
 class DNDWrap extends React.Component {
 
-
   constructor() {
     super();
-
     this.state = {
       quened: [],
       planning: [],
@@ -21,12 +19,10 @@ class DNDWrap extends React.Component {
       development: [],
       testing: [],
       completed: []
-
     }
   }
 
   componentWillMount(){
-
 
     let quened = this.props.data.filter((e)=>{
       return e.status === "Quened"
@@ -46,7 +42,6 @@ class DNDWrap extends React.Component {
     let completed = this.props.data.filter((e)=>{
       return e.status === "Completed"
     });
-
 
     this.setState({
       planning: planning
@@ -68,15 +63,7 @@ class DNDWrap extends React.Component {
     });
   }
 
-
   render() {
-
-    console.log('dndwrap state', this.state.quened)
-    console.log('dndwrap props ', this.props)
-
-
-
-
 
     return (
       <div className="DNDWrap">

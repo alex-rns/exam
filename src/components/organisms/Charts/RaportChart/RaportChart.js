@@ -8,6 +8,7 @@ import Select from '../../../atoms/Select/Select'
 
 //config
 import raportChart from "../../../../config/raportChart.config";
+import TopPieChart from "./TopPieChart";
 
 class RaportChart extends React.Component {
 
@@ -119,7 +120,7 @@ class RaportChart extends React.Component {
     return (
       <Col className="RaportChart">
         <div className="raport-header">
-          <div>123</div>
+          <TopPieChart/>
           <Select onChange={this.onChange} data={raportSelect}/>
         </div>
         <ReactHighcharts config={raportChart} ref='raportChart'>

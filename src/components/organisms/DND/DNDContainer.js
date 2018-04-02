@@ -14,6 +14,7 @@ class Container extends Component {
 
 
   pushCard(card) {
+    console.log('111',card)
     this.setState(update(this.state, {
       cards: {
         $push: [card]
@@ -22,6 +23,7 @@ class Container extends Component {
   }
 
   removeCard(index) {
+    console.log('222',index)
     this.setState(update(this.state, {
       cards: {
         $splice: [
@@ -46,8 +48,8 @@ class Container extends Component {
   }
 
 
+
   render() {
-    console.log('q', this.props)
 
     const {cards} = this.state;
     const {canDrop, isOver, connectDropTarget} = this.props;
@@ -60,16 +62,12 @@ class Container extends Component {
     let priceSum = 0;
     cards.forEach(function (e) {
       priceSum += e.price;
-      console.log('sum', priceSum)
     });
-
-
-    console.log(priceSum);
-    console.log(this.props);
 
     return connectDropTarget(
       <div>
         <div className="DND-header">
+
           <div>
             <p className="DND-header-name">{this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
             </p>

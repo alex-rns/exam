@@ -5,17 +5,18 @@ import flow from 'lodash/flow';
 import './DND.css'
 
 
-import DropdownButton from '../../atoms/buttons/DropdownButton/DropdownButton'
+import CardDropdown from '../../atoms/buttons/CardDropdown/CardDropdown'
 
 
 class Card extends Component {
+
 
   render() {
     const { card, isDragging, connectDragSource, connectDropTarget } = this.props;
     const opacity = isDragging ? 0 : 1;
 
     return connectDragSource(connectDropTarget(
-      <div className="DND-card">
+      <div style={{opacity}} className="DND-card">
         <div className="ProjectBlock">
           <div className="project-wrap">
             <img src={card.userImg} alt={card.name}/>
@@ -27,7 +28,7 @@ class Card extends Component {
               <p className="project-text">{card.company} &middot; ${card.price}</p>
             </div>
           </div>
-          <DropdownButton/>
+          <CardDropdown/>
         </div>
 
       </div>

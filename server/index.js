@@ -99,7 +99,7 @@ const projects = [
     deadline: "14 April 2018",
     timeLeft: "Completed",
     timeSpent: "140 hours",
-    progress: 100,
+    progress: 0,
     status: "Completed",
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
@@ -197,7 +197,7 @@ const projects = [
     deadline: "4 May 2018",
     timeLeft: "Completed",
     timeSpent: "548 hours",
-    progress: 100,
+    progress: 0,
     status: "Completed",
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
@@ -267,7 +267,7 @@ const projects = [
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
-    progress: 46,
+    progress: 0,
     status: "Quened",
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
@@ -309,8 +309,8 @@ const projects = [
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
-    progress: 20,
-    status: "Planning",
+    progress: 0,
+    status: "Quened",
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
   },
@@ -435,7 +435,7 @@ const projects = [
     deadline: "31 May 2018",
     timeLeft: "15 days left",
     timeSpent: "40 hours",
-    progress: 10,
+    progress: 30,
     status: "Design",
     assignedName: "Lyan Roach",
     assignedPosition: "UX/UI Desinger"
@@ -449,7 +449,7 @@ const projects = [
     deadline: "30 June 2018",
     timeLeft: "1 month left",
     timeSpent: "256 hours",
-    progress: 45,
+    progress: 25,
     status: "Planning",
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
@@ -491,7 +491,7 @@ const projects = [
     deadline: "3 May 2018",
     timeLeft: "1 month left",
     timeSpent: "2048 hours",
-    progress: 50,
+    progress: 0,
     status: "Quened",
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
@@ -561,7 +561,7 @@ const projects = [
     deadline: "9 May 2018",
     timeLeft: "5 month left",
     timeSpent: "1024 hours",
-    progress: 30,
+    progress: 0,
     status: "Quened",
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
@@ -659,7 +659,7 @@ const projects = [
     deadline: "30 April 2018",
     timeLeft: "2 month left",
     timeSpent: "56 hours",
-    progress: 46,
+    progress: 0,
     status: "Quened",
     assignedName: "Dominic Lynton",
     assignedPosition: "Front End Dev"
@@ -743,7 +743,7 @@ const projects = [
     deadline: "6 May 2018",
     timeLeft: "2 month left",
     timeSpent: "6 hours",
-    progress: 46,
+    progress: 86,
     status: "Testing",
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
@@ -932,7 +932,7 @@ const projects = [
   },
   { id: 64,
     type: "New website",
-    company: "Google",
+    company: "Facebook",
     price:3600,
     userImg: "/img/LyanRoach.png",
     idd: "user4",
@@ -1002,7 +1002,7 @@ const projects = [
   },
   { id: 69,
     type: "Landing page",
-    company: "Symu.co",
+    company: "Facebook",
     price:3500,
     userImg: "/img/MichelleStewart.png",
     idd: "user3",
@@ -1023,7 +1023,7 @@ const projects = [
     deadline: "1 April 2018",
     timeLeft: "2 month left",
     timeSpent: "78 hours",
-    progress: 7,
+    progress: 77,
     status: "Testing",
     assignedName: "Jolene Slater",
     assignedPosition: "Back End Dev"
@@ -1065,7 +1065,7 @@ const projects = [
     deadline: "13 June 2018",
     timeLeft: "20 days left",
     timeSpent: "48 hours",
-    progress: 20,
+    progress: 52,
     status: "Development",
     assignedName: "Michelle Stewart",
     assignedPosition: "Account"
@@ -1100,7 +1100,7 @@ const projects = [
   },
   { id: 76,
     type: "New dashboard",
-    company: "Themeforest",
+    company: "Facebook",
     price:3500,
     userImg: "/img/LyanRoach.png",
     idd: "user4",
@@ -1198,7 +1198,7 @@ const projects = [
   },
   { id: 83,
     type: "Mobile app",
-    company: "Google",
+    company: "Facebook",
     price:2600,
     userImg: "/img/DominicLynton.png",
     idd: "user2",
@@ -1240,7 +1240,7 @@ const projects = [
   },
   { id: 86,
     type: "Wordpress theme",
-    company: "Microsoft",
+    company: "Facebook",
     price:4400,
     userImg: "/img/ava.png",
     idd: "user1",
@@ -1436,7 +1436,7 @@ const projects = [
   },
   { id: 100,
     type: "Mobile app",
-    company: "Microsoft",
+    company: "Facebook",
     price:1200,
     userImg: "/img/MichelleStewart.png",
     idd: "user3",
@@ -1453,6 +1453,82 @@ const projects = [
 
 //Raport Chart
 const raport = [5, 10, 8, 11, 7, 13, 6, 8, 12, 6, 4, 5, 14, 12, 9, 1, 12, 12, 9, 2, 4, 1, 6, 14, 13, 6, 10, 13, 14, 4, 11, 12, 5, 2, 12, 6, 11, 4, 5, 3, 6, 7, 9, 14, 11, 10, 7, 9, 6, 8, 4, 3, 14, 5, 11, 2, 8, 1, 9, 1, 12, 9, 8, 8, 11, 7, 14, 7, 8, 11, 5, 6, 6, 4, 10, 5, 13, 4, 3, 5, 12, 12, 1, 5, 11, 4, 1, 2, 2, 5, 12, 3, 9, 1, 1, 6, 1, 13, 13, 7, 11, 10, 13, 5, 5, 13, 9, 7, 14, 6, 4, 8, 5, 11, 12, 13, 6, 3, 4, 1, 11, 5, 11, 4, 13, 6, 11, 2, 1, 13, 5, 8, 6, 5, 13, 9, 6, 2, 11, 4, 13, 3, 7, 9, 5, 14, 12, 3, 4, 6, 13, 10, 2, 12, 7, 4, 2, 2, 10, 4, 8, 3, 10, 6, 9, 12, 8, 2, 8, 9, 8, 5, 6, 3, 13, 12, 5, 14, 2, 12, 4, 11, 3, 9, 5, 8, 9, 11, 2, 13, 9, 4, 10, 1, 8, 3, 13, 1, 11, 14, 4, 13, 3, 9, 11, 1, 11, 14, 2, 12, 6, 12, 11, 1, 4, 6, 14, 7, 5, 4, 10, 14, 12, 11, 5, 14, 13, 9, 2, 3, 8, 2, 12, 13, 6, 2, 8, 9, 5, 8, 10, 4, 10, 6, 13, 7, 1, 6, 9, 14, 5, 7, 9, 11, 14, 10, 9, 5, 2, 12, 9, 8, 8, 11, 8, 12, 4, 1, 2, 1, 4, 1, 13, 9, 12, 2, 13, 12, 1, 3, 5, 7, 13, 7, 2, 8, 1, 14, 14, 14, 11, 11, 12, 11, 12, 8, 2, 1, 10, 2, 9, 14, 10, 11, 7, 3, 14, 5, 9, 5, 14, 14, 7, 12, 1, 11, 11, 8, 1, 13, 2, 1, 10, 3, 8, 4, 11, 1, 2, 11, 12, 3, 5, 3, 11, 3, 5, 4, 2, 7, 5, 11, 2, 14, 7, 4, 10, 9, 14, 1, 10, 9, 14, 14, 2, 7, 7, 11, 9, 4, 7, 11, 2, 7, 7, 12, 7, 8, 2, 9, 6, 4, 3, 12, 11, 11, 11, 12, 5, 3, 10, 4, 5, 7, 11, 9, 13, 9, 11, 7, 4, 9, 5, 11, 12, 7, 12, 5, 12, 10, 1, 8, 8, 10, 5, 3, 8, 4, 10, 10];
+
+
+//PieChart
+const totalSales = [
+  directSales = {
+    data : [55,45],
+    chartColor: ['#dadee6', '#6082fe'],
+    percent: '45'
+  },
+  chanelSales = {
+    data : [80,20],
+    chartColor: ['#dadee6', '#a65db7'],
+    percent: '20'
+  },
+  chanelTwoSales = {
+    data : [75,25],
+    chartColor: ['#dadee6', '#f03877'],
+    percent: '25'
+  },
+
+];
+
+const pieChartYear = [
+  views = {
+    data : [10,90],
+    num : 49500,
+    percent: '90'
+  },
+  visitors = {
+    data : [30,60],
+    num : 9000,
+    percent: '60'
+  },
+  impressions = {
+    data : [12,88],
+    num : 66500,
+    percent: '88'
+  }
+];
+
+const pieChartMonth = [
+  views = {
+    data : [40,60],
+    num : 5800,
+    percent: '75'
+  },
+  visitors = {
+    data : [45,55],
+    num : 2600,
+    percent: '55'
+  },
+  impressions = {
+    data : [70,30],
+    num : 7200,
+    percent: '30'
+  }
+];
+
+const pieChartWeek = [
+  views = {
+    data : [25,75],
+    num : 1300,
+    percent: '75'
+  },
+  visitors = {
+    data : [65,35],
+    num : 800,
+    percent: '35'
+  },
+  impressions = {
+    data : [38,62],
+    num : 3800,
+    percent: '62'
+  }
+];
+
 
 
 //login
@@ -1506,6 +1582,19 @@ App.get("/api/user/projects", (req, res) => {
 //Raport
 App.get("/api/user/raport", (req, res) => {
   return res.json(raport)
+});
+
+//PieChart
+App.get('/api/user/raport/pie/year', (req, res) => {
+  return res.json(pieChartYear)
+});
+
+App.get('/api/user/raport/pie/month', (req, res) => {
+  return res.json(pieChartMonth)
+});
+
+App.get('/api/user/raport/pie/week', (req, res) => {
+  return res.json(pieChartWeek)
 });
 
 

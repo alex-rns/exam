@@ -97,7 +97,6 @@ class Workflow extends React.Component {
 
   };
 
-
   tabChange = (value) => {
     this.setState({
       tab: value
@@ -105,14 +104,6 @@ class Workflow extends React.Component {
   };
 
   render() {
-
-    // let quenedd = this.state.showedProject.filter((e)=>{
-    //   return e.status === "Quened"
-    // });
-    // let planningg = this.state.showedProject.filter((e)=>{
-    //   return e.status === "Planning"
-    // });
-
 
     console.log('Workflow ', this.state.showedProject)
 
@@ -122,8 +113,6 @@ class Workflow extends React.Component {
     };
 
     return (
-
-
 
 
       <div className="Workflow">

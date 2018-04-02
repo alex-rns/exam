@@ -3,6 +3,7 @@ import './Raport.css'
 
 
 import RaportChart from "../../organisms/Charts/RaportChart/RaportChart";
+import TopPieChart from "../../organisms/Charts/RaportChart/TopPieChart";
 
 class Raport extends React.Component {
   render() {
