@@ -74,12 +74,11 @@ class Container extends Component {
             <p className="DND-header-name">{this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
             </p>
             <p>{cards.length} project{(cards.length === 1) ? '' : 's'}  &middot;  <span>${priceSum} </span></p>
-
           </div>
-          <FontAwesome
+          {(this.props.name !== 'completed') ? <FontAwesome
             name='angle-right'
             className="DND-header-icon"
-          />
+          />: null}
 
         </div>
         <div className="DND-container" style={{backgroundColor}}>
