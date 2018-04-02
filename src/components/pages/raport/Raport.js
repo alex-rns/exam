@@ -10,7 +10,6 @@ class Raport extends React.Component {
     return (
       <div className="Raport">
         <RaportChart/>
-
       </div>
     )
   }

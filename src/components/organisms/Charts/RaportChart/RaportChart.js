@@ -16,7 +16,8 @@ class RaportChart extends React.Component {
     super(props);
 
     this.state = {
-      dataRaport: []
+      dataRaport: [],
+      showStatus: ''
     }
   }
 
@@ -39,7 +40,11 @@ class RaportChart extends React.Component {
   }
 
   onChange = (e) => {
+
     if (e.target.value === "Year") {
+      this.setState({
+        showStatus:e.target.value
+      });
       fetch('/api/user/raport', {
         headers: {
           'Content-type': 'application/json'
@@ -65,7 +70,12 @@ class RaportChart extends React.Component {
             }
           })
         })
+
+
     } else if (e.target.value === "Month") {
+      this.setState({
+        showStatus:e.target.value
+      });
       fetch('/api/user/raport', {
         headers: {
           'Content-type': 'application/json'
@@ -91,7 +101,11 @@ class RaportChart extends React.Component {
             }
           })
         })
+
     } else if (e.target.value === "Week") {
+      this.setState({
+        showStatus:e.target.value
+      });
       fetch('/api/user/raport', {
         headers: {
           'Content-type': 'application/json'
@@ -108,19 +122,24 @@ class RaportChart extends React.Component {
           chart.series[0].setData(this.state.dataRaport, true);
 
         })
+
     }
+
   };
 
   render() {
+
     const raportSelect = {
       list: ["Week", "Month", "Year"],
       label: 'Show'
     };
 
+    console.log(this.state.showStatus)
+
     return (
       <Col className="RaportChart">
         <div className="raport-header">
-          <TopPieChart/>
+          <TopPieChart sort={this.state.showStatus}/>
           <Select onChange={this.onChange} data={raportSelect}/>
         </div>
         <ReactHighcharts config={raportChart} ref='raportChart'>

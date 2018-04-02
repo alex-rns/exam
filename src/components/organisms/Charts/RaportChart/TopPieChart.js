@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactHighcharts from 'react-highcharts';
-import {Row, Col} from 'react-bootstrap/lib';
+import './TopPieChart.css'
 
 //component
 
@@ -21,6 +21,8 @@ class TopPieChart extends React.Component {
   }
 
   componentWillMount() {
+    console.log('4444444', this.props.data)
+
     fetch('/api/user/raport/pie/week', {
       headers: {
         'Content-type': 'application/json'
@@ -61,42 +63,45 @@ class TopPieChart extends React.Component {
 
   }
 
+  
+
+
+
+
 
   render() {
 
-
     return (
-      <Col>
 
-        <Row>
-          <div>
+      <div className="TopPieChart">
+
+          <div className="pie-chart-item">
             <ReactHighcharts config={topPieChart} ref='topPieChart'>
             </ReactHighcharts>
-            <div>
-              <p>{this.state.viewsCount}$</p>
-              <span>Direct Sales</span>
+            <div className="pie-chart-info">
+              <p>{this.state.viewsCount}</p>
+              <span>Views</span>
             </div>
           </div>
-          <div>
+        <div className="pie-chart-item">
             <ReactHighcharts config={topPieChart} ref='topPieChart2'>
             </ReactHighcharts>
-            <div>
-              <p>980$</p>
-              <span>Channel Sales</span>
+          <div className="pie-chart-info">
+            <p>{this.state.viewsVisitors}</p>
+              <span>Visitors</span>
             </div>
           </div>
-          <div>
+        <div className="pie-chart-item">
             <ReactHighcharts config={topPieChart} ref='topPieChart3'>
             </ReactHighcharts>
-            <div>
-              <p>1,250$</p>
-              <span>Channel Sales</span>
+          <div className="pie-chart-info">
+            <p>{this.state.viewsImpressions}</p>
+              <span>Impressions</span>
             </div>
           </div>
 
-        </Row>
 
-      </Col>
+      </div>
     )
   }
 
