@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import update from 'react-addons-update';
 import Card from './DNDCard';
+import FontAwesome from 'react-fontawesome';
 import {DropTarget} from 'react-dnd';
 import './DND.css'
 
@@ -59,22 +60,26 @@ class Container extends Component {
     let priceSum = 0;
     cards.forEach(function (e) {
       priceSum += e.price;
-      console.log('sum' , priceSum)
+      console.log('sum', priceSum)
     });
 
 
     console.log(priceSum);
+    console.log(this.props);
 
     return connectDropTarget(
       <div>
         <div className="DND-header">
           <div>
+            <p className="DND-header-name">{this.props.name.charAt(0).toUpperCase() + this.props.name.slice(1)}
+            </p>
+            <p>{cards.length} project{(cards.length === 1) ? '' : 's'}  &middot;  <span>${priceSum} </span></p>
 
-            <p>123</p>
-
-
-            <span>{cards.length} project &middot; {priceSum} </span>
           </div>
+          <FontAwesome
+            name='angle-right'
+            className="DND-header-icon"
+          />
 
         </div>
         <div className="DND-container" style={{backgroundColor}}>

@@ -4,7 +4,24 @@
   display: flex
   padding: 50px
   &-header
-    margin-left: 20px
+    margin: 0 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    p
+      font: $second-font
+      color: $font-second-color
+    span
+      color: $accent-color
+
+  .DND-header-name
+    font-size: 18px
+    color: #fff
+    margin-bottom: 5px
+
+  .DND-header-icon
+    color: $font-second-color
+    font-size: 18px
 
   &-container
     border-radius: 5px

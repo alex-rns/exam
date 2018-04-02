@@ -48,14 +48,13 @@ class DNDWrap extends React.Component {
 
 
 
-
     return (
       <div className="DNDWrap">
 
         <Grid fluid>
           <Row className="DND">
-            <Container id={1} list={this.state.quened} />
-            <Container id={2} list={this.state.planning} />
+            <Container name="quened" id={1} list={this.state.quened} />
+            <Container name="planning" id={2} list={this.state.planning} />
             {/*<Container id={3} list={listThree} />*/}
           </Row>
         </Grid>
