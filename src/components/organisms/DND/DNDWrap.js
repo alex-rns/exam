@@ -16,26 +16,56 @@ class DNDWrap extends React.Component {
 
     this.state = {
       quened: [],
-      planning: []
+      planning: [],
+      design: [],
+      development: [],
+      testing: [],
+      completed: []
+
     }
   }
 
   componentWillMount(){
 
 
-    let quenedd = this.props.data.filter((e)=>{
+    let quened = this.props.data.filter((e)=>{
       return e.status === "Quened"
     });
-    this.setState({
-      quened: quenedd
-    })
-
-    let planningg = this.props.data.filter((e)=>{
+    let planning = this.props.data.filter((e)=>{
       return e.status === "Planning"
     });
+    let design = this.props.data.filter((e)=>{
+      return e.status === "Design"
+    });
+    let development = this.props.data.filter((e)=>{
+      return e.status === "Development"
+    });
+    let testing = this.props.data.filter((e)=>{
+      return e.status === "Testing"
+    });
+    let completed = this.props.data.filter((e)=>{
+      return e.status === "Completed"
+    });
+
+
     this.setState({
-      planning: planningg
-    })
+      planning: planning
+    });
+    this.setState({
+      quened: quened
+    });
+    this.setState({
+      design: design
+    });
+    this.setState({
+      development: development
+    });
+    this.setState({
+      testing: testing
+    });
+    this.setState({
+      completed: completed
+    });
   }
 
 
@@ -55,7 +85,10 @@ class DNDWrap extends React.Component {
           <Row className="DND">
             <Container name="quened" id={1} list={this.state.quened} />
             <Container name="planning" id={2} list={this.state.planning} />
-            {/*<Container id={3} list={listThree} />*/}
+            <Container name="design" id={3} list={this.state.design} />
+            <Container name="development" id={4} list={this.state.development} />
+            <Container name="testing" id={5} list={this.state.testing} />
+            <Container name="completed" id={6} list={this.state.completed} />
           </Row>
         </Grid>
 

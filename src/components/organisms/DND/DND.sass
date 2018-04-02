@@ -1,6 +1,9 @@
 @import "../../../variables.sass"
 
 .DND
+  min-height: 80vh
+  overflow-y: hidden
+  overflow-x: auto
   display: flex
   padding: 50px
   &-header
@@ -37,3 +40,15 @@
     height: 94px
     .ProjectBlock
       background: $gray
+
+.DND::-webkit-scrollbar
+  padding: 15px
+  width: 10px
+  background-color: #4d5060
+
+.DND::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background-color: #2196f3
+
+.DND::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
