@@ -7,7 +7,6 @@ const TopPieChart = {
     backgroundColor: '#2b2d3c'
   },
 
-
   title: {
     text: '',
     verticalAlign: 'middle',
@@ -21,11 +20,12 @@ const TopPieChart = {
 
   plotOptions: {
     pie: {
+      rounded: true,
+      startAngle: 0,
       borderColor: null,
-      colors: ['#4c4f5e', '#2196f3'],
+      colors: ['#2196f3', '#4c4f5e'],
     }
   },
-
 
   series: [{
     innerSize: '90%',
@@ -33,8 +33,10 @@ const TopPieChart = {
       enabled: false
     }
   }],
-
-
+  tooltip: {
+    headerFormat: '',
+    pointFormat: '<b>{point.y}</b>'
+  },
 
   legend: {
     enabled: false

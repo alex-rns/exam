@@ -1477,17 +1477,17 @@ const totalSales = [
 
 const pieChartYear = [
   views = {
-    data : [10,90],
+    data : [90,10],
     num : 49500,
     percent: '90'
   },
   visitors = {
-    data : [30,60],
+    data : [59,31],
     num : 9000,
-    percent: '60'
+    percent: '59'
   },
   impressions = {
-    data : [12,88],
+    data : [88,12],
     num : 66500,
     percent: '88'
   }
@@ -1495,35 +1495,35 @@ const pieChartYear = [
 
 const pieChartMonth = [
   views = {
-    data : [40,60],
+    data : [66,44],
     num : 5800,
-    percent: '75'
+    percent: '66'
   },
   visitors = {
-    data : [45,55],
+    data : [55,45],
     num : 2600,
     percent: '55'
   },
   impressions = {
-    data : [70,30],
+    data : [32,68],
     num : 7200,
-    percent: '30'
+    percent: '32'
   }
 ];
 
 const pieChartWeek = [
   views = {
-    data : [25,75],
+    data : [73,27],
     num : 1300,
-    percent: '75'
+    percent: '73'
   },
   visitors = {
-    data : [65,35],
+    data : [31,69],
     num : 800,
-    percent: '35'
+    percent: '31'
   },
   impressions = {
-    data : [38,62],
+    data : [62,38],
     num : 3800,
     percent: '62'
   }

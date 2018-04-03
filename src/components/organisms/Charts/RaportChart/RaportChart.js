@@ -17,7 +17,7 @@ class RaportChart extends React.Component {
 
     this.state = {
       dataRaport: [],
-      showStatus: ''
+      showBy: ''
     }
   }
 
@@ -40,10 +40,13 @@ class RaportChart extends React.Component {
   }
 
   onChange = (e) => {
+    this.setState({
+      sortBy: e.target.value
+    });
 
     if (e.target.value === "Year") {
       this.setState({
-        showStatus:e.target.value
+        showBy:e.target.value
       });
       fetch('/api/user/raport', {
         headers: {
@@ -74,7 +77,7 @@ class RaportChart extends React.Component {
 
     } else if (e.target.value === "Month") {
       this.setState({
-        showStatus:e.target.value
+        showBy:e.target.value
       });
       fetch('/api/user/raport', {
         headers: {
@@ -104,7 +107,7 @@ class RaportChart extends React.Component {
 
     } else if (e.target.value === "Week") {
       this.setState({
-        showStatus:e.target.value
+        showBy:e.target.value
       });
       fetch('/api/user/raport', {
         headers: {
@@ -134,12 +137,10 @@ class RaportChart extends React.Component {
       label: 'Show'
     };
 
-    console.log(this.state.showStatus)
-
     return (
       <Col className="RaportChart">
         <div className="raport-header">
-          <TopPieChart sort={this.state.showStatus}/>
+          <TopPieChart selectChange={this.state.showBy}/>
           <Select onChange={this.onChange} data={raportSelect}/>
         </div>
         <ReactHighcharts config={raportChart} ref='raportChart'>
