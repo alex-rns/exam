@@ -1,5 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
 import './TopBar.css';
 
 //components
@@ -23,9 +24,9 @@ class TopBar extends React.Component {
   render() {
     return (
       <div className='TopBar'>
-        <div className="top-bar-left-side">
+        <NavLink to="/" className="top-bar-left-side">
           <img className='logo' src={Logo} alt="Logo"/>
-        </div>
+        </NavLink>
 
         <div className="user-panel">
           <AddProjectButton/>

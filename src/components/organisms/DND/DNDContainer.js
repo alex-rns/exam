@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import update from 'react-addons-update';
-import Card from './DNDCard';
 import FontAwesome from 'react-fontawesome';
 import {DropTarget} from 'react-dnd';
 import './DND.css'
+
+//components
+import Card from './DNDCard';
+
 
 class Container extends Component {
 
@@ -14,7 +17,7 @@ class Container extends Component {
 
 
   pushCard(card) {
-    console.log('111',card)
+    console.log('111',card);
     this.setState(update(this.state, {
       cards: {
         $push: [card]
@@ -23,7 +26,7 @@ class Container extends Component {
   }
 
   removeCard(index) {
-    console.log('222',index)
+    console.log('222',index);
     this.setState(update(this.state, {
       cards: {
         $splice: [
@@ -107,7 +110,7 @@ const cardTarget = {
       listId: id
     };
   }
-}
+};
 
 export default DropTarget("CARD", cardTarget, (connect, monitor) => ({
   connectDropTarget: connect.dropTarget(),

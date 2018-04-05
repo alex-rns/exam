@@ -12,9 +12,6 @@ class WelcomeButton extends React.Component {
           {this.props.data}
 
         </button>
-        <FontAwesome
-          name='angle-right'
-        />
       </div>
     )
   }
