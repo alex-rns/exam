@@ -8,7 +8,7 @@ class InboxHomeMessage extends React.Component {
       <div>
         {this.props.data.map((item, index)=>{
            return(
-             <div className="InboxHomeMessage" key={index}>
+             <a className="InboxHomeMessage" key={index}>
                <img src={item.img} alt={item.name}/>
                <div className="inbox-message-wrap">
                  <div className={"inbox-message-header " + (item.readed || "inbox-message-header-noread")}>
@@ -17,7 +17,7 @@ class InboxHomeMessage extends React.Component {
                  </div>
                  <p className="inbox-message-text">{item.text}</p>
                </div>
-             </div>
+             </a>
            )
          })}
     </div>
