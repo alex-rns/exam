@@ -1,7 +1,8 @@
 const ReportChart = {
   chart: {
     type: 'areaspline',
-    backgroundColor: '#2b2d3c'
+    backgroundColor: '#2b2d3c',
+    margin: [0, 0, 0, 0]
   },
   title: {
     text: null
