@@ -3,7 +3,7 @@ import ReactHighcharts from 'react-highcharts';
 import {Col} from 'react-bootstrap/lib';
 import './RaportChart.css'
 
-//component
+//components
 import Select from '../../../atoms/Select/Select'
 
 //config
@@ -64,6 +64,11 @@ class RaportChart extends React.Component {
           chart.series[0].setData(this.state.dataRaport, true);
           chart.xAxis[0].update({
             categories: []
+          });
+          chart.update({
+            chart:{
+              margin:[0, 0, 10, 0]
+            }
           });
           chart.update({
             plotOptions: {
