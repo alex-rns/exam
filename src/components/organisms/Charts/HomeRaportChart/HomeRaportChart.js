@@ -3,7 +3,6 @@ import ReactHighcharts from 'react-highcharts';
 import {Col} from 'react-bootstrap/lib';
 import '../RaportChart/RaportChart.css'
 
-//component
 
 //config
 import raportChart from "../../../../config/raportChart.config";
@@ -47,7 +46,6 @@ class HomeRaportChart extends React.Component {
         })
       })
   }
-
 
   render() {
 

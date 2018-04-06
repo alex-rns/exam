@@ -1,6 +1,8 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import './NotificationButton.css'
+
+//components
 import IconMarker from "../../IconMarker/IconMarker";
 
 const NotificationButton = () => {

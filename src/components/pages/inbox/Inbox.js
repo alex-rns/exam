@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Home.css'
 
 class Inbox extends React.Component {
   render(){

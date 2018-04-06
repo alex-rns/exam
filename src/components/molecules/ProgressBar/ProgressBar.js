@@ -18,7 +18,6 @@ class ProgressBar extends React.Component {
       mycolor = '#2196f3';
     }
 
-
     return (
 
         <div style={containerStyle}>

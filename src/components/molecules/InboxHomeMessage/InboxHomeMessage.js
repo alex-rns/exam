@@ -1,7 +1,6 @@
 import React from 'react';
 import './InboxHomeMessage.css'
 
-
 class InboxHomeMessage extends React.Component {
   render(){
     return(

@@ -3,7 +3,6 @@ import {Col} from 'react-bootstrap/lib';
 import Calendar from 'react-calendar';
 import './HomeCalendar.css'
 
-
 class HomeCalendar extends React.Component {
 
   state = {

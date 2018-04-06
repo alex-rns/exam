@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css'
 import {Grid, Row} from 'react-bootstrap/lib';
+
+//components
 import HomeMainChart from "../../organisms/Charts/HomeMainChart/HomeMainChart";
 import YourProjects from "../../organisms/YourProjects/YourProjects";
 import SalesReport from "../../organisms/Charts/SalesReport/SalesReport";

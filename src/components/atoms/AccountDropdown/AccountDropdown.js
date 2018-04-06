@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom';
 import Dropdown, {DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
 import './AccountDropdown.css'
 
+
 class AccountDropdown extends React.Component {
 
   handleLinkClick = () => {

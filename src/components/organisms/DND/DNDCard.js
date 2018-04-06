@@ -4,12 +4,11 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 import './DND.css'
 
-
+//components
 import CardDropdown from '../../atoms/buttons/CardDropdown/CardDropdown'
 
 
 class Card extends Component {
-
 
   render() {
     const { card, isDragging, connectDragSource, connectDropTarget } = this.props;

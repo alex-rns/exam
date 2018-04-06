@@ -10,7 +10,6 @@ class DropdownButton extends React.Component {
     this.refs.dropdown.hide();
   };
 
-
   render() {
     return (
       <Dropdown className="dropdown-button" ref="dropdown">

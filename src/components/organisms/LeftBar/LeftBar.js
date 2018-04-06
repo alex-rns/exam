@@ -2,9 +2,11 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import FontAwesome from 'react-fontawesome';
 import './LeftBar.css'
-import IconMarker from "../../atoms/IconMarker/IconMarker";
+
 
 //components
+import IconMarker from "../../atoms/IconMarker/IconMarker";
+
 
 class LeftBar extends React.Component {
 
@@ -59,7 +61,6 @@ class LeftBar extends React.Component {
                   name='envelope'
                 />
                 <IconMarker/>
-
 
               </NavLink>
             </li>

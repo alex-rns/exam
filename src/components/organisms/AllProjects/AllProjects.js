@@ -2,13 +2,13 @@ import React from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css'
 import './AllProjects.css'
-// import onlineIndicator from '../../../assets/img/online-indicator.png'
 import FontAwesome from 'react-fontawesome';
+
+//components
 import ProgressBar from "../../molecules/ProgressBar/ProgressBar";
 
 
 class AllProjects extends React.Component {
-
 
   projectTitle = (cell, row) => {
     return (

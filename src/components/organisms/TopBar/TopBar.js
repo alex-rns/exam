@@ -12,7 +12,6 @@ import SearchButton from "../../atoms/buttons/SearchButton/SearchButton";
 import Logo from '../../../assets/img/logo.png';
 
 
-
 const userData = {
   name: localStorage.getItem("userName"),
   userPhoto: userPhoto

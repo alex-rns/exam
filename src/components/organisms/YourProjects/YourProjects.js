@@ -1,6 +1,8 @@
 import React from 'react';
 import {Col} from 'react-bootstrap/lib';
 import './YourProjects.css'
+
+//components
 import HomeProjectBlock from "../../molecules/ProjectBlock/ProjectBlock";
 
 class YourProjects extends React.Component {
@@ -29,7 +31,6 @@ class YourProjects extends React.Component {
 
       })
   }
-
 
 
   render(){

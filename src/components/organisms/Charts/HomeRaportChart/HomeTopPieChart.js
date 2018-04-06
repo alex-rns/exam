@@ -2,11 +2,9 @@ import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import './HomeTopPieChart.css'
 
-//component
 
 //config
 import topPieChart from "../../../../config/topPieChart.config";
-
 
 class HomeTopPieChart extends React.Component {
 

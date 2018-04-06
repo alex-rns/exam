@@ -5,7 +5,6 @@ import './HomeMainChart.css'
 //components
 import HomeRaportChart from "../HomeRaportChart/HomeRaportChart";
 
-
 class HomeMainChart extends React.Component {
   render(){
     return(

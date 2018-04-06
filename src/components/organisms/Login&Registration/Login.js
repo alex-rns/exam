@@ -6,7 +6,6 @@ import './Login&Registration.css'
 //components
 import WelcomeButton from '../../atoms/buttons/WelcomeButton/WelcomeButton';
 
-
 const buttonText = 'Enter';
 
 class Login extends React.Component {

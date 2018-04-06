@@ -1,5 +1,4 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
 import './WelcomeButton.css'
 
 class WelcomeButton extends React.Component {

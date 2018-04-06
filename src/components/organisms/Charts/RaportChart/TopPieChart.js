@@ -2,7 +2,6 @@ import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import './TopPieChart.css'
 
-//component
 
 //config
 import topPieChart from "../../../../config/topPieChart.config";

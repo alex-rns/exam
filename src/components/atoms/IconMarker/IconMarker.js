@@ -18,7 +18,6 @@ class IconMarker extends React.Component {
     }, 3000)
   }
 
-
   render() {
     return (
       this.state.marker &&

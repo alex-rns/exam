@@ -1,9 +1,10 @@
 import React from 'react';
-import Select from "../../atoms/Select/Select";
 import './Workflow.css'
+
+//components
 import DNDWrap from "../../organisms/DND/DNDWrap";
 import AllProjects from "../../organisms/AllProjects/AllProjects";
-
+import Select from "../../atoms/Select/Select";
 
 class Workflow extends React.Component {
 
@@ -31,8 +32,6 @@ class Workflow extends React.Component {
 
       })
   }
-
-
 
   onSelectChange = (e) => {
     let selectCompany = e.target.value;

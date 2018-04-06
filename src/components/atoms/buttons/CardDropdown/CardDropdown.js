@@ -10,7 +10,6 @@ class CardDropdown extends React.Component {
     this.refs.dropdown.hide();
   };
 
-
   render() {
     return (
       <Dropdown className="dropdown-button" ref="dropdown">

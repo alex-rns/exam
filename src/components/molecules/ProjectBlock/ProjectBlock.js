@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectBlock.css'
 
+//components
 import DropdownButton from '../../atoms/buttons/DropdownButton/DropdownButton'
 
 
@@ -16,7 +17,6 @@ class ProjectBlock extends React.Component {
                 <div>
                   <div className={"project-header"}>
                     <p>{item.type}</p>
-
                   </div>
                   <p className="project-text">{item.company} &middot; {item.price}</p>
                 </div>

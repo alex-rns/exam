@@ -7,14 +7,12 @@ import './DND.css'
 //components
 import Card from './DNDCard';
 
-
 class Container extends Component {
 
   constructor(props) {
     super(props);
     this.state = {cards: props.list};
   }
-
 
   pushCard(card) {
     console.log('111',card);
@@ -50,8 +48,6 @@ class Container extends Component {
     }));
   }
 
-
-
   render() {
 
     const {cards} = this.state;
@@ -59,7 +55,6 @@ class Container extends Component {
     const isActive = canDrop && isOver;
 
     const backgroundColor = isActive ? '#2f3242' : '#2b2d3c';
-
 
     //Total Price
     let priceSum = 0;
