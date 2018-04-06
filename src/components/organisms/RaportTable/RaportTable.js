@@ -5,66 +5,6 @@ import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css'
 import './RaportTable.css'
 
 
-const products = [
-  {
-    Campaing: 'Lorem ipsum dolor sit amet tetur',
-    Time: '6 days',
-    Views: 358000,
-    Visitors: 58200,
-    CTR: 25,
-    CPC: 3.02,
-    CPV: 2.51,
-    CPM: 28.35,
-    Status: 'Active'
-  },
-  {
-    Campaing: 'Sed do eiusmod tempor',
-    Time: '7 hours',
-    Views: 1200,
-    Visitors: 800,
-    CTR: 10,
-    CPC: 8.45,
-    CPV: 6.13,
-    CPM: 45.22,
-    Status: 'Disable'
-  }, {
-    Campaing: 'Consectetur adipisicing elit sed',
-    Time: '3 days',
-    Views: 69000,
-    Visitors: 7300,
-    CTR: 19,
-    CPC: 6.22,
-    CPV: 3.90,
-    CPM: 37.80,
-    Status: 'Active'
-  }
-];
-
-function getCaret(direction) {
-  if (direction === 'asc') {
-    return (
-        <FontAwesome
-          className='dropdown-caret dropdown-caret-table'
-          name='angle-down'
-        />
-    );
-  }
-  if (direction === 'desc') {
-    return (
-        <FontAwesome
-          className='dropdown-caret dropdown-caret-table'
-          name='angle-up'
-        />
-    );
-  }
-  return (
-    <FontAwesome
-      className='dropdown-caret dropdown-caret-table'
-      name='angle-down'
-    />
-  );
-}
-
 class RaportTable extends React.Component {
   constructor(props) {
     super(props);
@@ -74,26 +14,65 @@ class RaportTable extends React.Component {
       defaultSortOrder: 'ask'
     };
 
+    this.state = {
+      table: []
+    };
+
+    fetch("/api/user/raport/table", {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'get'
+    })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          table: res
+        });
+
+      })
   }
+
+  getCaret = (direction) => {
+    if (direction === 'asc') {
+      return (
+        <FontAwesome
+          className='dropdown-caret dropdown-caret-table'
+          name='angle-down'
+        />
+      );
+    }
+    if (direction === 'desc') {
+      return (
+        <FontAwesome
+          className='dropdown-caret dropdown-caret-table'
+          name='angle-up'
+        />
+      );
+    }
+    return (
+      <FontAwesome
+        className='dropdown-caret dropdown-caret-table'
+        name='angle-down'
+      />
+    );
+  };
 
   status = (cell, row) => {
     return <p className={'table-status ' + ((row.Status === 'Active')?'table-status-active': '')}>{row.Status}</p>
   };
-
-
 
   render() {
     return (
       <BootstrapTable
         headerStyle={{color: '#9ca1b2', 'background': '#3a3e52', 'font': '400 14px Montserrat'}}
         bordered={false}
-        data={products}
+        data={this.state.table}
         options={this.options}
       >
-
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           width='24%'
           tdStyle={{'background': '#2a2c3b', 'borderColor': '#3a3e52', 'font': '16px Montserrat', 'padding': '20px 25px'}}
           thStyle={{'border': 'none', 'padding': '10px 25px'}}
@@ -104,7 +83,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -121,7 +100,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -138,7 +117,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -155,7 +134,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -172,7 +151,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -189,7 +168,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -206,7 +185,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           tdStyle={{
             'background': '#2a2c3b',
             'borderColor': '#3a3e52',
@@ -223,7 +202,7 @@ class RaportTable extends React.Component {
 
         <TableHeaderColumn
           sortHeaderColumnClassName='active-sorting'
-          caretRender={getCaret}
+          caretRender={this.getCaret}
           dataFormat={ this.status }
           tdStyle={{
             'background': '#2a2c3b',

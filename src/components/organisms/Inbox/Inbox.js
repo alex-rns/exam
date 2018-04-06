@@ -30,6 +30,9 @@ class Inbox extends React.Component {
             if (!el.readed) {
               return el
             }
+            else {
+              return el
+            }
           })
         });
 
