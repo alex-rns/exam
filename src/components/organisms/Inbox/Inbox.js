@@ -27,12 +27,7 @@ class Inbox extends React.Component {
         this.setState({
           dataInbox: res,
           dataNoReaded: res.filter((el) => {
-            if (!el.readed) {
-              return el
-            }
-            else {
-              return el
-            }
+            return !el.readed && el
           })
         });
 

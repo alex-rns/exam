@@ -19,23 +19,39 @@ const inbox = [
   {
     name: "Michelle Stewart",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
-    date: "Today, 5:32 PM",
+    date: "Today, 5:32 AM",
     readed: false,
     img: "/img/MichelleStewart.png"
   },
   {
     name: "Jolene Slater",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
-    date: "Today, 5:32 PM",
+    date: "Yesterday, 8:30 PM",
     readed: false,
     img: "/img/JoleneSlater.png"
-  }, {
+  },
+  {
     name: "Lyan Roach",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
+    date: "1 April, 0:52 AM",
+    readed: true,
+    img: "/img/LyanRoach.png"
+  },
+  {
+    name: "Michelle Stewart",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
+    date: "1 May, 8:01 PM",
+    readed: true,
+    img: "/img/MichelleStewart.png"
+  },
+  {
+    name: "LyanRoach",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
     date: "Today, 5:32 PM",
     readed: true,
     img: "/img/LyanRoach.png"
-  }, {
+  },
+  {
     name: "Lyan Roach",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
     date: "Today, 5:32 PM",

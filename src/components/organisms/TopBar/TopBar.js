@@ -6,7 +6,7 @@ import './TopBar.css';
 //components
 import AccountDropdown from '../../atoms/AccountDropdown/AccountDropdown'
 import userPhoto from '../../../assets/img/user-photo.png'
-import NotificationButton from "../../atoms/buttons/NotificationButton/NotificationButton";
+import Notification from "../Notification/Notification";
 import AddProjectButton from "../../atoms/buttons/AddProjectButton/AddProjectButton";
 import SearchButton from "../../atoms/buttons/SearchButton/SearchButton";
 import Logo from '../../../assets/img/logo.png';
@@ -30,7 +30,7 @@ class TopBar extends React.Component {
         <div className="user-panel">
           <AddProjectButton/>
           <SearchButton/>
-          <NotificationButton />
+          <Notification/>
           <AccountDropdown data={userData} />
         </div>
       </div>
