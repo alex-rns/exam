@@ -8,7 +8,6 @@ import YourProjects from "../../organisms/YourProjects/YourProjects";
 import SalesReport from "../../organisms/Charts/SalesReport/SalesReport";
 import Inbox from "../../organisms/Inbox/Inbox";
 import Calendar from "../../organisms/HomeCalendar/HomeCalendar";
-import Search from "../../molecules/Search/Search";
 
 class Home extends React.Component {
   render(){

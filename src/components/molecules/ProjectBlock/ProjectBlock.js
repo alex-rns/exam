@@ -11,7 +11,7 @@ class ProjectBlock extends React.Component {
       <div>
         {this.props.data.map((item, index) => {
           return (
-            <a className="ProjectBlock" key={index}>
+            <div className="ProjectBlock" key={index}>
               <div className="project-wrap">
                 <img src={item.userImg} alt={item.name}/>
                 <div>
@@ -22,7 +22,7 @@ class ProjectBlock extends React.Component {
                 </div>
               </div>
               <DropdownButton/>
-            </a>
+            </div>
           )
         })}
       </div>

@@ -8,7 +8,7 @@ import Home from './components/pages/home/Home'
 import Workflow from './components/pages/workflow/Workflow'
 import Projects from './components/pages/projects/Projects'
 import Raport from './components/pages/raport/Raport'
-import Inbox from './components/pages/inbox/Inbox'
+import Chats from './components/pages/chats/Chats'
 import PageNotFound from './components/pages/pageNotFound/PageNotFound'
 import Authentication from './components/pages/authentication/Authentication'
 
@@ -23,7 +23,7 @@ class App extends React.Component {
           <PrivateRouter exact path="/workflow" component={Workflow}/>
           <PrivateRouter exact path="/projects" component={Projects}/>
           <PrivateRouter exact path="/raport" component={Raport}/>
-          <PrivateRouter exact path="/inbox" component={Inbox}/>
+          <PrivateRouter exact path="/chats" component={Chats}/>
 
           <Route component={PageNotFound}/>
         </Switch>

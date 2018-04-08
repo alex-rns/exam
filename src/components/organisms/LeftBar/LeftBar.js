@@ -55,7 +55,7 @@ class LeftBar extends React.Component {
                 className="wrapper-marker"
                 activeClassName="activeLeftLink"
                 exact
-                to="/inbox">
+                to="/chats">
                 <FontAwesome
                   className='nav-icon nav-icon-envelope'
                   name='envelope'

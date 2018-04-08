@@ -19,7 +19,7 @@ const inbox = [
   {
     name: "Michelle Stewart",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.",
-    date: "Today, 5:32 AM",
+    date: "Today, 5:32 PM",
     readed: false,
     img: "/img/MichelleStewart.png"
   },
