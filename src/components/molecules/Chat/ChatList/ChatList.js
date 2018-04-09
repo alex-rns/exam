@@ -3,8 +3,21 @@ import React from 'react';
 class ChatList extends React.Component {
 
 
-  leftMessageClick = (e) =>{
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeChat: [...this.props.data]
+    }
+  }
+
+  listClick = (e) =>{
     this.props.onClickMessage(e);
+  };
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      activeChat: nextProps.data
+    });
   }
 
 
@@ -12,9 +25,9 @@ class ChatList extends React.Component {
 
     return(
       <div>
-        {this.props.data.map((item, index)=>{
+        {this.state.activeChat.map((item, index)=>{
           return(
-            <a onClick={() => this.leftMessageClick(item)} className="InboxHomeMessage" key={index}>
+            <a onClick={() => this.listClick(item)} className="InboxHomeMessage" key={index}>
               <img src={item.img} alt={item.name}/>
               <div className="inbox-message-wrap">
                 <div className={"inbox-message-header " + (item.readed || "inbox-message-header-noread")}>

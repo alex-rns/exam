@@ -7,34 +7,48 @@ import ChatMessage from "../../molecules/Chat/ChatMessage/ChatMessage";
 
 class ChatWrap extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      activeChat : []
+      activeChat: [],
+      myMessage: {},
+      chatId : 0,
+      allData: []
     }
   }
 
-  mesClick =(e) =>{
+  componentWillMount(){
     this.setState({
-      activeChat: e.chat
+      allData: this.props.data
     })
   }
 
+  mesClick = (e) => {
+    this.setState({
+      activeChat: e.chat,
+      chatId: e.id
+    });
+  };
 
+  onAddMessage = (e) => {
+    this.setState({
+      myMessage: e,
+      activeChat: [...this.state.activeChat, e]
+      });
+    console.log('onAddMessage', this.state.allData[this.state.chatId].chat.push(e))
 
-  render(){
+  };
 
-    console.log(this.state.activeChat)
-
-    return(
+  render() {
+    return (
       <div className="ChatWrap">
         <Grid fluid>
           <Row>
             <Col md={3}>
-              <ChatList onClickMessage={this.mesClick} data={this.props.data}/>
+              <ChatList newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
             </Col>
             <Col md={7}>
-              <ChatMessage data={this.state.activeChat}/>
+              <ChatMessage onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
             </Col>
             <Col md={2}>3</Col>
           </Row>
