@@ -176,17 +176,17 @@ class Chats extends React.Component {
     let activeTab = this.state.tab;
     if (activeTab === 'chatInbox' && this.state.isLoading === false) {
       return (
-        <ChatWrap data={this.state.messagesInboxView}/>
+        <ChatWrap data={this.state.messagesInboxView.slice(0, 4)}/>
       )
     }
     if (activeTab  === 'chatSent') {
       return (
-        <ChatSentWrap data={this.state.messagesSentView}/>
+        <ChatSentWrap data={this.state.messagesSentView.slice(0, 4)}/>
       )
     }
     if (activeTab === 'chatTrash') {
       return (
-        <ChatTrashWrap  data={this.state.messagesTrashView}/>
+        <ChatTrashWrap  data={this.state.messagesTrashView.slice(0, 4)}/>
       )
     }
   }

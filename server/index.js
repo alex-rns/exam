@@ -1841,6 +1841,50 @@ const messagesInbox = [
         answer: true,
         date: "14 April",
         text: "last"
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "i",
+    readed: false,
+    img: "/img/MichelleStewart.png",
+    sendlerInfo: {
+      online: false,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/MichelleStewart.png",
+      name: "Michelle Stewart",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "99"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "888"
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "7"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "66"
+      },
+      {
+        answer: true,
+        date: "Yesterday, 5:31 PM",
+        text: "Tst"
       },
     ]
   },
