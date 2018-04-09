@@ -1933,7 +1933,7 @@ const messagesTrash = [
       },
       {
         answer: true,
-        date: "Today, 5:31 PM",
+        date: "Yesterday, 5:31 PM",
         text: "Tst"
       },
     ]

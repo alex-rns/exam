@@ -19,6 +19,9 @@ class Chats extends React.Component {
       messagesInbox: [],
       messagesSent: [],
       messagesTrash: [],
+      messagesTrashView: [],
+      messagesInboxView: [],
+      messagesSentView: [],
       isLoading: false
     }
   }
@@ -34,6 +37,7 @@ class Chats extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({
+          messagesInboxView: res,
           messagesInbox: res,
           isLoading: false
         });
@@ -48,6 +52,7 @@ class Chats extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({
+          messagesSentView: res,
           messagesSent: res,
           isLoading: false
         });
@@ -62,6 +67,7 @@ class Chats extends React.Component {
       .then(res => res.json())
       .then(res => {
         this.setState({
+          messagesTrashView: res,
           messagesTrash: res,
           isLoading: false
         });
@@ -69,19 +75,94 @@ class Chats extends React.Component {
       })
   }
 
-  onSelectChange = (ev)=> {
-    console.log(ev.target.value)
-    let filterMessage = this.state.messagesInbox.filter((e)=>{
-      return e.chat[e.chat.length - 1].date === "Today, 5:31 PM"
-    });
 
-    this.setState({
-      messagesInbox: filterMessage
-    })
+  onSelectChange = (selectFilter)=> {
 
-    console.log(filterMessage, this.state.messagesInbox)
+    if(selectFilter.target.value === 'All'){
+      fetch('/api/user/chat/inbox', {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        method: 'get'
+      })
+        .then(res => res.json())
+        .then(res => {
+          this.setState({
+            messagesInboxView: res
+          });
 
-  }
+        });
+      fetch('/api/user/chat/sent', {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        method: 'get'
+      })
+        .then(res => res.json())
+        .then(res => {
+          this.setState({
+            messagesSentView: res
+          });
+
+        });
+      fetch('/api/user/chat/trash', {
+        headers: {
+          'Content-type': 'application/json'
+        },
+        method: 'get'
+      })
+        .then(res => res.json())
+        .then(res => {
+          this.setState({
+            messagesTrashView: res
+          });
+
+        })
+    }
+
+    if(selectFilter.target.value === 'Today'){
+      let filterInputMessage = this.state.messagesInbox.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
+      });
+      this.setState({
+        messagesInboxView: filterInputMessage
+      });
+      let filterSentMessage = this.state.messagesSent.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
+      });
+      this.setState({
+        messagesSentView: filterSentMessage
+      });
+      let filterTrashMessage = this.state.messagesTrash.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
+      });
+      this.setState({
+        messagesTrashView: filterTrashMessage
+      })
+    }
+    if(selectFilter.target.value === 'Yesterday'){
+      let filterInputMessage = this.state.messagesInbox.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
+      });
+      this.setState({
+        messagesInboxView: filterInputMessage
+      });
+      let filterSentMessage = this.state.messagesSent.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
+      });
+      this.setState({
+        messagesSentView: filterSentMessage
+      });
+      let filterTrashMessage = this.state.messagesTrash.filter((e)=>{
+        return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
+      });
+      this.setState({
+        messagesTrashView: filterTrashMessage
+      })
+    }
+
+
+  };
 
 
   tabChange = (value) => {
@@ -95,17 +176,17 @@ class Chats extends React.Component {
     let activeTab = this.state.tab;
     if (activeTab === 'chatInbox' && this.state.isLoading === false) {
       return (
-        <ChatWrap data={this.state.messagesInbox}/>
+        <ChatWrap data={this.state.messagesInboxView}/>
       )
     }
     if (activeTab  === 'chatSent') {
       return (
-        <ChatSentWrap data={this.state.messagesSent}/>
+        <ChatSentWrap data={this.state.messagesSentView}/>
       )
     }
     if (activeTab === 'chatTrash') {
       return (
-        <ChatTrashWrap  data={this.state.messagesTrash}/>
+        <ChatTrashWrap  data={this.state.messagesTrashView}/>
       )
     }
   }
@@ -115,7 +196,7 @@ class Chats extends React.Component {
 
 
     const chatMessages = {
-      list: ["Today", "Yesterday", "Last Month"],
+      list: ["All","Today", "Yesterday", "Last Month"],
       label: 'Filter messages'
     };
 
