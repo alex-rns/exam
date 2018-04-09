@@ -196,7 +196,7 @@ class Chats extends React.Component {
 
 
     const chatMessages = {
-      list: ["All","Today", "Yesterday", "Last Month"],
+      list: ["All", "Today", "Yesterday"],
       label: 'Filter messages'
     };
 

@@ -49,6 +49,7 @@ class ChatWrap extends React.Component {
   };
 
   render() {
+
     return (
       <div className="ChatWrap">
         <Grid fluid>
