@@ -142,8 +142,8 @@ class Workflow extends React.Component {
 
           <div className="workflow-wrap">
             {this.state.tab === 'workflowDndTab'
-              ? <AllProjects data={this.state.showedProject}/>
-              : <DNDWrap data={this.state.showedProject}/>
+              ? <DNDWrap data={this.state.showedProject}/>
+              : <AllProjects data={this.state.showedProject}/>
             }
           </div>
 
