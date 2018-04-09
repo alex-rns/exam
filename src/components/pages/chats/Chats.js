@@ -2,108 +2,11 @@ import React from 'react';
 // import './Workflow.css'
 
 //components
-// import DNDWrap from "../../organisms/DND/DNDWrap";
-// import AllProjects from "../../organisms/AllProjects/AllProjects";
 import Select from "../../atoms/Select/Select";
 import ChatWrap from "../../organisms/ChatWrap/ChatInboxWrap";
 import ChatSentWrap from "../../organisms/ChatWrap/ChatSentWrap";
 import ChatTrashWrap from "../../organisms/ChatWrap/ChatTrashWrap";
 
-
-
-const messagesSent = [
-  {
-    id: 0,
-    name: "Mi",
-    readed: false,
-    img: "/img/MichelleStewart.png",
-    sendlerInfo: {
-      online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
-      email: 'michellestewart@gmail.com',
-      phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
-      organization: 'Symu.co',
-      img: "/img/MichelleStewart.png",
-      name: "Michelle Stewart",
-    },
-    chat: [
-      {
-        answer: false,
-        date: "14 April",
-        text: "99"
-      },
-      {
-        answer: true,
-        date: "14 April",
-        text: "888"
-      },
-      {
-        answer: false,
-        date: "14 April",
-        text: "7"
-      },
-      {
-        answer: true,
-        date: "14 April",
-        text: "66"
-      },
-      {
-        answer: true,
-        date: "Today, 5:31 PM",
-        text: "Tst"
-      },
-    ]
-  },
-];
-
-const messagesTrash = [
-  {
-    id: 0,
-    name: "i",
-    readed: false,
-    img: "/img/MichelleStewart.png",
-    sendlerInfo: {
-      online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
-      email: 'michellestewart@gmail.com',
-      phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
-      organization: 'Symu.co',
-      img: "/img/MichelleStewart.png",
-      name: "Michelle Stewart",
-    },
-    chat: [
-      {
-        answer: false,
-        date: "14 April",
-        text: "99"
-      },
-      {
-        answer: true,
-        date: "14 April",
-        text: "888"
-      },
-      {
-        answer: false,
-        date: "14 April",
-        text: "7"
-      },
-      {
-        answer: true,
-        date: "14 April",
-        text: "66"
-      },
-      {
-        answer: true,
-        date: "Today, 5:31 PM",
-        text: "Tst"
-      },
-    ]
-  },
-];
 
 class Chats extends React.Component {
 
@@ -114,8 +17,8 @@ class Chats extends React.Component {
     this.state = {
       tab: 'chatInbox',
       messagesInbox: [],
-      messagesSent: messagesSent,
-      messagesTrash: messagesTrash,
+      messagesSent: [],
+      messagesTrash: [],
       isLoading: false
     }
   }
@@ -135,7 +38,49 @@ class Chats extends React.Component {
           isLoading: false
         });
 
+      });
+    fetch('/api/user/chat/sent', {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'get'
+    })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          messagesSent: res,
+          isLoading: false
+        });
+
+      });
+    fetch('/api/user/chat/trash', {
+      headers: {
+        'Content-type': 'application/json'
+      },
+      method: 'get'
+    })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          messagesTrash: res,
+          isLoading: false
+        });
+
       })
+  }
+
+  onSelectChange = (ev)=> {
+    console.log(ev.target.value)
+    let filterMessage = this.state.messagesInbox.filter((e)=>{
+      return e.chat[e.chat.length - 1].date === "Today, 5:31 PM"
+    });
+
+    this.setState({
+      messagesInbox: filterMessage
+    })
+
+    console.log(filterMessage, this.state.messagesInbox)
+
   }
 
 
@@ -170,7 +115,7 @@ class Chats extends React.Component {
 
 
     const chatMessages = {
-      list: ["Tooday", "Yestarday", "Last Month"],
+      list: ["Today", "Yesterday", "Last Month"],
       label: 'Filter messages'
     };
 

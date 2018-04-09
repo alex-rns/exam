@@ -1702,7 +1702,7 @@ const messagesInbox = [
       },
       {
         answer: true,
-        date: "14 April",
+        date: "Yesterday, 15:09 PM",
         text: "66666"
       },
       {
@@ -1751,7 +1751,7 @@ const messagesInbox = [
       },
       {
         answer: true,
-        date: "14 April",
+        date: "Today, 5:31 PM",
         text: "last"
       },
     ]
@@ -1846,7 +1846,99 @@ const messagesInbox = [
   },
 ];
 
+const messagesSent = [
+  {
+    id: 0,
+    name: "Mi",
+    readed: false,
+    img: "/img/MichelleStewart.png",
+    sendlerInfo: {
+      online: false,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/MichelleStewart.png",
+      name: "Michelle Stewart",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "99"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "888"
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "7"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "66"
+      },
+      {
+        answer: true,
+        date: "Today, 5:31 PM",
+        text: "Tst"
+      },
+    ]
+  },
+];
 
+const messagesTrash = [
+  {
+    id: 0,
+    name: "i",
+    readed: false,
+    img: "/img/MichelleStewart.png",
+    sendlerInfo: {
+      online: false,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/MichelleStewart.png",
+      name: "Michelle Stewart",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "99"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "888"
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "7"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "66"
+      },
+      {
+        answer: true,
+        date: "Today, 5:31 PM",
+        text: "Tst"
+      },
+    ]
+  },
+];
 
 //login
 const userExist = {
@@ -1925,6 +2017,14 @@ App.get('/api/user/raport/pie/week', (req, res) => {
 //Inbox Messages
 App.get("/api/user/chat/inbox", (req, res) => {
   return res.json(messagesInbox)
+});
+//Sent Messages
+App.get("/api/user/chat/sent", (req, res) => {
+  return res.json(messagesSent)
+});
+//Trash Messages
+App.get("/api/user/chat/trash", (req, res) => {
+  return res.json(messagesTrash)
 });
 
 App.listen(4000, () => {

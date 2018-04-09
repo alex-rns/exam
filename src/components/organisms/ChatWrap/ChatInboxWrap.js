@@ -25,6 +25,12 @@ class ChatWrap extends React.Component {
     })
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      allData: nextProps.data
+    })
+  }
+
   mesClick = (e) => {
     this.setState({
       activeChat: e.chat,
