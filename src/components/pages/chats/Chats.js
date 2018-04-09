@@ -14,6 +14,17 @@ const messagesInbox = [
     name: "Michelle Stewart",
     readed: false,
     img: "/img/MichelleStewart.png",
+    sendlerInfo: {
+      online: false,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/MichelleStewart.png",
+      name: "Michelle Stewart",
+    },
     chat: [
       {
         answer: false,
@@ -47,6 +58,17 @@ const messagesInbox = [
     name: "Jolene Slater",
     readed: false,
     img: "/img/JoleneSlater.png",
+    sendlerInfo: {
+      online: true,
+      position: 'Full Stack Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/JoleneSlater.png",
+      name: "Jolene Slater",
+    },
     chat: [
       {
         answer: false,
@@ -80,6 +102,17 @@ const messagesInbox = [
     name: "Lyall Roach",
     readed: true,
     img: "/img/LyanRoach.png",
+    sendlerInfo: {
+      online: false,
+      position: 'UX/UI Designer',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/LyanRoach.png",
+      name: "Lyall Roach",
+    },
     chat: [
       {
         answer: false,
@@ -112,7 +145,18 @@ const messagesInbox = [
     id: 3,
     name: "Dominic Lynton",
     readed: true,
-    img: "/img/MichelleStewart.png",
+    img: "/img/DominicLynton.png",
+    sendlerInfo: {
+      online: true,
+      position: 'Dominic Lynton',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'michellestewart@gmail.com',
+      phone: '+48 500 400 300',
+      adress: '65 Lorem St, Warsaw, PL',
+      organization: 'Symu.co',
+      img: "/img/DominicLynton.png",
+      name: "Dominic Lynton",
+    },
     chat: [
       {
         answer: false,
@@ -152,7 +196,7 @@ class Chats extends React.Component {
 
     this.state = {
       tab: 'chatInbox',
-      messagesInbox : messagesInbox
+      messagesInbox: messagesInbox
 
     }
   }
