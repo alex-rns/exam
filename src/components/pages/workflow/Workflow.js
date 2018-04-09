@@ -33,7 +33,9 @@ class Workflow extends React.Component {
       })
   }
 
+
   onSelectChange = (e) => {
+
     let selectCompany = e.target.value;
     fetch('/api/user/projects', {
       headers: {
@@ -48,7 +50,9 @@ class Workflow extends React.Component {
           this.setState({
             showedProject: res.filter((e)=>{
               return e.company === "Microsoft"
-            })
+            }),
+
+            isLoading: false
           })
         }
         if(selectCompany === "Google"){
@@ -111,37 +115,43 @@ class Workflow extends React.Component {
       label: 'Show projects'
     };
 
-    return (
 
 
-      <div className="Workflow">
-        <div className="workflow-header">
-          <div className="workflow-tab">
-            <a
-              className={this.state.tab === 'workflowDndTab'
-                ? 'workflowTab-active'
-                : 'workflowTab'}
-              onClick={() => this.tabChange('workflowDndTab')}
-            >All Projects ({this.state.showedProject.length})</a>
-            <a
-              className={this.state.tab === 'workflowAllProjectTab'
-                ? 'workflowTab-active'
-                : 'workflowTab'}
-              onClick={() => this.tabChange('workflowAllProjectTab')}
-            >Workflow</a>
+      return (
+
+
+
+        <div className="Workflow">
+          <div className="workflow-header">
+            <div className="workflow-tab">
+              <a
+                className={this.state.tab === 'workflowDndTab'
+                  ? 'workflowTab-active'
+                  : 'workflowTab'}
+                onClick={() => this.tabChange('workflowDndTab')}
+              >All Projects ({this.state.showedProject.length})</a>
+              <a
+                className={this.state.tab === 'workflowAllProjectTab'
+                  ? 'workflowTab-active'
+                  : 'workflowTab'}
+                onClick={() => this.tabChange('workflowAllProjectTab')}
+              >Workflow</a>
+            </div>
+            <Select onChange={this.onSelectChange} data={workflowProject}/>
           </div>
-          <Select onChange={this.onSelectChange} data={workflowProject}/>
-        </div>
 
-        <div className="workflow-wrap">
-          {this.state.tab === 'workflowDndTab'
-            ? <DNDWrap data={this.state.showedProject}/>
-            : <AllProjects data={this.state.showedProject}/>
-          }
-        </div>
+          <div className="workflow-wrap">
+            {this.state.tab === 'workflowDndTab'
+              ? <AllProjects data={this.state.showedProject}/>
+              : <DNDWrap data={this.state.showedProject}/>
+            }
+          </div>
 
-      </div>
-    )
+        </div>
+      )
+
+
+
   }
 }
 

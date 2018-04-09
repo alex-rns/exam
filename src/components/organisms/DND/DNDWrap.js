@@ -8,21 +8,12 @@ import './DND.css'
 import Container from './DNDContainer';
 
 
+
+
 class DNDWrap extends React.Component {
 
-  constructor() {
-    super();
-    this.state = {
-      quened: [],
-      planning: [],
-      design: [],
-      development: [],
-      testing: [],
-      completed: []
-    }
-  }
 
-  componentWillMount(){
+  render() {
 
     let quened = this.props.data.filter((e)=>{
       return e.status === "Quened"
@@ -43,39 +34,19 @@ class DNDWrap extends React.Component {
       return e.status === "Completed"
     });
 
-    this.setState({
-      planning: planning
-    });
-    this.setState({
-      quened: quened
-    });
-    this.setState({
-      design: design
-    });
-    this.setState({
-      development: development
-    });
-    this.setState({
-      testing: testing
-    });
-    this.setState({
-      completed: completed
-    });
-  }
-
-  render() {
-
     return (
       <div className="DNDWrap">
 
+
+
         <Grid fluid>
           <Row className="DND">
-            <Container name="quened" id={1} list={this.state.quened} />
-            <Container name="planning" id={2} list={this.state.planning} />
-            <Container name="design" id={3} list={this.state.design} />
-            <Container name="development" id={4} list={this.state.development} />
-            <Container name="testing" id={5} list={this.state.testing} />
-            <Container name="completed" id={6} list={this.state.completed} />
+            <Container name="quened" id={1} list={quened} />
+            <Container name="planning" id={2} list={planning} />
+            <Container name="design" id={3} list={design} />
+            <Container name="development" id={4} list={development} />
+            <Container name="testing" id={5} list={testing} />
+            <Container name="completed" id={6} list={completed} />
           </Row>
         </Grid>
 
