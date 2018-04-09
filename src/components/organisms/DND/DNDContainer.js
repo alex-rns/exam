@@ -14,12 +14,6 @@ class Container extends Component {
     this.state = {cards: props.list};
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      cards: nextProps.list
-    });
-  }
-
 
   pushCard(card) {
     console.log('111',card);
@@ -55,11 +49,7 @@ class Container extends Component {
     }));
   }
 
-
-
   render() {
-
-    console.log('wwwww',this.state.cards)
 
     const {cards} = this.state;
     const {canDrop, isOver, connectDropTarget} = this.props;
