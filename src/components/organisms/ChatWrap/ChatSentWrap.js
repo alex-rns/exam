@@ -58,7 +58,7 @@ class ChatSentWrap extends React.Component {
               <ChatList newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
             </Col>
             <Col className="chat-col-wrap" md={7}>
-              <ChatMessage onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
+              <ChatMessage dataImg={this.state.userInfo} onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
             </Col>
             <Col className="chat-col-wrap" md={2}>
               <ChatUserInfo data={this.state.userInfo}/>

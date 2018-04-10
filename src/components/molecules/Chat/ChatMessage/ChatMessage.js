@@ -5,22 +5,44 @@ import myAvatar from '../../../../assets/img/ava.png'
 class ChatMessage extends React.Component {
 
 
+
+  componentDidUpdate() {
+    //autoScroll to bottom
+    const objDiv = document.getElementById('qwe');
+    objDiv.scrollTop = objDiv.scrollHeight;
+  }
+
+
   addMessage = (e) => {
     e.preventDefault();
     let myText = this.refs.input.value;
     let myMess = {};
+    let date = new Date();
+    let now = (date.toLocaleString(undefined, {
+      year: '2-digit',
+      month: '2-digit',
+      day: '2-digit',
+    }) + ' , ' + date.toLocaleString(undefined, {
+      hour: '2-digit',
+      minute: '2-digit'
+    }));
+
     myMess.answer = true;
-    myMess.date = 'NOW';
+    myMess.date = now;
     myMess.text = myText;
 
     this.props.onAddMessage(myMess);
+
   };
+
 
 
   render() {
 
+
+
     return (
-      <div className="ChatMessage-wrap">
+      <div id="qwe" className="ChatMessage-wrap">
         {this.props.data.map((item, index) => {
           return (
             <div className={'message-wrap ' + (item.answer && 'my-message')} key={index}>
@@ -39,7 +61,7 @@ class ChatMessage extends React.Component {
 
         <div className={'ChatMessage-form-wrap' + this.props.data || 'active'}>
           <form onSubmit={this.addMessage}>
-            <input ref="input" type="text"/>
+            <input ref="input" type="text" autoFocus/>
             <button>123</button>
           </form>
 

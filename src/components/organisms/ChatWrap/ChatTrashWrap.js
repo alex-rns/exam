@@ -57,7 +57,7 @@ class ChatTrashWrap extends React.Component {
               <ChatList className="chat-col-wrap" newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
             </Col>
             <Col md={7}>
-              <ChatMessage className="chat-col-wrap" onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
+              <ChatMessage dataImg={this.state.userInfo} className="chat-col-wrap" onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
             </Col>
             <Col className="chat-col-wrap" md={2}>
               <ChatUserInfo data={this.state.userInfo}/>
