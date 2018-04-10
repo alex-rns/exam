@@ -1,6 +1,6 @@
 import React from 'react';
-// import './ChatList.css'
-
+import FontAwesome from 'react-fontawesome';
+import './Chats.css'
 //components
 import Select from "../../atoms/Select/Select";
 import ChatWrap from "../../organisms/ChatWrap/ChatInboxWrap";
@@ -27,7 +27,7 @@ class Chats extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({isLoading:true});
+    this.setState({isLoading: true});
     fetch('/api/user/chat/inbox', {
       headers: {
         'Content-type': 'application/json'
@@ -76,9 +76,9 @@ class Chats extends React.Component {
   }
 
 
-  onSelectChange = (selectFilter)=> {
+  onSelectChange = (selectFilter) => {
 
-    if(selectFilter.target.value === 'All'){
+    if (selectFilter.target.value === 'All') {
       fetch('/api/user/chat/inbox', {
         headers: {
           'Content-type': 'application/json'
@@ -120,40 +120,40 @@ class Chats extends React.Component {
         })
     }
 
-    if(selectFilter.target.value === 'Today'){
-      let filterInputMessage = this.state.messagesInbox.filter((e)=>{
+    if (selectFilter.target.value === 'Today') {
+      let filterInputMessage = this.state.messagesInbox.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
       });
       this.setState({
         messagesInboxView: filterInputMessage
       });
-      let filterSentMessage = this.state.messagesSent.filter((e)=>{
+      let filterSentMessage = this.state.messagesSent.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
       });
       this.setState({
         messagesSentView: filterSentMessage
       });
-      let filterTrashMessage = this.state.messagesTrash.filter((e)=>{
+      let filterTrashMessage = this.state.messagesTrash.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Today,"
       });
       this.setState({
         messagesTrashView: filterTrashMessage
       })
     }
-    if(selectFilter.target.value === 'Yesterday'){
-      let filterInputMessage = this.state.messagesInbox.filter((e)=>{
+    if (selectFilter.target.value === 'Yesterday') {
+      let filterInputMessage = this.state.messagesInbox.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
       });
       this.setState({
         messagesInboxView: filterInputMessage
       });
-      let filterSentMessage = this.state.messagesSent.filter((e)=>{
+      let filterSentMessage = this.state.messagesSent.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
       });
       this.setState({
         messagesSentView: filterSentMessage
       });
-      let filterTrashMessage = this.state.messagesTrash.filter((e)=>{
+      let filterTrashMessage = this.state.messagesTrash.filter((e) => {
         return e.chat[e.chat.length - 1].date.replace(/ [\s\S]+/, '') === "Yesterday,"
       });
       this.setState({
@@ -178,14 +178,14 @@ class Chats extends React.Component {
         <ChatWrap data={this.state.messagesInboxView.slice(0, 4)}/>
       )
     }
-    if (activeTab  === 'chatSent') {
+    if (activeTab === 'chatSent') {
       return (
         <ChatSentWrap data={this.state.messagesSentView.slice(0, 4)}/>
       )
     }
     if (activeTab === 'chatTrash') {
       return (
-        <ChatTrashWrap  data={this.state.messagesTrashView.slice(0, 4)}/>
+        <ChatTrashWrap data={this.state.messagesTrashView.slice(0, 4)}/>
       )
     }
   }
@@ -207,21 +207,34 @@ class Chats extends React.Component {
                 ? 'chatTab-active'
                 : 'chatTab'}
               onClick={() => this.tabChange('chatInbox')}
-            >Inbox </a>
+            >
+              <FontAwesome
+                name='inbox'
+              />
+              Inbox({this.state.messagesInbox.length}) </a>
 
             <a
               className={this.state.tab === 'chatSent'
                 ? 'chatTab-active'
                 : 'chatTab'}
               onClick={() => this.tabChange('chatSent')}
-            >Sent</a>
+            >
+              <FontAwesome
+                name='paper-plane'
+              />
+
+              Sent</a>
 
             <a
               className={this.state.tab === 'chatTrash'
                 ? 'chatTab-active'
                 : 'chatTab'}
               onClick={() => this.tabChange('chatTrash')}
-            >Trash</a>
+            >
+              <FontAwesome
+                name='trash'
+              />
+              Trash</a>
 
           </div>
           <Select onChange={this.onSelectChange} data={chatMessages}/>

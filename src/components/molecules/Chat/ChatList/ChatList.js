@@ -29,12 +29,19 @@ class ChatList extends React.Component {
       <div className="ChatList">
         {this.state.activeChat.map((item, index) => {
           return (
-            <a onClick={() => this.listClick(item)} className="chatlist-item" key={index}>
+            <a
+              onClick={() => this.listClick(item)}
+              className={'chatlist-item ' +  ''}
+              key={index}
+            >
 
               <div className="chatlist-message-wrap">
 
-
-                <div className={"chatlist-message-header " + (item.readed || "chatlist-message-header-noread")}>
+                <div
+                  className={"chatlist-message-header "
+                  +
+                  (item.readed || "chatlist-message-header-noread")}
+                >
 
                   <div className="chatlist-message-sendler">
                     <img src={item.img} alt={item.name}/>
@@ -43,7 +50,9 @@ class ChatList extends React.Component {
 
                   <span>{item.chat[item.chat.length - 1].date}</span>
                 </div>
-                <p className="chatlist-message-text">{item.chat[item.chat.length - 1].text}</p>
+                <p className="chatlist-message-text">
+                  {item.chat[item.chat.length - 1].text}
+                </p>
               </div>
             </a>
           )
@@ -53,7 +62,8 @@ class ChatList extends React.Component {
           <FontAwesome
             name='plus'
           />
-          New coversation</button>
+          New coversation
+        </button>
       </div>
     )
   }

@@ -3,9 +3,6 @@ const bodyParser = require("body-parser");
 const App = express();
 
 
-//data
-
-
 //Chart HomeSalesReport
 const report = {
   year: [150, 216, 168, 105, 66, 105, 105, 153, 123, 195, 161, 51],
