@@ -1,0 +1,45 @@
+@import "../../../../variables.sass"
+
+.ChatUserInfo
+  height: 100%
+  background: $third-gray
+  box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3)
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 15px
+  img
+    margin-top: 25px
+    width: 120px
+    height: 120px
+  span
+    color: $font-color
+    font: $second-font
+    line-height: 28px
+    letter-spacing: 0.42px
+    margin: 5px 0
+    + p
+      color: #ffffff
+      font: $main-font
+      line-height: 28px
+      letter-spacing: 0.48px
+      margin-bottom: 10px
+
+.chat-info
+  &-name
+    margin: 25px 0 5px
+    color: #ffffff
+    font: $big-font
+    letter-spacing: 0.44px
+
+  &-position
+    color: $font-color
+    font: $main-font
+
+  &-about
+    color: $font-color
+    text-align: center
+    margin: 20px 10px
+    font: $second-font
+    line-height: 28px
+    letter-spacing: 0.42px

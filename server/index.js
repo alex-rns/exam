@@ -1665,7 +1665,6 @@ const pieChartWeek = [
 ];
 
 //Chat
-
 //Inbox
 const messagesInbox = [
   {
@@ -1676,10 +1675,10 @@ const messagesInbox = [
     sendlerInfo: {
       online: false,
       position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/MichelleStewart.png",
       name: "Michelle Stewart",
@@ -1723,7 +1722,7 @@ const messagesInbox = [
       about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/JoleneSlater.png",
       name: "Jolene Slater",
@@ -1767,7 +1766,7 @@ const messagesInbox = [
       about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/LyanRoach.png",
       name: "Lyall Roach",
@@ -1811,7 +1810,7 @@ const messagesInbox = [
       about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/DominicLynton.png",
       name: "Dominic Lynton",
@@ -1855,7 +1854,7 @@ const messagesInbox = [
       about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/MichelleStewart.png",
       name: "Michelle Stewart",
