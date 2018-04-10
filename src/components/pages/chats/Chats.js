@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Workflow.css'
+// import './ChatList.css'
 
 //components
 import Select from "../../atoms/Select/Select";
@@ -161,7 +161,6 @@ class Chats extends React.Component {
       })
     }
 
-
   };
 
 
@@ -191,17 +190,13 @@ class Chats extends React.Component {
     }
   }
 
-
   render() {
-
 
     const chatMessages = {
       list: ["All", "Today", "Yesterday"],
       label: 'Filter messages'
     };
-
     return (
-
 
       <div className="Chats">
         <div className="chat-header">

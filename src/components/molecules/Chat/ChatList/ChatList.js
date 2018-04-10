@@ -1,4 +1,6 @@
 import React from 'react';
+import './ChatList.css'
+import FontAwesome from 'react-fontawesome';
 
 class ChatList extends React.Component {
 
@@ -10,7 +12,7 @@ class ChatList extends React.Component {
     }
   }
 
-  listClick = (e) =>{
+  listClick = (e) => {
     this.props.onClickMessage(e);
   };
 
@@ -21,24 +23,37 @@ class ChatList extends React.Component {
   }
 
 
-  render(){
+  render() {
 
-    return(
-      <div>
-        {this.state.activeChat.map((item, index)=>{
-          return(
-            <a onClick={() => this.listClick(item)} className="InboxHomeMessage" key={index}>
-              <img src={item.img} alt={item.name}/>
-              <div className="inbox-message-wrap">
-                <div className={"inbox-message-header " + (item.readed || "inbox-message-header-noread")}>
-                  <p>{item.name}</p>
+    return (
+      <div className="ChatList">
+        {this.state.activeChat.map((item, index) => {
+          return (
+            <a onClick={() => this.listClick(item)} className="chatlist-item" key={index}>
+
+              <div className="chatlist-message-wrap">
+
+
+                <div className={"chatlist-message-header " + (item.readed || "chatlist-message-header-noread")}>
+
+                  <div className="chatlist-message-sendler">
+                    <img src={item.img} alt={item.name}/>
+                    <p>{item.name}</p>
+                  </div>
+
                   <span>{item.chat[item.chat.length - 1].date}</span>
                 </div>
-                <p className="inbox-message-text">{item.chat[item.chat.length - 1].text}</p>
+                <p className="chatlist-message-text">{item.chat[item.chat.length - 1].text}</p>
               </div>
             </a>
           )
         })}
+
+        <button className="new-coversation">
+          <FontAwesome
+            name='plus'
+          />
+          New coversation</button>
       </div>
     )
   }

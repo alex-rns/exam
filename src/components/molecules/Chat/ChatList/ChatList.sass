@@ -1,0 +1,69 @@
+@import "../../../../variables.sass"
+
+.ChatList
+  display: flex
+  flex-direction: column
+
+.chatlist-item
+  overflow: hidden
+  height: 150px
+  box-shadow: 10px 3px 80px rgba(23, 24, 32, 0.3)
+  background: $third-gray
+  border-bottom: 1px solid $gray
+  display: flex
+  align-items: center
+  img
+    min-width: 38px
+    height: 38px
+    margin-left: 25px
+    margin-right: 10px
+  &:hover
+    background: $second-gray
+
+.chatlist-message-wrap
+  width: 100%
+  display: flex
+  flex-direction: column
+
+.chatlist-message-sendler
+  display: flex
+  align-items: center
+
+
+
+.chatlist-message-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 15px 10px 0
+
+  p
+    font: $big-font
+    color: #fff
+
+  span
+    font-size: 13px
+    color: $font-second-color
+  &-noread
+    span
+      color: $accent-color
+
+.chatlist-message-text
+  margin-left: 25px
+  font: $second-font
+  font-size: 16px
+  color: $font-second-color
+  line-height: 28px
+  padding-right: 35px
+
+.new-coversation
+  border: none
+  border-radius: 5px
+  background: $accent-color
+  padding: 7px 80px
+  margin: 15px 0
+  align-self: center
+  .fa
+    margin-right: 5px
+  &:hover
+    background: lighten($accent-color, 10%)

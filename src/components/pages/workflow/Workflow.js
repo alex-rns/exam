@@ -115,11 +115,7 @@ class Workflow extends React.Component {
       label: 'Show projects'
     };
 
-
-
       return (
-
-
 
         <div className="Workflow">
           <div className="workflow-header">

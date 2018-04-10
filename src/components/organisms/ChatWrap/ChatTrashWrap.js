@@ -3,7 +3,7 @@ import {Grid, Col, Row} from 'react-bootstrap/lib';
 import ChatList from "../../molecules/Chat/ChatList/ChatList";
 import ChatMessage from "../../molecules/Chat/ChatMessage/ChatMessage";
 import ChatUserInfo from "../../molecules/Chat/ChatUserInfo/ChatUserInfo";
-
+import './ChatWrap.css'
 //components
 
 class ChatTrashWrap extends React.Component {
@@ -54,12 +54,12 @@ class ChatTrashWrap extends React.Component {
         <Grid fluid>
           <Row>
             <Col md={3}>
-              <ChatList newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
+              <ChatList className="chat-col-wrap" newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
             </Col>
             <Col md={7}>
-              <ChatMessage onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
+              <ChatMessage className="chat-col-wrap" onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
             </Col>
-            <Col md={2}>
+            <Col className="chat-col-wrap" md={2}>
               <ChatUserInfo data={this.state.userInfo}/>
             </Col>
           </Row>

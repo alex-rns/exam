@@ -1708,7 +1708,7 @@ const messagesInbox = [
       {
         answer: true,
         date: "Today, 5:31 PM",
-        text: "Todaylast"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm."
       },
     ]
   },
