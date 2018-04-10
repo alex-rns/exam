@@ -10,9 +10,10 @@ class ChatUserInfo extends React.Component {
 
     return (
       <div className={img && 'ChatUserInfo'}>
-        <div className="chat-info-img-wrap">
-          <img className="online" src={img} alt={name}/>
-        </div>
+        {img && <div className={'chat-info-img-wrap ' + (online ||'chat-info-online')}>
+          <img src={img} alt={name}/>
+        </div>}
+
 
         <p className="chat-info-name">{name}</p>
         <p className="chat-info-position">{position}</p>

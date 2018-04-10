@@ -59,7 +59,7 @@ class ChatMessage extends React.Component {
 
         <div className={'ChatMessage-form-wrap ' + (this.props.dataImg.img && 'active')}>
           <form onSubmit={this.addMessage}>
-            <input className="ChatMessage-form-wrap-input" ref="input" type="text" autoFocus/>
+            <input className="ChatMessage-form-wrap-input" ref="input" type="text" autoFocus placeholder="Write a message"/>
             <input className="input-file" type="file" />
             <FontAwesome
               className='input-file-icon'

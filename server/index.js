@@ -1719,7 +1719,7 @@ const messagesInbox = [
     sendlerInfo: {
       online: true,
       position: 'Full Stack Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1763,7 +1763,7 @@ const messagesInbox = [
     sendlerInfo: {
       online: false,
       position: 'UX/UI Designer',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1807,7 +1807,7 @@ const messagesInbox = [
     sendlerInfo: {
       online: true,
       position: 'Dominic Lynton',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1851,7 +1851,7 @@ const messagesInbox = [
     sendlerInfo: {
       online: false,
       position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1898,7 +1898,7 @@ const messagesSent = [
     sendlerInfo: {
       online: false,
       position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       adress: '65 Lorem St, Warsaw, PL',
@@ -1945,7 +1945,7 @@ const messagesTrash = [
     sendlerInfo: {
       online: false,
       position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
       email: 'michellestewart@gmail.com',
       phone: '+48 500 400 300',
       adress: '65 Lorem St, Warsaw, PL',
