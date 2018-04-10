@@ -39,11 +39,7 @@ class ChatMessage extends React.Component {
   };
 
 
-
   render() {
-
-
-
     return (
       <div id="qwe" className="ChatMessage-wrap">
         {this.props.data.map((item, index) => {
@@ -56,7 +52,6 @@ class ChatMessage extends React.Component {
                 <p>{item.text}</p>
                 <span>{item.date}</span>
               </div>
-
             </div>
           )
         })
@@ -71,7 +66,6 @@ class ChatMessage extends React.Component {
               name='paperclip'
             />
           </form>
-
         </div>
       </div>
     )
