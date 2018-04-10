@@ -1,5 +1,8 @@
 import React from 'react';
 import './ChatMessage.css'
+import FontAwesome from 'react-fontawesome';
+
+
 import myAvatar from '../../../../assets/img/ava.png'
 
 class ChatMessage extends React.Component {
@@ -32,7 +35,7 @@ class ChatMessage extends React.Component {
     myMess.text = myText;
 
     this.props.onAddMessage(myMess);
-
+    this.refs.input.value = ''
   };
 
 
@@ -59,10 +62,14 @@ class ChatMessage extends React.Component {
         })
         }
 
-        <div className={'ChatMessage-form-wrap' + this.props.data || 'active'}>
+        <div className={'ChatMessage-form-wrap ' + (this.props.dataImg.img && 'active')}>
           <form onSubmit={this.addMessage}>
-            <input ref="input" type="text" autoFocus/>
-            <button>123</button>
+            <input className="ChatMessage-form-wrap-input" ref="input" type="text" autoFocus/>
+            <input className="input-file" type="file" />
+            <FontAwesome
+              className='input-file-icon'
+              name='paperclip'
+            />
           </form>
 
         </div>

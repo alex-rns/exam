@@ -53,12 +53,44 @@
     background-color: darken($accent-color, 10%)
 
 
-.ChatMessage-form-wrap
-  visibility: hidden
-  position: absolute
-  bottom: 0
-  right: 0
-
-
 .ChatMessage-form-wrap.active
   visibility: visible
+
+.ChatMessage-form-wrap
+  visibility: hidden
+  form
+    overflow: hidden
+    position: relative
+  &-input
+    width: 100%
+    padding: 5px 10px
+    background: #404359
+    border-radius: 10px
+    border: #5b5f73
+    &::placeholder
+      color: $font-color
+      font: $main-font
+      line-height: 28px
+      letter-spacing: 0.32px
+
+  .input-file
+    cursor: pointer
+    opacity: 0
+    width: 60px
+    height: 50px
+    position: absolute
+    top: -20px
+    bottom: 0
+    right: 0
+    z-index: 2
+
+    &-icon
+      z-index: 1
+      margin-right: 20px
+      color: $font-color
+      position: absolute
+      transform: translateY(-50%)
+      top: 50%
+      right: 0
+
+
