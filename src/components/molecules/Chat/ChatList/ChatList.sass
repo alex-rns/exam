@@ -6,7 +6,7 @@
 
 .chatlist-item
   overflow: hidden
-  height: 150px
+  height: 15vmax
   background: $third-gray
   border-bottom: 1px solid $gray
   display: flex
@@ -31,7 +31,6 @@
   align-items: center
 
 
-
 .chatlist-message-header
   display: flex
   align-items: center
@@ -43,7 +42,7 @@
     color: #fff
 
   span
-    font-size: 13px
+    font: $second-font
     color: $font-second-color
   &-noread
     span
@@ -51,17 +50,18 @@
 
 .chatlist-message-text
   margin-left: 25px
-  font: $second-font
-  font-size: 16px
+  font: $main-font
   color: $font-second-color
   line-height: 28px
   padding-right: 35px
 
 .new-coversation
+  font: $main-font
+  white-space: nowrap
   border: none
   border-radius: 5px
   background: $accent-color
-  padding: 7px 80px
+  padding: 0.5vmax 4vmax
   margin: 15px 0
   align-self: center
   .fa

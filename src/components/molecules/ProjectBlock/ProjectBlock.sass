@@ -1,6 +1,7 @@
 @import "../../../variables.sass"
 
 .ProjectBlock
+  height: 6vmax
   background: $second-gray
   border-bottom: 1px solid $gray
   display: flex
@@ -8,8 +9,8 @@
   align-items: center
   padding: 8px 0
   img
-    min-width: 42px
-    height: 42px
+    min-width: 3vmax
+    height: 3vmax
     margin: 14px
   &:hover
     background: $third-gray
@@ -19,8 +20,11 @@
   justify-content: space-between
   padding-right: 15px
   color: #fff
+  p
+    font: $main-font
+    margin-bottom: 0.3vmax
   span
-    font-size: 13px
+    font: $second-font
 
 .project-wrap
   display: flex
@@ -28,7 +32,6 @@
 
 .project-text
   font: $second-font
-  font-size: 13px
   color: $font-second-color
   line-height: 20px
   padding-right: 35px

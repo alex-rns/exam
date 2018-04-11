@@ -1,17 +1,57 @@
 @import "../../../../variables.sass"
 
 .TopPieChart
-  margin-left: 30px
+  margin-left: 2.2vmax
   display: flex
   .pie-chart
     &-item
-      margin-right: 30px
+      height: 10vmax
+      margin-right: 2.3vmax
       display: flex
       align-items: center
     &-info
-      line-height: 25px
+      line-height: 2vmax
       p
         font: $big-font
       span
+        font: $title-font
         text-transform: uppercase
         color: #9ca1b2
+
+  .highcharts-container
+    width: 6vmax!important
+
+    display: flex!important
+    align-items: center!important
+    text-align: center!important
+  .highcharts-root
+    width: 8vmax!important
+    height: 8vmax!important
+
+.highcharts-title
+  font-size: 1.8vmax!important
+
+
+//media-queries
+@media only screen and (max-width : 1200px)
+  //
+
+@media only screen and (max-width : 992px)
+  .highcharts-title
+    font-size: 2vmax!important
+
+@media only screen and (max-width : 768px)
+  .welcome
+    font-size: 3.3vmax
+
+@media only screen and (max-width : 576px)
+  .welcome
+    font-size: 3.3vmax
+
+@media only screen and (max-width : 480px)
+  .welcome
+    font-size: 2.5vmax
+
+@media only screen and (max-width : 320px)
+  .welcome
+    font-size: 2.0vmax

@@ -39,11 +39,13 @@
   background: #2f3242;
   border: 1px solid #2093ef;
   border-radius: 5px;
-  padding: 5px 15px 0 15px;
+  padding: 5px 1vmax 0 1vmax;
   margin-top: 60px; }
 
 .account-dropdown__link {
   padding: 5px; }
+  .account-dropdown__link a {
+    font: 400 1.2vmax Montserrat, sans-serif; }
   .account-dropdown__link:hover a {
     color: #2093ef; }
 
@@ -52,7 +54,7 @@
 
 @media only screen and (max-width: 1200px) {
   .dropdown__content {
-    width: 12vmax; } }
+    width: 13vmax; } }
 
 @media only screen and (max-width: 992px) {
   .dropdown__content {

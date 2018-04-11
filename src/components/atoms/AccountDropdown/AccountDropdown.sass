@@ -20,7 +20,6 @@
 
 .account-dropdown__name
   margin-left: 10px
-  //height: 32px
 
   &:hover .fa
     transition: $transition
@@ -44,11 +43,13 @@
   background: $second-gray
   border: 1px solid $accent-color
   border-radius: 5px
-  padding: 5px 15px 0 15px
+  padding: 5px 1vmax 0 1vmax
   margin-top: 60px
 
 .account-dropdown__link
   padding: 5px
+  a
+    font: $main-font
   &:hover a
     color: $accent-color
 
@@ -59,7 +60,7 @@
 //media-queries
 @media only screen and (max-width : 1200px)
   .dropdown__content
-    width: 12vmax
+    width: 13vmax
 
 @media only screen and (max-width : 992px)
   .dropdown__content

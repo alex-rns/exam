@@ -14,7 +14,6 @@ class ChatUserInfo extends React.Component {
           <img src={img} alt={name}/>
         </div>}
 
-
         <p className="chat-info-name">{name}</p>
         <p className="chat-info-position">{position}</p>
         <p className="chat-info-about">{about}</p>

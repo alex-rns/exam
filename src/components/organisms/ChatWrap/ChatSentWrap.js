@@ -54,11 +54,19 @@ class ChatSentWrap extends React.Component {
       <div className="ChatWrap">
         <Grid fluid>
           <Row>
-            <Col className="chat-col-wrap" md={3}>
-              <ChatList newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
+            <Col className="chat-col-wrap" md={4}>
+              <ChatList
+                newData={this.state.myMessage}
+                onClickMessage={this.mesClick}
+                data={this.state.allData}
+              />
             </Col>
-            <Col className="chat-col-wrap" md={7}>
-              <ChatMessage dataImg={this.state.userInfo} onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
+            <Col className="chat-col-wrap" md={6}>
+              <ChatMessage
+                dataImg={this.state.userInfo}
+                onAddMessage={this.onAddMessage}
+                data={this.state.activeChat}
+              />
             </Col>
             <Col className="chat-col-wrap" md={2}>
               <ChatUserInfo data={this.state.userInfo}/>

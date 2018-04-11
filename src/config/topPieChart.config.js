@@ -3,9 +3,10 @@ const TopPieChart = {
   chart: {
     type: 'pie',
     height: '130',
-    width:'130',
+    width: '130',
     backgroundColor: '#2b2d3c'
   },
+
 
   title: {
     text: '',
@@ -13,7 +14,7 @@ const TopPieChart = {
     style: {
       fontFamily: 'Montserrat',
       color: '#2196f3',
-      fontSize:'22',
+      fontSize: '22',
       fontWeight: '600'
     }
   },

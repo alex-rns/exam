@@ -4,6 +4,7 @@ import ChatList from "../../molecules/Chat/ChatList/ChatList";
 import ChatMessage from "../../molecules/Chat/ChatMessage/ChatMessage";
 import ChatUserInfo from "../../molecules/Chat/ChatUserInfo/ChatUserInfo";
 import './ChatWrap.css'
+
 //components
 
 class ChatTrashWrap extends React.Component {
@@ -13,13 +14,13 @@ class ChatTrashWrap extends React.Component {
     this.state = {
       activeChat: [],
       myMessage: {},
-      chatId : 0,
+      chatId: 0,
       allData: [],
       userInfo: []
     }
   }
 
-  componentWillMount(){
+  componentWillMount() {
     this.setState({
       allData: this.props.data
     })
@@ -53,11 +54,19 @@ class ChatTrashWrap extends React.Component {
       <div className="ChatWrap">
         <Grid fluid>
           <Row>
-            <Col md={3}>
-              <ChatList className="chat-col-wrap" newData={this.state.myMessage} onClickMessage={this.mesClick} data={this.state.allData}/>
+            <Col className="chat-col-wrap" md={4}>
+              <ChatList
+                newData={this.state.myMessage}
+                onClickMessage={this.mesClick}
+                data={this.state.allData}
+              />
             </Col>
-            <Col md={7}>
-              <ChatMessage dataImg={this.state.userInfo} className="chat-col-wrap" onAddMessage={this.onAddMessage} data={this.state.activeChat}/>
+            <Col className="chat-col-wrap" md={6}>
+              <ChatMessage
+                dataImg={this.state.userInfo}
+                onAddMessage={this.onAddMessage}
+                data={this.state.activeChat}
+              />
             </Col>
             <Col className="chat-col-wrap" md={2}>
               <ChatUserInfo data={this.state.userInfo}/>
