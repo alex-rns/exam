@@ -16,15 +16,15 @@ class Card extends Component {
 
     return connectDragSource(connectDropTarget(
       <div style={{opacity}} className="DND-card">
-        <div className="ProjectBlock">
-          <div className="project-wrap">
+        <div className="CardBlock">
+          <div className="card-wrap">
             <img src={card.userImg} alt={card.name}/>
             <div>
-              <div className={"project-header"}>
+              <div className={"card-header"}>
                 <p>{card.type}</p>
 
               </div>
-              <p className="project-text">{card.company} &middot; ${card.price}</p>
+              <p className="card-text">{card.company} &middot; ${card.price}</p>
             </div>
           </div>
           <CardDropdown/>

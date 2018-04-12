@@ -1,13 +1,13 @@
 @import "../../../variables.sass"
 
 .project-table
-  padding: 30px
+  padding: 0.7vmax 2.4vmax
 
   .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
     vertical-align: middle
 
   tbody tr
-    border-top: 20px #2a2c3a solid
+    border-top: 1.5vmax #2a2c3a solid
     font: $main-font
     &.progress-0
       border-left: 5px #fff solid
@@ -17,11 +17,11 @@
       border-left: 5px #4caf50 solid
 
   .table>thead>tr>th:first-child
-    padding-left: 45px
+    padding-left: 3.6vmax
 
 
 .projectTitle-block
-  padding-left: 30px
+  padding-left: 2vmax
   span
     font-weight: 400
     color: $font-second-color
@@ -34,7 +34,7 @@
 .progress-block
   display: flex
   p
-    margin-right: 10px
+    margin-right: 0.7vmax
 
 .user-name-block
   display: flex
@@ -43,7 +43,7 @@
 
 .user-image
   border-radius: 50%
-  margin-right: 25px
+  margin-right: 1.5vmax
   position: relative
 
   .user-photo
@@ -68,3 +68,6 @@
 .react-bootstrap-table-page-btns-ul
   display: flex
   justify-content: center
+
+.react-bs-table .react-bs-container-footer>table>thead>tr>th, .react-bs-table .react-bs-container-header>table>thead>tr>th
+  font: $main-font

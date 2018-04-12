@@ -22,7 +22,7 @@
   .message-text
     display: flex
     flex-direction: column
-    max-width: 460px
+
     p
       background: $accent-color
       border-radius: 10px 10px 0 10px
@@ -31,6 +31,7 @@
       margin-left: -50px
 
 .message-text
+  max-width: 30vmax
   p
     font: $main-font
     padding: 7px 10px
@@ -96,5 +97,8 @@
 
 //media-queries
 
+@media only screen and (max-width : 992px)
+  .message-text
+    max-width: 50vmax
 
 

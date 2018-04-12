@@ -1592,7 +1592,7 @@ const table = [
     CPV: 6.13,
     CPM: 45.22,
     Status: 'Disable'
-  },{
+  }, {
     Campaing: 'Consectetur adipisicing elit sed',
     Time: '3 days',
     Views: 69000,
@@ -1662,7 +1662,6 @@ const pieChartWeek = [
 ];
 
 //Chat
-//Inbox
 const messagesInbox = [
   {
     id: 0,
@@ -1671,8 +1670,8 @@ const messagesInbox = [
     img: "/img/MichelleStewart.png",
     sendlerInfo: {
       online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+      position: 'Account',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart @gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1684,27 +1683,32 @@ const messagesInbox = [
       {
         answer: false,
         date: "14 April",
-        text: "999999999"
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: true,
         date: "14 April",
-        text: "8888888"
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
       },
       {
         answer: false,
         date: "14 April",
-        text: "77777"
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        answer: false,
+        date: "Yesterday, 12:30 PM",
+        text: "Lorem ipsum dolor sit amet?"
       },
       {
         answer: true,
         date: "Yesterday, 15:09 PM",
-        text: "66666"
+        text: "Lorem ipsum dolor sit amet.!"
       },
       {
-        answer: true,
+        answer: false,
         date: "Today, 5:31 PM",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm."
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
     ]
   },
@@ -1715,12 +1719,12 @@ const messagesInbox = [
     img: "/img/JoleneSlater.png",
     sendlerInfo: {
       online: true,
-      position: 'Full Stack Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
-      email: 'michellestewart @gmail.com',
-      phone: '+48 500 400 300',
-      address: '65 Lorem St, Warsaw, PL',
-      organization: 'Symu.co',
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'joleneslater @gmail.com',
+      phone: '+48 400 500 600',
+      address: '78 Enim St, London, UK',
+      organization: 'Google',
       img: "/img/JoleneSlater.png",
       name: "Jolene Slater",
     },
@@ -1728,71 +1732,81 @@ const messagesInbox = [
       {
         answer: false,
         date: "14 April",
-        text: "999999999"
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         answer: true,
         date: "14 April",
-        text: "8888888"
+        text: "Ut enim ad minim veniam."
       },
       {
         answer: false,
         date: "14 April",
-        text: "77777"
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?"
       },
       {
         answer: true,
         date: "14 April",
-        text: "66666"
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco."
       },
       {
-        answer: true,
+        answer: false,
+        date: "Yesterday, 11:45 AM",
+        text: "Ut enim ad."
+      },
+      {
+        answer: false,
         date: "Today, 5:31 PM",
-        text: "last"
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
     ]
   },
   {
     id: 2,
-    name: "Lyall Roach",
+    name: "LyanRoach",
     readed: true,
     img: "/img/LyanRoach.png",
     sendlerInfo: {
       online: false,
       position: 'UX/UI Designer',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
-      email: 'michellestewart @gmail.com',
-      phone: '+48 500 400 300',
-      address: '65 Lorem St, Warsaw, PL',
-      organization: 'Symu.co',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'lyanroach @gmail.com',
+      phone: '+48 600 500 400',
+      address: '89 Duis St, Kyiv, UA',
+      organization: 'Microsoft',
       img: "/img/LyanRoach.png",
-      name: "Lyall Roach",
+      name: "Lyan Roach",
     },
     chat: [
       {
         answer: false,
         date: "14 April",
-        text: "999999999"
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       },
       {
         answer: true,
         date: "14 April",
-        text: "8888888"
+        text: "Duis aute irure/"
       },
       {
         answer: false,
         date: "14 April",
-        text: "77777"
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       },
       {
         answer: true,
         date: "14 April",
-        text: "66666"
+        text: "Duis aute irure dolor in reprehenderit in voluptate."
       },
       {
         answer: true,
         date: "14 April",
-        text: "last"
+        text: "Duis aute irure dolor in!"
+      },
+      {
+        answer: false,
+        date: "Yesterday, 5:16 PM",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       },
     ]
   },
@@ -1803,12 +1817,12 @@ const messagesInbox = [
     img: "/img/DominicLynton.png",
     sendlerInfo: {
       online: true,
-      position: 'Dominic Lynton',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
-      email: 'michellestewart @gmail.com',
-      phone: '+48 500 400 300',
-      address: '65 Lorem St, Warsaw, PL',
-      organization: 'Symu.co',
+      position: 'Front End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'dominiclynton @gmail.com',
+      phone: '+46 500 800 100',
+      address: '12 Excepteur St, Paris, FR',
+      organization: 'Themeforest',
       img: "/img/DominicLynton.png",
       name: "Dominic Lynton",
     },
@@ -1816,39 +1830,39 @@ const messagesInbox = [
       {
         answer: false,
         date: "14 April",
-        text: "999999999"
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
         answer: true,
         date: "14 April",
-        text: "8888888"
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
       },
       {
         answer: false,
         date: "14 April",
-        text: "77777"
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
         answer: true,
         date: "14 April",
-        text: "66666"
+        text: "Excepteur."
       },
       {
         answer: true,
         date: "14 April",
-        text: "last"
+        text: "Excepteur sint occaecat cupidatat non provident."
       }
     ]
   },
   {
     id: 4,
-    name: "i",
+    name: "Michele Stewart",
     readed: false,
     img: "/img/MichelleStewart.png",
     sendlerInfo: {
       online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+      position: 'Account',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart @gmail.com',
       phone: '+48 500 400 300',
       address: '65 Lorem St, Warsaw, PL',
@@ -1860,42 +1874,41 @@ const messagesInbox = [
       {
         answer: false,
         date: "14 April",
-        text: "99"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: true,
         date: "14 April",
-        text: "888"
+        text: "Lorem ipsum?"
       },
       {
         answer: false,
         date: "14 April",
-        text: "7"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt!"
       },
       {
         answer: true,
         date: "14 April",
-        text: "66"
+        text: "Lorem ipsum dolor sit amet."
       },
       {
         answer: true,
         date: "Yesterday, 5:31 PM",
-        text: "Tst"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
     ]
   },
 ];
-
 const messagesSent = [
   {
     id: 0,
-    name: "Mi",
-    readed: false,
+    name: "Michelle Stewart",
+    readed: true,
     img: "/img/MichelleStewart.png",
     sendlerInfo: {
       online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+      position: 'Account',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart @gmail.com',
       phone: '+48 500 400 300',
       adress: '65 Lorem St, Warsaw, PL',
@@ -1907,45 +1920,172 @@ const messagesSent = [
       {
         answer: false,
         date: "14 April",
-        text: "99"
+        text: "Lorem ipsum dolor."
       },
       {
         answer: true,
         date: "14 April",
-        text: "888"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
       },
       {
         answer: false,
         date: "14 April",
-        text: "7"
+        text: "Lorem ipsum dolor sit amet"
       },
       {
         answer: true,
         date: "14 April",
-        text: "66"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?"
       },
       {
         answer: true,
         date: "Today, 5:31 PM",
-        text: "Tst"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit!"
       },
     ]
   },
-];
+  {
+    id: 1,
+    name: "Jolene Slater",
+    readed: true,
+    img: "/img/JoleneSlater.png",
+    sendlerInfo: {
+      online: true,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'joleneslater @gmail.com',
+      phone: '+48 400 500 600',
+      address: '78 Enim St, London, UK',
+      organization: 'Google',
+      img: "/img/JoleneSlater.png",
+      name: "Jolene Slater",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Ut enim ad minim veniam."
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?"
+      },
+      {
+        answer: true,
+        date: "Tooday, 5:34 PM",
+        text: " Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "LyanRoach",
+    readed: true,
+    img: "/img/LyanRoach.png",
+    sendlerInfo: {
+      online: false,
+      position: 'UX/UI Designer',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'lyanroach @gmail.com',
+      phone: '+48 600 500 400',
+      address: '89 Duis St, Kyiv, UA',
+      organization: 'Microsoft',
+      img: "/img/LyanRoach.png",
+      name: "Lyan Roach",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure/"
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure dolor in!"
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Dominic Lynton",
+    readed: true,
+    img: "/img/DominicLynton.png",
+    sendlerInfo: {
+      online: true,
+      position: 'Front End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'dominiclynton @gmail.com',
+      phone: '+46 500 800 100',
+      address: '12 Excepteur St, Paris, FR',
+      organization: 'Themeforest',
+      img: "/img/DominicLynton.png",
+      name: "Dominic Lynton",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Excepteur."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Excepteur sint occaecat cupidatat non provident."
+      }
+    ]
+  },
 
+];
 const messagesTrash = [
   {
     id: 0,
-    name: "i",
+    name: "Michelle Stewart",
     readed: false,
     img: "/img/MichelleStewart.png",
     sendlerInfo: {
       online: false,
-      position: 'Back End Dev',
-      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et',
+      position: 'Account',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
       email: 'michellestewart @gmail.com',
       phone: '+48 500 400 300',
-      adress: '65 Lorem St, Warsaw, PL',
+      address: '65 Lorem St, Warsaw, PL',
       organization: 'Symu.co',
       img: "/img/MichelleStewart.png",
       name: "Michelle Stewart",
@@ -1954,31 +2094,121 @@ const messagesTrash = [
       {
         answer: false,
         date: "14 April",
-        text: "99"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: true,
         date: "14 April",
-        text: "888"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: false,
         date: "14 April",
-        text: "7"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: true,
         date: "14 April",
-        text: "66"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
         answer: true,
         date: "Yesterday, 5:31 PM",
-        text: "Tst"
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
     ]
   },
+  {
+    id: 1,
+    name: "Jolene Slater",
+    readed: false,
+    img: "/img/JoleneSlater.png",
+    sendlerInfo: {
+      online: true,
+      position: 'Back End Dev',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'joleneslater @gmail.com',
+      phone: '+48 400 500 600',
+      address: '78 Enim St, London, UK',
+      organization: 'Google',
+      img: "/img/JoleneSlater.png",
+      name: "Jolene Slater",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Ut enim ad minim veniam."
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?"
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: " Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      },
+      {
+        answer: true,
+        date: "Today, 5:31 PM",
+        text: " Ut enim ad."
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "LyanRoach",
+    readed: true,
+    img: "/img/LyanRoach.png",
+    sendlerInfo: {
+      online: false,
+      position: 'UX/UI Designer',
+      about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad',
+      email: 'lyanroach @gmail.com',
+      phone: '+48 600 500 400',
+      address: '89 Duis St, Kyiv, UA',
+      organization: 'Microsoft',
+      img: "/img/LyanRoach.png",
+      name: "Lyan Roach",
+    },
+    chat: [
+      {
+        answer: false,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure/"
+      },
+      {
+        answer: false,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure dolor in reprehenderit in voluptate."
+      },
+      {
+        answer: true,
+        date: "14 April",
+        text: "Duis aute irure dolor in!"
+      },
+    ]
+  },
+
 ];
+
 
 //login
 const userExist = {
@@ -2016,12 +2246,10 @@ App.get("/api/user/report/week", (req, res) => {
   return res.json(report.week)
 });
 
-
 //Inbox Messages
 App.get("/api/user/messages/inbox", (req, res) => {
   return res.json(inbox)
 });
-
 
 //Projects
 App.get("/api/user/projects", (req, res) => {
@@ -2050,7 +2278,6 @@ App.get('/api/user/raport/pie/month', (req, res) => {
 App.get('/api/user/raport/pie/week', (req, res) => {
   return res.json(pieChartWeek)
 });
-
 
 //Chat Inbox
 

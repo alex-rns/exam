@@ -62,8 +62,8 @@ class AllProjects extends React.Component {
         </div>
 
         <div className="user-main-info">
-          <p>{row.type}</p>
-          <span>{row.company}</span>
+          <p>{row.assignedName}</p>
+          <span>{row.assignedPosition}</span>
         </div>
       </div>
     )
@@ -110,7 +110,7 @@ class AllProjects extends React.Component {
           columnClassName='td-column-string-example'
           tdStyle={{'border': 'none', background: '#3a3e52'}}
           thStyle={{'border': 'none'}}
-          width='15%'
+          width='14%'
           dataField='id'
           isKey
           dataFormat={this.projectTitle}
@@ -119,7 +119,7 @@ class AllProjects extends React.Component {
         <TableHeaderColumn
           tdStyle={{'border': 'none', background: '#3a3e52'}}
           thStyle={{'border': 'none'}}
-          width='10%'
+          width='7%'
           dataField='value'
           dataFormat={this.value}
         >Value</TableHeaderColumn>
@@ -145,7 +145,7 @@ class AllProjects extends React.Component {
         <TableHeaderColumn
           tdStyle={{'border': 'none', background: '#3a3e52'}}
           thStyle={{'border': 'none'}}
-          width='20%'
+          width='15%'
           dataField='progress'
           dataFormat={this.progress}
         >Progress</TableHeaderColumn>
@@ -153,7 +153,7 @@ class AllProjects extends React.Component {
         <TableHeaderColumn
           tdStyle={{'border': 'none', background: '#3a3e52'}}
           thStyle={{'border': 'none'}}
-          width='10%'
+          width='9%'
           dataField='status'
           dataFormat={this.status}
         >Status</TableHeaderColumn>

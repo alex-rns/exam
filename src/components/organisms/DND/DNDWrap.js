@@ -8,8 +8,6 @@ import './DND.css'
 import Container from './DNDContainer';
 
 
-
-
 class DNDWrap extends React.Component {
 
 
@@ -36,8 +34,6 @@ class DNDWrap extends React.Component {
 
     return (
       <div className="DNDWrap">
-
-
 
         <Grid fluid>
           <Row className="DND">

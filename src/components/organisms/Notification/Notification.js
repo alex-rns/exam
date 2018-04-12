@@ -1,7 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
 import Dropdown, {DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
-// import './NotificationButton.css'
 
 //components
 import NotificationButton from '../../atoms/buttons/NotificationButton/NotificationButton'

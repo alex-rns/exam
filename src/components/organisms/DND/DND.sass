@@ -5,10 +5,10 @@
   overflow-y: hidden
   overflow-x: auto
   display: flex
-  margin: 2.5vmax
+  margin: 2vmax 1.2vmax
   &-header
-    width: 23vmax
-    margin: 0 1.5vmax
+    width: 18vmax
+    margin: 0 1.3vmax
     display: flex
     align-items: center
     justify-content: space-between
@@ -19,26 +19,24 @@
       color: $accent-color
 
   .DND-header-name
-    font-size: 18px
+    font: $title-font
     color: #fff
     margin-bottom: 5px
 
   .DND-header-icon
     color: $font-second-color
-    font-size: 18px
+    font-size: 1.2vmax
 
   &-container
     border-radius: 5px
     height: 100%
-    min-width: 23vmax
+    min-width: 18vmax
   &-card
     background: $gray
     border-radius: 5px
-    padding: 0.2vmax 1vmax
     margin: 1.5vmax
     cursor: move
-    width: 23vmax
-    height: 7vmax
+    width: 18vmax
     .ProjectBlock
       background: $gray
 
@@ -61,3 +59,40 @@
   background-color: $accent-color
   &:hover
     background-color: darken($accent-color, 10%)
+
+
+
+.CardBlock
+  height: 6vmax
+  background: $gray
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 8px 0
+  img
+    min-width: 3vmax
+    height: 3vmax
+    margin: 14px
+  &:hover
+    background: $second-gray
+
+.card-header
+  display: flex
+  justify-content: space-between
+  padding-right: 1vmax
+  color: #fff
+  p
+    font: $main-font
+    margin-bottom: 0.3vmax
+  span
+    font: $second-font
+
+.card-wrap
+  display: flex
+  align-items: center
+
+.card-text
+  font: $second-font
+  color: $font-second-color
+  line-height: 1vmax
+  padding-right: 2vmax

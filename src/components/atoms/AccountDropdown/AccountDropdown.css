@@ -9,7 +9,11 @@
   display: block; }
 
 .account-dropdown__identity {
-  border-bottom: 1px solid #2093ef; }
+  border-bottom: 1px solid #2093ef;
+  font: 400 1.2vmax Montserrat, sans-serif; }
+  .account-dropdown__identity strong {
+    display: inline-block;
+    padding: 5px 0; }
 
 .dropdown__trigger {
   display: flex;
