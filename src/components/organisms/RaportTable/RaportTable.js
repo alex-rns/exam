@@ -59,165 +59,118 @@ class RaportTable extends React.Component {
   };
 
   status = (cell, row) => {
-    return <p className={'table-status ' + ((row.Status === 'Active')?'table-status-active': '')}>{row.Status}</p>
+    return <p className={'table-status ' + ((row.Status === 'Active') ? 'table-status-active' : '')}>{row.Status}</p>
+  };
+
+  cellStyle = {
+    tdStyle: {
+      'borderColor': '#3a3e52'
+    },
+    thStyle: {
+      'border': 'none',
+    }
   };
 
   render() {
     return (
       <BootstrapTable
-        headerStyle={{color: '#9ca1b2', 'background': '#3a3e52', 'font': '400 14px Montserrat'}}
+        tableHeaderClass='tableHeaderClass'
         bordered={false}
         data={this.state.table}
         options={this.options}
       >
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
           width='24%'
-          tdStyle={{'background': '#2a2c3b', 'borderColor': '#3a3e52', 'font': '16px Montserrat', 'padding': '20px 25px'}}
-          thStyle={{'border': 'none', 'padding': '10px 25px'}}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='Campaing'
           isKey
           dataSort
         >Campaing</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='Time'
           dataSort
         >Time</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='Views'
           dataSort
         >Views</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='Visitors'
           dataSort
         >Visitors</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='CTR'
           dataSort
         >CTR</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='CPC'
           dataSort
         >CPC</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='CPV'
           dataSort
         >CPV</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='CPM'
           dataSort
         >CPM</TableHeaderColumn>
 
         <TableHeaderColumn
+          columnClassName="tableColumnClassName"
           sortHeaderColumnClassName='active-sorting'
           caretRender={this.getCaret}
-          dataFormat={ this.status }
-          tdStyle={{
-            'background': '#2a2c3b',
-            'borderColor': '#3a3e52',
-            'font': '16px Montserrat',
-            'padding': '20px 25px'
-          }}
-          thStyle={{
-            'border': 'none',
-            'padding': '20px 25px'
-          }}
+          dataFormat={this.status}
+          tdStyle={this.cellStyle.tdStyle}
+          thStyle={this.cellStyle.thStyle}
           dataField='Status'
           dataSort
         >Status</TableHeaderColumn>
-
 
       </BootstrapTable>
     );

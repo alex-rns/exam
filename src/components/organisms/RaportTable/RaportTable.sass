@@ -1,7 +1,7 @@
 @import '../../../variables.sass'
 
 .dropdown-caret-table
-  margin-left: 10px
+  margin-left: 0.8vmax
   color: $font-second-color
 
 .active-sorting
@@ -10,7 +10,7 @@
 .table-status
   &:before
     display: inline-block
-    margin-right: 10px
+    margin-right: 0.8vmax
     content: ''
     width: 10px
     height: 10px
@@ -18,3 +18,14 @@
     background: #f44336
   &-active:before
     background: #4caf50
+
+.tableHeaderClass
+  font: $title-font
+  color: $font-color
+  background: $gray
+  padding: 1vmax
+
+.tableColumnClassName
+  vertical-align: middle!important
+  padding: 1.5vmax!important
+  font: $second-font

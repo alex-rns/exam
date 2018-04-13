@@ -33,6 +33,7 @@ class HomeRaportChart extends React.Component {
           dataRaport: res.slice(0, 7)
         });
         let chart = this.refs.raportChart.getChart();
+
         chart.series[0].setData(this.state.dataRaport, true);
         chart.update({
           chart:{
