@@ -22,7 +22,8 @@ class Chats extends React.Component {
       messagesTrashView: [],
       messagesInboxView: [],
       messagesSentView: [],
-      isLoading: false
+      isLoading: false,
+      dataNoReaded: []
     }
   }
 
@@ -39,6 +40,9 @@ class Chats extends React.Component {
         this.setState({
           messagesInboxView: res,
           messagesInbox: res,
+          dataNoReaded: res.filter((el) => {
+            return !el.readed && el
+          }),
           isLoading: false
         });
 
@@ -73,6 +77,7 @@ class Chats extends React.Component {
         });
 
       })
+
   }
 
 
@@ -211,7 +216,7 @@ class Chats extends React.Component {
               <FontAwesome
                 name='inbox'
               />
-              Inbox({this.state.messagesInbox.length}) </a>
+              Inbox({this.state.dataNoReaded.length}) </a>
 
             <a
               className={this.state.tab === 'chatSent'

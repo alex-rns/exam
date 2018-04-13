@@ -1857,7 +1857,7 @@ const messagesInbox = [
   {
     id: 4,
     name: "Michele Stewart",
-    readed: false,
+    readed: true,
     img: "/img/MichelleStewart.png",
     sendlerInfo: {
       online: false,
@@ -2209,6 +2209,53 @@ const messagesTrash = [
 
 ];
 
+const userList = [
+  {
+    id: 0,
+    online: false,
+    position: 'Account',
+    email: 'michellestewart@gmail.com',
+    phone: '+48 500 400 300',
+    address: '65 Lorem St, Warsaw, PL',
+    organization: 'Symu.co',
+    img: "/img/MichelleStewart.png",
+    name: "Michelle Stewart"
+  },
+  {
+    id: 1,
+    online: true,
+    position: 'Front End Dev',
+    email: 'dominiclynton@gmail.com',
+    phone: '+46 500 800 100',
+    address: '12 Excepteur St, Paris, FR',
+    organization: 'Themeforest',
+    img: "/img/DominicLynton.png",
+    name: "Dominic Lynton",
+  },
+  {
+    id: 2,
+    online: false,
+    position: 'UX/UI Designer',
+    email: 'lyanroach@gmail.com',
+    phone: '+48 600 500 400',
+    address: '89 Duis St, Kyiv, UA',
+    organization: 'Microsoft',
+    img: "/img/LyanRoach.png",
+    name: "Lyan Roach",
+  },
+  {
+    id: 3,
+    online: true,
+    position: 'Back End Dev',
+    email: 'joleneslater@gmail.com',
+    phone: '+48 400 500 600',
+    address: '78 Enim St, London, UK',
+    organization: 'Google',
+    img: "/img/JoleneSlater.png",
+    name: "Jolene Slater",
+  },
+];
+
 
 //login
 const userExist = {
@@ -2292,6 +2339,11 @@ App.get("/api/user/chat/sent", (req, res) => {
 //Trash Messages
 App.get("/api/user/chat/trash", (req, res) => {
   return res.json(messagesTrash)
+});
+
+//AllUsers
+App.get("/api/user/userList", (req, res) => {
+  return res.json(userList)
 });
 
 App.listen(4000, () => {

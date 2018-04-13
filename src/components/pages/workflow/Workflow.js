@@ -12,7 +12,7 @@ class Workflow extends React.Component {
     super(props);
 
     this.state = {
-      tab: 'workflowAllProjectTab',
+      tab: 'workflowDndTab',
       showedProject: []
     }
   }
@@ -108,7 +108,7 @@ class Workflow extends React.Component {
 
   render() {
 
-    console.log('Workflow ', this.state.showedProject)
+    console.log('Workflow ', this.state.showedProject);
 
     const workflowProject = {
       list: ["All", "Microsoft", "Google", "Symu.co", "JCD.pl", "Facebook", "Themeforest"],
@@ -121,23 +121,23 @@ class Workflow extends React.Component {
           <div className="workflow-header">
             <div className="workflow-tab">
               <a
-                className={this.state.tab === 'workflowDndTab'
-                  ? 'workflowTab-active'
-                  : 'workflowTab'}
-                onClick={() => this.tabChange('workflowDndTab')}
-              >All Projects ({this.state.showedProject.length})</a>
-              <a
                 className={this.state.tab === 'workflowAllProjectTab'
                   ? 'workflowTab-active'
                   : 'workflowTab'}
                 onClick={() => this.tabChange('workflowAllProjectTab')}
               >Workflow</a>
+              <a
+                className={this.state.tab === 'workflowDndTab'
+                  ? 'workflowTab-active'
+                  : 'workflowTab'}
+                onClick={() => this.tabChange('workflowDndTab')}
+              >All Projects ({this.state.showedProject.length})</a>
             </div>
             <Select onChange={this.onSelectChange} data={workflowProject}/>
           </div>
 
           <div className="workflow-wrap">
-            {this.state.tab === 'workflowDndTab'
+            {this.state.tab === 'workflowAllProjectTab'
               ? <DNDWrap data={this.state.showedProject}/>
               : <AllProjects data={this.state.showedProject}/>
             }
