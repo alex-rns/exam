@@ -1,7 +1,6 @@
 import React from 'react';
 import './FormSettings.css'
 
-
 class RightFormSettings extends React.Component{
   onSubmitForm = (e) => {
     e.preventDefault();

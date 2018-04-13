@@ -1978,7 +1978,7 @@ const messagesSent = [
       },
       {
         answer: true,
-        date: "Tooday, 5:34 PM",
+        date: "Today, 5:34 PM",
         text: " Ut enim ad minim veniam, quis nostrud exercitation ullamco."
       },
     ]

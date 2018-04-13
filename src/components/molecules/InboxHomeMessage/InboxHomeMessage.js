@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import './InboxHomeMessage.css'
 
 class InboxHomeMessage extends React.Component {
+
   render(){
     return(
       <div>

@@ -6,7 +6,7 @@ class LeftFormSettings extends React.Component{
 
   onSubmitForm = (e) => {
     e.preventDefault();
-    localStorage.setItem('userName', this.refs.nameInput.value);
+    this.refs.nameInput.value = ''
   };
 
   render(){

@@ -48,7 +48,7 @@ class Notification extends React.Component  {
         </DropdownTrigger>
         <DropdownContent className="dropdown__content-notification">
 
-              <InboxHomeMessage  data={this.state.dataInbox.slice(0,5)}/>
+              <InboxHomeMessage data={this.state.dataInbox.slice(0,5)}/>
 
         </DropdownContent>
       </Dropdown>

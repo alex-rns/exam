@@ -22,6 +22,20 @@ class ChatList extends React.Component {
     });
   }
 
+  addNewCoversation = () => {
+    console.log('qweqwe');
+    console.log(this.state.activeChat);
+    let myText = 'qwe';
+    let myMess = {};
+    let date = 'asdasd';
+    myMess.answer = true;
+    myMess.date = date;
+    myMess.text = myText;
+
+    console.log(myMess)
+
+  };
+
 
   render() {
 
@@ -31,7 +45,7 @@ class ChatList extends React.Component {
           return (
             <a
               onClick={() => this.listClick(item)}
-              className={'chatlist-item ' +  ''}
+              className='chatlist-item'
               key={index}
             >
 
@@ -58,7 +72,7 @@ class ChatList extends React.Component {
           )
         })}
 
-        <button className="new-coversation">
+        <button onClick={this.addNewCoversation} className="new-coversation">
           <FontAwesome
             name='plus'
           />
