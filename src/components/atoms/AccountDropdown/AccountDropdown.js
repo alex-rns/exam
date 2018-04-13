@@ -1,6 +1,6 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import {withRouter} from 'react-router-dom';
+import {withRouter, NavLink} from 'react-router-dom';
 import Dropdown, {DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
 import './AccountDropdown.css'
 
@@ -45,9 +45,9 @@ class AccountDropdown extends React.Component {
           <ul className="account-dropdown__management-links account-dropdown__segment">
 
             <li className="account-dropdown__link">
-              <a className="account-dropdown__link__anchor" onClick={this.handleLinkClick}>
+              <NavLink to="/settings" className="account-dropdown__link__anchor" onClick={this.handleLinkClick}>
                 Settings
-              </a>
+              </NavLink>
             </li>
 
             <li className="account-dropdown__link">

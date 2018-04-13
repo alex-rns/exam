@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import './InboxHomeMessage.css'
 
 class InboxHomeMessage extends React.Component {
@@ -7,7 +8,7 @@ class InboxHomeMessage extends React.Component {
       <div>
         {this.props.data.map((item, index)=>{
            return(
-             <a className="InboxHomeMessage" key={index}>
+             <NavLink to="/chats" className="InboxHomeMessage" key={index}>
                <img src={item.img} alt={item.name}/>
                <div className="inbox-message-wrap">
                  <div className={"inbox-message-header " + (item.readed || "inbox-message-header-noread")}>
@@ -16,7 +17,7 @@ class InboxHomeMessage extends React.Component {
                  </div>
                  <p className="inbox-message-text">{item.text}</p>
                </div>
-             </a>
+             </NavLink>
            )
          })}
     </div>

@@ -10,6 +10,7 @@ import Projects from './components/pages/projects/Projects'
 import Raport from './components/pages/raport/Raport'
 import Chats from './components/pages/chats/Chats'
 import Users from './components/pages/users/Users'
+import Settings from './components/pages/settings/Settings'
 import PageNotFound from './components/pages/pageNotFound/PageNotFound'
 import Authentication from './components/pages/authentication/Authentication'
 
@@ -26,6 +27,7 @@ class App extends React.Component {
           <PrivateRouter exact path="/raport" component={Raport}/>
           <PrivateRouter exact path="/chats" component={Chats}/>
           <PrivateRouter exact path="/users" component={Users}/>
+          <PrivateRouter exact path="/settings" component={Settings}/>
 
           <Route component={PageNotFound}/>
         </Switch>

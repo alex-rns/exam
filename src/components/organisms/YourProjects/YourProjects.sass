@@ -2,13 +2,16 @@
 
 .YourProjects
   height: 460px
-  overflow: hidden
   display: flex
   flex-direction: column
   justify-content: space-between
 
   .ProjectBlock
     height: auto
+    &:nth-last-child(2), &:last-child
+      .dropdown__content
+        margin-top: -60px
+
 
 
 .your-project-header
@@ -18,3 +21,16 @@
   justify-content: center
   align-items: center
   background: $gray
+
+.YourProjects >div:last-child
+  overflow: hidden
+  z-index: 1
+
+//media-queries
+
+@media only screen and (max-width : 992px)
+  .YourProjects
+    .dropdown__content
+      width: 11vmax
+    .dropdown-button__link
+      padding: 0

@@ -28,7 +28,6 @@ class YourProjects extends React.Component {
             return el.idd === 'user1'
           })
         });
-
       })
   }
 
@@ -39,7 +38,7 @@ class YourProjects extends React.Component {
         <div className="your-project-header">
           <p>Your projects</p>
         </div>
-        <HomeProjectBlock data={this.state.dataYourProject.slice(0,4)}/>
+        <HomeProjectBlock data={this.state.dataYourProject.slice(0,5)}/>
       </Col>
     )
   }

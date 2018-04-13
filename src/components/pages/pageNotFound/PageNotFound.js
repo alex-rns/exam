@@ -1,8 +1,14 @@
 import React from 'react';
+import './PageNotFound.css'
+import {NavLink} from 'react-router-dom'
 
 const PageNotFound = () => {
   return(
-    <h2>PageNotFound</h2>
+    <div className="PageNotFound">
+      <h2>PageNotFound</h2>
+      <NavLink to="/">Home</NavLink>
+    </div>
+
   )
 };
 
